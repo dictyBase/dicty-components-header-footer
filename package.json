@@ -11,12 +11,6 @@
       "git add"
     ]
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
-  },
   "scripts": {
     "build": "nwb build-react-component --no-demo --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
