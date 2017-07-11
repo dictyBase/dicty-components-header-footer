@@ -6,7 +6,10 @@
   "module": "es/index.js",
   "files": ["css", "es", "lib", "umd"],
   "lint-staged": {
-    "src/**/*.{js,jsx,json}": ["prettier --no-semi --write", "git add"]
+    "src/**/*.{js,jsx,json}": [
+      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
+      "git add"
+    ]
   },
   "scripts": {
     "build": "nwb build-react-component",
@@ -15,9 +18,12 @@
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "flow": "flow"
   },
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^2.1.1"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
@@ -30,6 +36,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
+    "flow-bin": "^0.49.1",
+    "flow-typed": "^2.1.2",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.1",
     "nwb": "0.18.x",
