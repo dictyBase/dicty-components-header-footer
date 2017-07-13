@@ -1,15 +1,20 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from "react"
+import { render } from "react-dom"
 
-import Example from '../../src'
+import Header from "../../src/components/Header"
 
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>dicty-components-header-footer Demo</h1>
-      <Example/>
-    </div>
+    return (
+      <div>
+        <Header
+          downloads={"www.google.com"}
+          info={"www.google.com"}
+          cite={"www.google.com"}
+        />
+      </div>
+    )
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector("#demo"))

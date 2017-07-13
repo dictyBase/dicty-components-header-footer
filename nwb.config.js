@@ -27,4 +27,7 @@ module.exports = {
   webpack: {
     extra: eslintWebpack,
   },
+  babel: {
+    plugins: "transform-export-extensions",
+  },
 }

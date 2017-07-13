@@ -4,7 +4,12 @@
   "description": "dicty-components-header-footer React component",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["css", "es", "lib", "umd"],
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -24,6 +29,8 @@
     "styleguide:build": "styleguidist build"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "react-fontawesome": "^1.6.1",
     "styled-components": "^2.1.1"
   },
   "peerDependencies": {
@@ -31,6 +38,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^3.0.1",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^1.0.5",
@@ -54,5 +62,7 @@
   "homepage": "",
   "license": "MIT",
   "repository": "",
-  "keywords": ["react-component"]
+  "keywords": [
+    "react-component"
+  ]
 }
