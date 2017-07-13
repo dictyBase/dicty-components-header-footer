@@ -19,4 +19,4 @@ const SearchBar = ({ children, ...props }) =>
     {children}
   </SearchBarStyle>
 
-export default SearchBarStyle
+export default SearchBar
