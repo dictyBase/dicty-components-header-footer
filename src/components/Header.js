@@ -15,17 +15,25 @@ import {
 import "font-awesome/css/font-awesome.min.css"
 import FontAwesome from "react-fontawesome"
 
-type headerProps = {
+const Home = "http://dictybase.org"
+
+let Header = ({
+  downloads,
+  info,
+  cite,
+  home = Home,
+}: {
   downloads: string,
   info: string,
   cite: string,
-}
-
-let Header = ({ downloads, info, cite }: headerProps) => {
+  home?: string,
+}) => {
   return (
     <Container>
       <Logo>
-        <Img src={logo} />
+        <Link href={home}>
+          <Img src={logo} />
+        </Link>
       </Logo>
       <Right>
         <LinksContainer>
