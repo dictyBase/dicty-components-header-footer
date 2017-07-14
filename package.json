@@ -40,6 +40,7 @@
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^3.0.1",
+    "css-loader": "^0.28.4",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^1.0.5",
     "eslint-loader": "^1.7.1",
@@ -56,7 +57,8 @@
     "react": "^15.6.1",
     "react-dev-utils": "^3.0.2",
     "react-dom": "^15.6.1",
-    "react-styleguidist": "^5.5.5"
+    "react-styleguidist": "^5.5.5",
+    "style-loader": "^0.18.2"
   },
   "author": "",
   "homepage": "",
