@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of Header 1`] = `
+<div
+  className="sc-htoDjs bYyUcW"
+>
+  <div
+    className="sc-bxivhb buXlKK"
+  >
+    <a
+      className="sc-bwzfXH hGnGxX"
+      href="http://dictybase.org"
+    >
+      <img
+        className="sc-bdVaJa jvBHhC"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
+  <div
+    className="sc-EHOje brHOjA"
+  >
+    <div
+      className="sc-htpNat RVmdF"
+    >
+      <a
+        className="sc-bwzfXH hGnGxX"
+        href="/citation"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-plus"
+        />
+         Cite Us
+      </a>
+      <a
+        className="sc-bwzfXH hGnGxX"
+        href="/downloads"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-download"
+        />
+         Downloads
+      </a>
+      <a
+        className="sc-bwzfXH hGnGxX"
+        href="/information"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-info-circle"
+        />
+         About dictyBase
+      </a>
+    </div>
+    <div
+      className="sc-gzVnrw eulfAK"
+    >
+      <input
+        className="sc-bZQynM jNzRMB"
+        disabled={true}
+        placeholder="Guided Search (coming soon)"
+      />
+      <div
+        className="sc-ifAKCX TXZOw"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-search"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
