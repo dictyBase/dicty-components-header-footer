@@ -12,7 +12,10 @@ import {
   SearchBar,
   SearchContainer,
 } from "../styles/header"
+
+// $FlowFixMe
 import "font-awesome/css/font-awesome.min.css"
+
 import FontAwesome from "react-fontawesome"
 
 const Home = "http://dictybase.org"
