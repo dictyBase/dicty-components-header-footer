@@ -21,7 +21,7 @@ React components for displaying header and footer in all dictyBase web applicati
 + To run a demo while development  
   ```npm run start```
 + Write tests in the same folder as the component.  
-+ At the end of development, ```npm test``` should pass.  
++ At the end of development, ```npm run test:run``` should pass.  
 + Write documentation using `styleguidist` and build it using ```npm run styleguide:build```.  
 + Run ```npm run build``` to generate the library.  
 + Commit all the changes and either merge to develop or send a pull request.  
