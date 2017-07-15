@@ -26,8 +26,8 @@ React components for displaying header and footer in all dictyBase web applicati
 + Run ```npm run build``` to generate the library.  
 + Commit all the changes and either merge to develop or send a pull request.  
 
-[build-badge]: https://img.shields.io/travis/dictyBase/dicty-components-header-footer/develop.png?style=flat-square
+[build-badge]: https://travis-ci.org/dictyBase/dicty-components-header-footer.svg?branch=develop
 [build]: https://travis-ci.org/dictyBase/dicty-components-header-footer
 
-[coveralls-badge]: https://img.shields.io/coveralls/dictyBase/dicty-components-header-footer/develop.png?style=flat-square
-[coveralls]: https://coveralls.io/github/dictyBase/dicty-components-header-footer
+[coveralls-badge]: https://coveralls.io/repos/github/dictyBase/dicty-components-header-footer/badge.svg?branch=develop
+[coveralls]: https://coveralls.io/github/dictyBase/dicty-components-header-footer?branch=develop
