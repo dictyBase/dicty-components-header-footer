@@ -8,6 +8,11 @@ module.exports = {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           loader: "babel-loader",
+          options: {
+            babelrc: false,
+            presets: ["react-app"],
+            plugins: ["transform-export-extensions"],
+          },
         },
         {
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
