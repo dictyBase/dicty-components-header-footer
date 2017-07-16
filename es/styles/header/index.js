@@ -1,0 +1,9 @@
+export { default as Img } from "./Img";
+export { default as Link } from "./Link";
+export { default as LinksContainer } from "./LinksContainer";
+export { default as Logo } from "./Logo";
+export { default as Magnifier } from "./Magnifier";
+export { default as Right } from "./Right";
+export { default as SearchBar } from "./SearchBar";
+export { default as SearchContainer } from "./SearchContainer";
+export { default as Container } from "./Container";

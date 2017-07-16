@@ -9,7 +9,7 @@ React components for displaying header and footer in all dictyBase web applicati
   ```npm i dictyBase/dicty-components-header-footer --save```
 
   For a particular version(checks tags/release first)  
-  ```npm i dictyBase/dicty-components-header-footer#1.0.0 --save```
+  ```npm i dictyBase/dicty-components-header-footer#v1.0.0 --save```
 
 ## [Usage and documentation](https://dictybase.github.io/dicty-components-header-footer)
 
