@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { space } from "styled-system"
 
 const ContainerStyle = styled.ul`
-  listStyle: none;
+  list-style: none;
   @media (max-width: 40em) : {
     textAlign: center;
   }
