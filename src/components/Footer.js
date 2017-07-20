@@ -28,7 +28,7 @@ type FooterProps = {
 
 const footerItems = (items: Array<ItemType>) =>
   items.map((c, i) =>
-    <FooterItem key={i} mt={0} ml={0} pl={0} pt={3}>
+    <FooterItem key={i} m={0} p={1}>
       <FooterLink href={c.link} color="#d8d8d8" fontSize={11}>
         {c.description}
       </FooterLink>
@@ -38,24 +38,19 @@ const footerItems = (items: Array<ItemType>) =>
 const footerSubSections = (items: Array<FooterItemType>) =>
   items.map((c, i) =>
     <Box key={i} p={10}>
-      <FooterItemsHeader>
-        <FooterLink
-          href={c.header.link}
-          color="#ccffcc"
-          pt={10}
-          pb={6}
-          fontSize={14}>
+      <FooterItemsHeader p={0}>
+        <FooterLink href={c.header.link} color="#ccffcc" fontSize={14}>
           {c.header.description}
         </FooterLink>
       </FooterItemsHeader>
-      <FooterItemsContainer mt={0} ml={0} pl={0}>
+      <FooterItemsContainer m={0} p={0}>
         {footerItems(c.items)}
       </FooterItemsContainer>
     </Box>,
   )
 
 const footerSections = (items: Array<Array<FooterItemType>>) => {
-  const fraction = 1 / items.length
+  const fraction = 1 / (items.length + 2)
   return items.map((c, i) =>
     <Box width={fraction} key={i}>
       {footerSubSections(c)}
@@ -75,13 +70,7 @@ const theme = {
  */
 let Footer = ({ items }: FooterProps) =>
   <Provider theme={theme}>
-    <FooterContainer
-      mt={50}
-      mr="auto"
-      ml="auto"
-      pr={15}
-      pl={15}
-      width={[750, 992, 1200]}>
+    <FooterContainer width={1} mt={50}>
       {footerSections(items)}
     </FooterContainer>
   </Provider>
