@@ -26,7 +26,7 @@ type FooterProps = {
   items: Array<Array<FooterItemType>>,
 }
 
-const footerItems = items =>
+const footerItems = (items: Array<ItemType>) =>
   items.map((c, i) =>
     <FooterItem key={i} mt={0} ml={0} pl={0} pt={3}>
       <FooterLink href={c.link} color="#d8d8d8" fontSize={11}>
@@ -35,7 +35,7 @@ const footerItems = items =>
     </FooterItem>,
   )
 
-const footerSubSections = items =>
+const footerSubSections = (items: Array<FooterItemType>) =>
   items.map((c, i) =>
     <Box key={i} p={10}>
       <FooterItemsHeader>
@@ -54,7 +54,7 @@ const footerSubSections = items =>
     </Box>,
   )
 
-const footerSections = items => {
+const footerSections = (items: Array<Array<FooterItemType>>) => {
   const fraction = 1 / items.length
   return items.map((c, i) =>
     <Box width={fraction} key={i}>
