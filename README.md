@@ -4,6 +4,7 @@
 [![Coveralls][coveralls-badge]][coveralls]
 [![Dependencies][dependencies-badge]][dependencies]
 [![Devdependencies][devdependencies-badge]][devdependencies]
+[![Peerdependencies][peerdependencies-badge]][peerdependencies]
 
 React components for displaying header and footer in all dictyBase web applications.
 
@@ -37,8 +38,11 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 [coveralls-badge]: https://coveralls.io/repos/github/dictyBase/dicty-components-header-footer/badge.svg?branch=develop
 [coveralls]: https://coveralls.io/github/dictyBase/dicty-components-header-footer?branch=develop
 
-[dependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages
-[dependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages.svg
+[dependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer
+[dependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/status.svg
 
-[devdependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages#info=devDependencies
-[devdependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages/dev-status.svg
+[devdependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer?type=dev
+[devdependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/dev-status.svg
+
+[peerdependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer?type=peer
+[devdependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/peer-status.svg
