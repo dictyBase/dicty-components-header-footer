@@ -7,11 +7,8 @@ import { Header, Footer } from "../../src"
 const items = [
   [
     {
-      header: { link: "http://yahoo.com", description: "Yahoo" },
-      items: [
-        { link: "http://cnn.com", description: "CNN" },
-        { link: "http://nytimes.com", description: "Nytimes" },
-      ],
+      header: { link: "http://yahoo.com", description: "Genomes" },
+      items: [{ link: "http://cnn.com", description: "Genomes Home" }],
     },
   ],
   [
@@ -19,7 +16,25 @@ const items = [
       header: { description: "Tools", link: "http://dictybase.org/tools" },
       items: [
         { link: "http://dictybase.org/tools", description: "Tools home" },
-        { link: "http://dictybase.org/tools", description: "Genome browser" },
+        {
+          link: "http://dictybase.org/tools",
+          description: "New Genomes browser",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      header: { description: "Research", link: "http://dictybase.org/tools" },
+      items: [
+        { link: "http://dictybase.org/tools", description: "Research home" },
+        { link: "http://dictybase.org/tools", description: "Anatomy ontology" },
+        { link: "http://dictybase.org/tools", description: "Codon bias table" },
+        {
+          link: "http://dictybase.org/tools",
+          description: "Nomenclature Guidelines",
+        },
+        { link: "http://dictybase.org/tools", description: "Phenotyping" },
       ],
     },
   ],
