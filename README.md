@@ -2,8 +2,8 @@
 
 [![Travis][build-badge]][build]
 [![Coveralls][coveralls-badge]][coveralls]
-[![Dependencies][dependencies-badge][dependencies]
-[![Devdependencies][devdependencies-badge][devdependencies]
+[![Dependencies][dependencies-badge]][dependencies]
+[![Devdependencies][devdependencies-badge]][devdependencies]
 
 React components for displaying header and footer in all dictyBase web applications.
 
