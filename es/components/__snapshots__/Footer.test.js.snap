@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of Footer 1`] = `
+<div
+  className="sc-EHOje ftpZOV"
+>
+  <div
+    className="sc-eerKOB bXGZxA sc-bxivhb bUZGRr sc-htpNat eGEoBZ sc-bdVaJa bGMmSw"
+    direction={
+      Array [
+        "column",
+        "row",
+        "row",
+      ]
+    }
+    width={1}
+  >
+    <div
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
+      width={0.16666666666666666}
+    >
+      <div
+        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+      >
+        <div
+          className="sc-emmjRN fcxxGP"
+        >
+          <a
+            className="sc-cpmLhU bkAwLP"
+            color="#ccffcc"
+            fontSize={14}
+            href="http://yahoo.com"
+          >
+            Genomes
+          </a>
+        </div>
+        <ul
+          className="sc-dymIpo QciTE"
+        >
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://cnn.com"
+            >
+              Genomes Home
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
+      width={0.16666666666666666}
+    >
+      <div
+        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+      >
+        <div
+          className="sc-emmjRN fcxxGP"
+        >
+          <a
+            className="sc-cpmLhU bkAwLP"
+            color="#ccffcc"
+            fontSize={14}
+            href="http://dictybase.org/tools"
+          >
+            Tools
+          </a>
+        </div>
+        <ul
+          className="sc-dymIpo QciTE"
+        >
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Tools home
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              New Genomes browser
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
+      width={0.16666666666666666}
+    >
+      <div
+        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+      >
+        <div
+          className="sc-emmjRN fcxxGP"
+        >
+          <a
+            className="sc-cpmLhU bkAwLP"
+            color="#ccffcc"
+            fontSize={14}
+            href="http://dictybase.org/tools"
+          >
+            Research
+          </a>
+        </div>
+        <ul
+          className="sc-dymIpo QciTE"
+        >
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Research home
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Anatomy ontology
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Codon bias table
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Nomenclature Guidelines
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/tools"
+            >
+              Phenotyping
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
+      width={0.16666666666666666}
+    >
+      <div
+        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+      >
+        <div
+          className="sc-emmjRN fcxxGP"
+        >
+          <a
+            className="sc-cpmLhU bkAwLP"
+            color="#ccffcc"
+            fontSize={14}
+            href="http://dictybase.org/cite"
+          >
+            Please Cite
+          </a>
+        </div>
+        <ul
+          className="sc-dymIpo QciTE"
+        >
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org"
+            >
+              dictyBase
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/stock"
+            >
+              Dicty stock center
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+      >
+        <div
+          className="sc-emmjRN fcxxGP"
+        >
+          <a
+            className="sc-cpmLhU bkAwLP"
+            color="#ccffcc"
+            fontSize={14}
+            href="http://dictybase.org/support"
+          >
+            Supported By
+          </a>
+        </div>
+        <ul
+          className="sc-dymIpo QciTE"
+        >
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/nih"
+            >
+              NIH
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/nih"
+            >
+              GMOD
+            </a>
+          </li>
+          <li
+            className="sc-bnXvFD jLHkBJ"
+          >
+            <a
+              className="sc-cpmLhU RuABJ"
+              color="#d8d8d8"
+              fontSize={11}
+              href="http://dictybase.org/nih"
+            >
+              Gene ontology
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
