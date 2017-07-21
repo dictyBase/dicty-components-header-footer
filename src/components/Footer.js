@@ -70,7 +70,12 @@ const theme = {
  */
 let Footer = ({ items }: FooterProps) =>
   <Provider theme={theme}>
-    <FooterContainer width={1} mt={50}>
+    <FooterContainer
+      width={1}
+      mt={50}
+      justify="center"
+      align={["center", "left", "left"]}
+      direction={["column", "row", "row"]}>
       {footerSections(items)}
     </FooterContainer>
   </Provider>
