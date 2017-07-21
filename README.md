@@ -2,6 +2,8 @@
 
 [![Travis][build-badge]][build]
 [![Coveralls][coveralls-badge]][coveralls]
+[![Dependencies][dependencies-badge][dependencies]
+[![Devdependencies][devdependencies-badge][devdependencies]
 
 React components for displaying header and footer in all dictyBase web applications.
 
@@ -11,7 +13,10 @@ React components for displaying header and footer in all dictyBase web applicati
   For a particular version(checks tags/release first)  
   ```npm i dictyBase/dicty-components-header-footer#v1.0.0 --save```
 
-## [Usage and documentation](https://dictybase.github.io/dicty-components-header-footer)
+## Usage and documentation
+```import {Header, Footer} from "dicty-components-header-footer``` 
+Documentation of `Header` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Header). 
+Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Footer).
 
 ## Development
 + Clone the `develop` branch of this repository  
@@ -31,3 +36,9 @@ React components for displaying header and footer in all dictyBase web applicati
 
 [coveralls-badge]: https://coveralls.io/repos/github/dictyBase/dicty-components-header-footer/badge.svg?branch=develop
 [coveralls]: https://coveralls.io/github/dictyBase/dicty-components-header-footer?branch=develop
+
+[dependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages
+[dependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages.svg
+
+[devdependencies]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages#info=devDependencies
+[devdependencis-badge]: https://david-dm.org/dictyBase/dicty-components-header-footer/update-packages/dev-status.svg
