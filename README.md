@@ -16,17 +16,19 @@ React components for displaying header and footer in all dictyBase web applicati
 
 ## Usage and documentation
 ```import {Header, Footer} from "dicty-components-header-footer``` 
-Documentation of `Header` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Header). 
-Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Footer).
+
+Documentation of `Header` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Header).  
+Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Footer).  
+
 
 ## Development
 + Clone the `develop` branch of this repository  
 + Run `npm install`  
 + Create a feature branch(feature/foo) or `bug/foo` or `documentation/foo` or
   `refactor/foo`, whatever suits the purpose of development  
-+ To run a demo while development  
++ To run a demo during development  
   ```npm run start```
-+ Write tests in the same folder as the component.  
++ Write tests in the same folder as the component. Snapshot testing is recommended.  
 + At the end of development, ```npm run test:run``` should pass.  
 + Write documentation using `styleguidist` and build it using ```npm run styleguide:build```.  
 + Run ```npm run build``` to generate the library.  
