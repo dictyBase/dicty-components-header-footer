@@ -18,6 +18,7 @@ var Header = function Header(_ref) {
   var downloads = _ref.downloads,
       info = _ref.info,
       cite = _ref.cite,
+      login = _ref.login,
       _ref$home = _ref.home,
       home = _ref$home === undefined ? Home : _ref$home;
 
@@ -39,6 +40,12 @@ var Header = function Header(_ref) {
       React.createElement(
         LinksContainer,
         null,
+        React.createElement(
+          Link,
+          { href: login },
+          React.createElement(FontAwesome, { name: "sign-in" }),
+          " Login"
+        ),
         React.createElement(
           Link,
           { href: cite },

@@ -25,6 +25,16 @@ exports[`matching a snapshot of Header 1`] = `
     >
       <a
         className="sc-bwzfXH hGnGxX"
+        href="/login"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-sign-in"
+        />
+         Login
+      </a>
+      <a
+        className="sc-bwzfXH hGnGxX"
         href="/citation"
       >
         <span

@@ -26,6 +26,8 @@ type HeaderProps = {
   info: string,
   /** Link for the citation page */
   cite: string,
+  /** Link for the login page */
+  login: string,
   /** Link for the logo, that goes to the home page */
   home?: string,
 }
@@ -34,7 +36,7 @@ type HeaderProps = {
  * The `Header` component that will be displayed
  * on top of navigation bar in every react web application of [dictyBase](http://dictybase.org).
  */
-let Header = ({ downloads, info, cite, home = Home }: HeaderProps) => {
+let Header = ({ downloads, info, cite, login, home = Home }: HeaderProps) => {
   return (
     <Container>
       <Logo>
@@ -44,6 +46,9 @@ let Header = ({ downloads, info, cite, home = Home }: HeaderProps) => {
       </Logo>
       <Right>
         <LinksContainer>
+          <Link href={login}>
+            <FontAwesome name="sign-in" /> Login
+          </Link>
           <Link href={cite}>
             <FontAwesome name="plus" /> Cite Us
           </Link>

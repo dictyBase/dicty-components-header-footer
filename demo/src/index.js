@@ -8,7 +8,7 @@ import items from "../../src/data/footer"
 const Demo = () =>
   <Flex column>
     <Box>
-      <Header downloads="/downloads" info="/info" cite="/citation" />
+      <Header login="/login" downloads="/downloads" info="/info" cite="/citation" />
     </Box>
     <Box w={1}>
       <Divider w={1} color="green" />

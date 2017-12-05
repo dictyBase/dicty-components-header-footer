@@ -5,5 +5,6 @@
           downloads="/downloads"
           info="/information"
           cite="/citation"
+          login="/login"
         />
 ```
