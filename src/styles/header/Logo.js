@@ -8,6 +8,14 @@ const LogoStyle = styled.div`
   height: 100px;
   align-items: flex-end;
   flex-basis: calc(33.33333333333333% - 8px);
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-basis: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    order: initial;
+  }
 `
 const Logo = ({ children, ...props }) => (
   <LogoStyle {...props}>{children}</LogoStyle>

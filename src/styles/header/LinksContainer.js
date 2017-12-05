@@ -9,6 +9,14 @@ const LinksContainerStyle = styled.div`
   margin-bottom: 5px;
   flex-basis: 100%;
   font-size: 14px;
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-basis: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    order: initial;
+  }
 `
 
 const LinksContainer = ({ children, ...props }) => (

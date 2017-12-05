@@ -8,10 +8,18 @@ const SearchBarStyle = styled.input`
   border-bottom-right-radius: 0px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  width: 100%;
+  width: 50%;
   height: 30px;
   color: #555;
   padding: 0px 0px 0px 5px;
+
+  @media only screen and (max-width: 1024px) {
+    display: flex;
+    flex-basis: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    order: initial;
+  }
 `
 
 const SearchBar = ({ children, ...props }) => (
