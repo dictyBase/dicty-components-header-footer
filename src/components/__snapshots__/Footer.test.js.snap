@@ -6,21 +6,15 @@ exports[`matching a snapshot of Footer 1`] = `
 >
   <div
     className="sc-eerKOB bXGZxA sc-bxivhb bUZGRr sc-htpNat eGEoBZ sc-bdVaJa bGMmSw"
-    direction={
-      Array [
-        "column",
-        "row",
-        "row",
-      ]
-    }
-    width={1}
+    is={null}
   >
     <div
       className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      width={0.16666666666666666}
+      is={null}
     >
       <div
         className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+        is={null}
       >
         <div
           className="sc-emmjRN fcxxGP"
@@ -54,10 +48,11 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
     <div
       className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      width={0.16666666666666666}
+      is={null}
     >
       <div
         className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+        is={null}
       >
         <div
           className="sc-emmjRN fcxxGP"
@@ -103,10 +98,11 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
     <div
       className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      width={0.16666666666666666}
+      is={null}
     >
       <div
         className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+        is={null}
       >
         <div
           className="sc-emmjRN fcxxGP"
@@ -188,10 +184,11 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
     <div
       className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      width={0.16666666666666666}
+      is={null}
     >
       <div
         className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+        is={null}
       >
         <div
           className="sc-emmjRN fcxxGP"
@@ -236,6 +233,7 @@ exports[`matching a snapshot of Footer 1`] = `
       </div>
       <div
         className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
+        is={null}
       >
         <div
           className="sc-emmjRN fcxxGP"

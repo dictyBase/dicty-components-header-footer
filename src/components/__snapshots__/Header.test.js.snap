@@ -2,26 +2,26 @@
 
 exports[`matching a snapshot of Header 1`] = `
 <div
-  className="sc-htoDjs bYyUcW"
+  className="sc-htoDjs iwSRh"
 >
   <div
-    className="sc-bxivhb buXlKK"
+    className="sc-bxivhb kduGgx"
   >
     <a
       className="sc-bwzfXH hGnGxX"
       href="http://dictybase.org"
     >
       <img
-        className="sc-bdVaJa jvBHhC"
+        className="sc-bdVaJa kJtDpr"
         src="test-file-stub"
       />
     </a>
   </div>
   <div
-    className="sc-EHOje brHOjA"
+    className="sc-EHOje dunrIc"
   >
     <div
-      className="sc-htpNat RVmdF"
+      className="sc-htpNat dZAest"
     >
       <a
         className="sc-bwzfXH hGnGxX"
@@ -58,7 +58,7 @@ exports[`matching a snapshot of Header 1`] = `
       className="sc-gzVnrw eulfAK"
     >
       <input
-        className="sc-bZQynM jNzRMB"
+        className="sc-bZQynM gEhwdb"
         disabled={true}
         placeholder="Guided Search (coming soon)"
       />

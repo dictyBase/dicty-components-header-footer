@@ -1,4 +1,4 @@
-var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n"], ["\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n"]);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  display: flex;\n  flex-flow: row wrap;\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  justify-content: space-between;\n"], ["\n  display: flex;\n  flex-flow: row wrap;\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  justify-content: space-between;\n"]);
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
