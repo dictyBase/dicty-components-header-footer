@@ -2,13 +2,16 @@ import React from "react"
 import styled from "styled-components"
 
 const ContainerStyle = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 `
-const Container = ({ children, ...props }) =>
-  <ContainerStyle {...props}>
-    {children}
-  </ContainerStyle>
+const Container = ({ children, ...props }) => (
+  <ContainerStyle {...props}>{children}</ContainerStyle>
+)
 
 export default Container

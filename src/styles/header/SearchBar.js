@@ -8,15 +8,14 @@ const SearchBarStyle = styled.input`
   border-bottom-right-radius: 0px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  width: 50%;
+  width: 100%;
   height: 30px;
   color: #555;
   padding: 0px 0px 0px 5px;
 `
 
-const SearchBar = ({ children, ...props }) =>
-  <SearchBarStyle {...props}>
-    {children}
-  </SearchBarStyle>
+const SearchBar = ({ children, ...props }) => (
+  <SearchBarStyle {...props}>{children}</SearchBarStyle>
+)
 
 export default SearchBar

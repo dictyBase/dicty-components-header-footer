@@ -6,12 +6,11 @@ const LogoStyle = styled.div`
   display: flex;
   justify-content: flex-start;
   height: 100px;
-  padding: 20px;
   align-items: flex-end;
+  flex-basis: calc(33.33333333333333% - 8px);
 `
-const Logo = ({ children, ...props }) =>
-  <LogoStyle {...props}>
-    {children}
-  </LogoStyle>
+const Logo = ({ children, ...props }) => (
+  <LogoStyle {...props}>{children}</LogoStyle>
+)
 
 export default Logo

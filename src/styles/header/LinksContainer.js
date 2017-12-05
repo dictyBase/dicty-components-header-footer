@@ -7,11 +7,12 @@ const LinksContainerStyle = styled.div`
   width: 100%;
   justify-content: flex-end;
   margin-bottom: 5px;
+  flex-basis: 100%;
+  font-size: 14px;
 `
 
-const LinksContainer = ({ children, ...props }) =>
-  <LinksContainerStyle {...props}>
-    {children}
-  </LinksContainerStyle>
+const LinksContainer = ({ children, ...props }) => (
+  <LinksContainerStyle {...props}>{children}</LinksContainerStyle>
+)
 
 export default LinksContainer
