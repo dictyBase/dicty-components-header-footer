@@ -32,7 +32,10 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 + At the end of development, ```npm run test:run``` should pass.  
 + Write documentation using `styleguidist` and build it using ```npm run styleguide:build```.  
 + Run ```npm run build``` to generate the library.  
-+ Commit all the changes and either merge to develop or send a pull request.  
++ Commit all the changes and either merge to develop or send a pull request.
+
+## Tagging
++ Run `git tag -a v1.0.0 "version 1.0.0"` where the version number is the one that needs to be updated
 
 [build-badge]: https://travis-ci.org/dictyBase/dicty-components-header-footer.svg?branch=develop
 [build]: https://travis-ci.org/dictyBase/dicty-components-header-footer
