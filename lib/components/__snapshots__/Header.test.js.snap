@@ -31,17 +31,19 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-sign-in"
         />
-         Login
+         
+        Login
       </a>
       <a
         className="sc-bwzfXH hGnGxX"
-        href="/citation"
+        href="/cite"
       >
         <span
           aria-hidden={true}
           className="fa fa-plus"
         />
-         Cite Us
+         
+        Cite Us
       </a>
       <a
         className="sc-bwzfXH hGnGxX"
@@ -51,17 +53,19 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-download"
         />
-         Downloads
+         
+        Downloads
       </a>
       <a
         className="sc-bwzfXH hGnGxX"
-        href="/information"
+        href="/info"
       >
         <span
           aria-hidden={true}
           className="fa fa-info-circle"
         />
-         About dictyBase
+         
+        About dictyBase
       </a>
     </div>
     <div
