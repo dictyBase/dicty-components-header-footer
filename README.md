@@ -36,6 +36,7 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 
 ## Tagging
 + Run `git tag -a v1.0.0 "version 1.0.0"` where the version number is the one that needs to be updated
++ Push tag to branch, i.e. `git push origin v1.0.0`
 
 [build-badge]: https://travis-ci.org/dictyBase/dicty-components-header-footer.svg?branch=develop
 [build]: https://travis-ci.org/dictyBase/dicty-components-header-footer
