@@ -12,7 +12,7 @@ module.exports = [
   {
     url: "/downloads",
     icon: "download",
-    text: "Login",
+    text: "Downloads",
   },
   {
     url: "/info",
