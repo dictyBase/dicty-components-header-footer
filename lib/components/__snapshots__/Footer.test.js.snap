@@ -1,26 +1,156 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Footer 1`] = `
+.c0 {
+  font-family: helvetica,arial,sans-serif;
+}
+
+.c1 {
+  background: linear-gradient(#15317E, #0099FF);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 16.666666666666664%;
+}
+
+.c5 {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.c6 {
+  padding: 0px;
+}
+
+.c7 {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ccffcc;
+}
+
+.c7:hover {
+  text-decoration: underline;
+}
+
+.c10 {
+  text-decoration: none;
+  font-size: 11px;
+  color: #d8d8d8;
+}
+
+.c10:hover {
+  text-decoration: underline;
+}
+
+.c8 {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.c9 {
+  list-style: none;
+  margin: 0px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 40em) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .c2 {
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .c2 {
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+  }
+}
+
+@media (max-width: 40em) : {
+  .c6 {
+    textAlign: center;
+  }
+}
+
+@media (max-width: 40em) : {
+  .c8 {
+    textAlign: center;
+  }
+}
+
 <div
-  className="sc-EHOje ftpZOV"
+  className="c0"
 >
   <div
-    className="sc-eerKOB bXGZxA sc-bxivhb bUZGRr sc-htpNat eGEoBZ sc-bdVaJa bGMmSw"
-    is={null}
+    className="c1 c2 c3"
+    direction={
+      Array [
+        "column",
+        "row",
+        "row",
+      ]
+    }
+    width={1}
   >
     <div
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      is={null}
+      className="c4"
+      width={0.16666666666666666}
     >
       <div
-        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
-        is={null}
+        className="c5"
       >
         <div
-          className="sc-emmjRN fcxxGP"
+          className="c6"
         >
           <a
-            className="sc-cpmLhU bkAwLP"
+            className="c7"
             color="#ccffcc"
             fontSize={14}
             href="http://yahoo.com"
@@ -29,13 +159,13 @@ exports[`matching a snapshot of Footer 1`] = `
           </a>
         </div>
         <ul
-          className="sc-dymIpo QciTE"
+          className="c8"
         >
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://cnn.com"
@@ -47,18 +177,17 @@ exports[`matching a snapshot of Footer 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      is={null}
+      className="c4"
+      width={0.16666666666666666}
     >
       <div
-        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
-        is={null}
+        className="c5"
       >
         <div
-          className="sc-emmjRN fcxxGP"
+          className="c6"
         >
           <a
-            className="sc-cpmLhU bkAwLP"
+            className="c7"
             color="#ccffcc"
             fontSize={14}
             href="http://dictybase.org/tools"
@@ -67,13 +196,13 @@ exports[`matching a snapshot of Footer 1`] = `
           </a>
         </div>
         <ul
-          className="sc-dymIpo QciTE"
+          className="c8"
         >
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -82,10 +211,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -97,18 +226,17 @@ exports[`matching a snapshot of Footer 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      is={null}
+      className="c4"
+      width={0.16666666666666666}
     >
       <div
-        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
-        is={null}
+        className="c5"
       >
         <div
-          className="sc-emmjRN fcxxGP"
+          className="c6"
         >
           <a
-            className="sc-cpmLhU bkAwLP"
+            className="c7"
             color="#ccffcc"
             fontSize={14}
             href="http://dictybase.org/tools"
@@ -117,13 +245,13 @@ exports[`matching a snapshot of Footer 1`] = `
           </a>
         </div>
         <ul
-          className="sc-dymIpo QciTE"
+          className="c8"
         >
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -132,10 +260,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -144,10 +272,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -156,10 +284,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -168,10 +296,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/tools"
@@ -183,18 +311,17 @@ exports[`matching a snapshot of Footer 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX cFlEyZ sc-bdVaJa kyFkYe"
-      is={null}
+      className="c4"
+      width={0.16666666666666666}
     >
       <div
-        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
-        is={null}
+        className="c5"
       >
         <div
-          className="sc-emmjRN fcxxGP"
+          className="c6"
         >
           <a
-            className="sc-cpmLhU bkAwLP"
+            className="c7"
             color="#ccffcc"
             fontSize={14}
             href="http://dictybase.org/cite"
@@ -203,13 +330,13 @@ exports[`matching a snapshot of Footer 1`] = `
           </a>
         </div>
         <ul
-          className="sc-dymIpo QciTE"
+          className="c8"
         >
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org"
@@ -218,10 +345,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/stock"
@@ -232,14 +359,13 @@ exports[`matching a snapshot of Footer 1`] = `
         </ul>
       </div>
       <div
-        className="sc-ifAKCX cFlEyZ sc-bdVaJa dYYfsz"
-        is={null}
+        className="c5"
       >
         <div
-          className="sc-emmjRN fcxxGP"
+          className="c6"
         >
           <a
-            className="sc-cpmLhU bkAwLP"
+            className="c7"
             color="#ccffcc"
             fontSize={14}
             href="http://dictybase.org/support"
@@ -248,13 +374,13 @@ exports[`matching a snapshot of Footer 1`] = `
           </a>
         </div>
         <ul
-          className="sc-dymIpo QciTE"
+          className="c8"
         >
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/nih"
@@ -263,10 +389,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/nih"
@@ -275,10 +401,10 @@ exports[`matching a snapshot of Footer 1`] = `
             </a>
           </li>
           <li
-            className="sc-bnXvFD jLHkBJ"
+            className="c9"
           >
             <a
-              className="sc-cpmLhU RuABJ"
+              className="c10"
               color="#d8d8d8"
               fontSize={11}
               href="http://dictybase.org/nih"
