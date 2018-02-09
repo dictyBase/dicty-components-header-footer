@@ -4,7 +4,12 @@
   "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["css", "es", "lib", "umd"],
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -28,7 +33,11 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "babel": { "presets": ["react-app"] },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
   "scripts": {
     "build": "nwb build-react-component --no-demo --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
@@ -81,5 +90,7 @@
   "homepage": "",
   "license": "MIT",
   "repository": "",
-  "keywords": ["react-component"]
+  "keywords": [
+    "react-component"
+  ]
 }
