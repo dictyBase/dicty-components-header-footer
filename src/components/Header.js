@@ -1,5 +1,6 @@
 // @flow
 import React from "react"
+import type { Node } from "react"
 import logo from "../images/logo.png"
 import {
   Container,
@@ -19,18 +20,6 @@ import "font-awesome/css/font-awesome.min.css"
 import FontAwesome from "react-fontawesome"
 
 const Home = "http://dictybase.org"
-// type HeaderProps = {
-//   /** Link for the download page */
-//   downloads: string,
-//   /** Link for the information page */
-//   info: string,
-//   /** Link for the citation page */
-//   cite: string,
-//   /** Link for the login page */
-//   login: string,
-//   /** Link for the logo, that goes to the home page */
-//   home?: string,
-// }
 
 type ItemType = {
   /** url link */
@@ -39,6 +28,9 @@ type ItemType = {
   icon: string,
   /** description of the link that will be displayed */
   text: string,
+  /** whether the link will be routed using react-routers `Link` component **/
+  /** remember, the rendering will be decided by children component **/
+  isrouter?: boolean,
 }
 
 type HeaderProps = {
@@ -46,20 +38,22 @@ type HeaderProps = {
   items: Array<ItemType>,
   /** Link for the logo, that goes to the home page */
   home?: string,
+  /** Children react node which renders the links in the header */
+  children: Node,
 }
 
-const headerItems = (items: Array<ItemType>) =>
-  items.map((link, i) => (
-    <Link key={i} href={link.url}>
-      <FontAwesome name={link.icon} /> {link.text}
-    </Link>
-  ))
+//const headerItems = (items: Array<ItemType>) =>
+//items.map((link, i) => (
+//<Link key={i} href={link.url}>
+//<FontAwesome name={link.icon} /> {link.text}
+//</Link>
+//))
 
 /**
  * The `Header` component that will be displayed
  * on top of navigation bar in every react web application of [dictyBase](http://dictybase.org).
  */
-let Header = ({ items, home = Home }: HeaderProps) => {
+let Header = ({ children, items, home = Home }: HeaderProps) => {
   return (
     <Container>
       <Logo>
@@ -68,7 +62,7 @@ let Header = ({ items, home = Home }: HeaderProps) => {
         </Link>
       </Logo>
       <Right>
-        <LinksContainer>{headerItems(items)}</LinksContainer>
+        <LinksContainer>{children(items)}</LinksContainer>
         <SearchContainer>
           <SearchBar placeholder="Guided Search (coming soon)" disabled />
           <Magnifier>
