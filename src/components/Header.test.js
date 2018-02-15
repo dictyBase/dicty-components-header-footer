@@ -3,13 +3,23 @@ import Header from "./Header"
 import renderer from "react-test-renderer"
 import items from "../data/header"
 import { Link } from "../styles/header"
+import styled from "styled-components"
 import "jest-styled-components"
 // $FlowFixMe
 import "font-awesome/css/font-awesome.min.css"
 import FontAwesome from "react-fontawesome"
 
+const RouterLink = styled(Link)`
+  color: #ff6b81;
+`
+
 const generateLinks = (link, i) => {
-  return (
+  return link.isRouter ? (
+    <RouterLink key={i} href={link.url}>
+      <FontAwesome name={link.icon} />
+      {link.text}
+    </RouterLink>
+  ) : (
     <Link key={i} href={link.url}>
       <FontAwesome name={link.icon} />
       {link.text}

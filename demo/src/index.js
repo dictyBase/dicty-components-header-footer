@@ -5,11 +5,33 @@ import { Flex, Box, Divider } from "rebass"
 import { Header, Footer } from "../../src"
 import links from "../../src/data/header"
 import items from "../../src/data/footer"
+import { Link } from "../../src/styles/header"
+import "font-awesome/css/font-awesome.min.css"
+import FontAwesome from "react-fontawesome"
+import styled from "styled-components"
 
-const Demo = () =>
+const RouterLink = styled(Link)`
+  color: #1B9CFC;
+`
+
+const generateLinks = (link, i) => {
+  return link.isRouter ? (
+    <RouterLink key={i} href={link.url}>
+      <FontAwesome name={link.icon} size="lg" />
+      {link.text}
+    </RouterLink>
+  ) : (
+    <Link key={i} href={link.url}>
+      <FontAwesome name={link.icon} />
+      {link.text}
+    </Link>
+  )
+}
+
+const Demo = () => (
   <Flex column>
     <Box>
-      <Header items={links} />
+      <Header items={links}>{items => items.map(generateLinks)}</Header>,
     </Box>
     <Box w={1}>
       <Divider w={1} color="green" />
@@ -18,5 +40,6 @@ const Demo = () =>
       <Footer items={items} />
     </Box>
   </Flex>
+)
 
 render(<Demo />, document.querySelector("#demo"))

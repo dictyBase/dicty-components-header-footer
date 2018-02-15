@@ -3,6 +3,7 @@ module.exports = [
     url: "/login",
     icon: "sign-in",
     text: "Login",
+    isRouter: true,
   },
   {
     url: "/cite",
@@ -13,7 +14,6 @@ module.exports = [
     url: "/downloads",
     icon: "download",
     text: "Downloads",
-    isRouter: true,
   },
   {
     url: "/info",
