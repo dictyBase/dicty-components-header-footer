@@ -1,9 +1,18 @@
 ## Default header component
 
 ```example
-const  Link = require("../styles/header")
-require("font-awesome/css/font-awesome.min.css")
-const FontAwesome = require("react-fontawesome")
+
+const aStyle = {
+  color: "#15317e",
+  marginRight: "8px",
+  textDecoration: "none"
+};
+
+const rStyle = {
+  color: "#1B9CFC",
+  marginRight: "8px",
+  textDecoration: "none"
+};
 
 const items = [
   {
@@ -25,17 +34,21 @@ const items = [
     url: "/login",
     icon: "sign-in",
     text: "Login",
+    isRouter: true,
   },
 ];
 
 
 const generateLinks = (link, i) => {
-  return (
-    <Link key={i} href={link.url}>
-      <FontAwesome name={link.icon} />
+  return link.isRouter ? (
+    <a style={rStyle} key={i} href={link.url}>
       {link.text}
-    </Link>
-  );
+    </a>
+  ) : (
+    <a style={aStyle} key={i} href={link.url}>
+      {link.text}
+    </a>
+  )
 };
 
 <Header items={items}>
