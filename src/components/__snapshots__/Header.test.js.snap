@@ -265,7 +265,6 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-sign-in"
         />
-         
         Login
       </a>
       <a
@@ -276,7 +275,6 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-plus"
         />
-         
         Cite Us
       </a>
       <a
@@ -287,7 +285,6 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-download"
         />
-         
         Downloads
       </a>
       <a
@@ -298,7 +295,6 @@ exports[`matching a snapshot of Header 1`] = `
           aria-hidden={true}
           className="fa fa-info-circle"
         />
-         
         About dictyBase
       </a>
     </div>

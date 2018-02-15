@@ -28,9 +28,10 @@ type ItemType = {
   icon: string,
   /** description of the link that will be displayed */
   text: string,
-  /** whether the link will be routed using react-routers `Link` component **/
-  /** remember, the rendering will be decided by children component **/
-  isrouter?: boolean,
+  /** whether the link will be routed using react-routers `Link` component
+   * remember, the rendering will be decided by children component
+   */
+  isRouter?: boolean,
 }
 
 type HeaderProps = {

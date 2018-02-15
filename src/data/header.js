@@ -13,6 +13,7 @@ module.exports = [
     url: "/downloads",
     icon: "download",
     text: "Downloads",
+    isRouter: true,
   },
   {
     url: "/info",
