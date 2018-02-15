@@ -1,6 +1,19 @@
 ## Default header component
 
 ```example
+
+const aStyle = {
+  color: "#15317e",
+  marginRight: "8px",
+  textDecoration: "none"
+};
+
+const rStyle = {
+  color: "#1B9CFC",
+  marginRight: "8px",
+  textDecoration: "none"
+};
+
 const items = [
   {
     url: "/cite",
@@ -21,8 +34,24 @@ const items = [
     url: "/login",
     icon: "sign-in",
     text: "Login",
+    isRouter: true,
   },
 ];
 
-        <Header items={items} />
+
+const generateLinks = (link, i) => {
+  return link.isRouter ? (
+    <a style={rStyle} key={i} href={link.url}>
+      {link.text}
+    </a>
+  ) : (
+    <a style={aStyle} key={i} href={link.url}>
+      {link.text}
+    </a>
+  )
+};
+
+<Header items={items}>
+    {items => items.map(generateLinks)}
+</Header>
 ```
