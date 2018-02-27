@@ -35,7 +35,7 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 + Commit all the changes and either merge to develop or send a pull request.
 
 ## Tagging
-+ Run `git tag -a v1.0.0 "version 1.0.0"` where the version number is the one that needs to be updated
++ Run `git tag -a v1.0.0 -m "version 1.0.0"` where the version number is the one that needs to be updated
 + Push tag to branch, i.e. `git push origin v1.0.0`
 
 [build-badge]: https://travis-ci.org/dictyBase/dicty-components-header-footer.svg?branch=develop
