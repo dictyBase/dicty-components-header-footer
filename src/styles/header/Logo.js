@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const LogoStyle = styled.div`
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   height: 100px;

@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 
-const RightStyle = styled.div`
+const CenterStyle = styled.div`
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
-  padding: 20px;
 
   @media only screen and (max-width: 800px) {
     display: flex;
@@ -19,8 +18,8 @@ const RightStyle = styled.div`
   }
 `
 
-const Right = ({ children, ...props }) => (
-  <RightStyle {...props}>{children}</RightStyle>
+const Center = ({ children, ...props }) => (
+  <CenterStyle {...props}>{children}</CenterStyle>
 )
 
-export default Right
+export default Center

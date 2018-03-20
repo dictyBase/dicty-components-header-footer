@@ -3,6 +3,7 @@ import React from "react"
 import type { Node } from "react"
 import logo from "../images/logo.png"
 import {
+  Center,
   Container,
   Img,
   Link,
@@ -62,14 +63,16 @@ let Header = ({ children, items, home = Home }: HeaderProps) => {
           <Img src={logo} />
         </Link>
       </Logo>
-      <Right>
-        <LinksContainer>{children(items)}</LinksContainer>
+      <Center>
         <SearchContainer>
           <SearchBar placeholder="Guided Search (coming soon)" disabled />
           <Magnifier>
             <FontAwesome name="search" />
           </Magnifier>
         </SearchContainer>
+      </Center>
+      <Right>
+        <LinksContainer>{children(items)}</LinksContainer>
       </Right>
     </Container>
   )
