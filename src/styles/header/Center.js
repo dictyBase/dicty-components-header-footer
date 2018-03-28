@@ -2,13 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 const CenterStyle = styled.div`
-  width: 30%;
+  width: 28%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 965px) {
     display: flex;
     flex-basis: 100%;
     align-items: flex-end;

@@ -6,11 +6,11 @@ const LinksContainerStyle = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: flex-end;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   flex-basis: 100%;
   font-size: 14px;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 965px) {
     display: flex;
     flex-basis: 100%;
     align-items: flex-end;

@@ -11,18 +11,20 @@ import FontAwesome from "react-fontawesome"
 import styled from "styled-components"
 
 const RouterLink = styled(Link)`
-  color: #1B9CFC;
+  color: #1b9cfc;
 `
 
 const generateLinks = (link, i) => {
   return link.isRouter ? (
     <RouterLink key={i} href={link.url}>
       <FontAwesome name={link.icon} size="lg" />
+      &nbsp;
       {link.text}
     </RouterLink>
   ) : (
     <Link key={i} href={link.url}>
       <FontAwesome name={link.icon} />
+      &nbsp;
       {link.text}
     </Link>
   )
@@ -31,7 +33,7 @@ const generateLinks = (link, i) => {
 const Demo = () => (
   <Flex column>
     <Box>
-      <Header items={links}>{items => items.map(generateLinks)}</Header>,
+      <Header items={links}>{items => items.map(generateLinks)}</Header>
     </Box>
     <Box w={1}>
       <Divider w={1} color="green" />
