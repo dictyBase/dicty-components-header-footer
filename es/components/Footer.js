@@ -72,7 +72,6 @@ var theme = {
       FooterContainer,
       {
         width: 1,
-        mt: 50,
         justify: "center",
         align: ["center", "left", "left"],
         direction: ["column", "row", "row"] },
