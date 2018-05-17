@@ -27,16 +27,16 @@ type FooterProps = {
 }
 
 const footerItems = (items: Array<ItemType>) =>
-  items.map((c, i) =>
+  items.map((c, i) => (
     <FooterItem key={i} m={0} p={1}>
       <FooterLink href={c.link} color="#d8d8d8" fontSize={11}>
         {c.description}
       </FooterLink>
-    </FooterItem>,
-  )
+    </FooterItem>
+  ))
 
 const footerSubSections = (items: Array<FooterItemType>) =>
-  items.map((c, i) =>
+  items.map((c, i) => (
     <Box key={i} p={10}>
       <FooterItemsHeader p={0}>
         <FooterLink href={c.header.link} color="#ccffcc" fontSize={14}>
@@ -46,16 +46,16 @@ const footerSubSections = (items: Array<FooterItemType>) =>
       <FooterItemsContainer m={0} p={0}>
         {footerItems(c.items)}
       </FooterItemsContainer>
-    </Box>,
-  )
+    </Box>
+  ))
 
 const footerSections = (items: Array<Array<FooterItemType>>) => {
   const fraction = 1 / (items.length + 2)
-  return items.map((c, i) =>
+  return items.map((c, i) => (
     <Box width={fraction} key={i}>
       {footerSubSections(c)}
-    </Box>,
-  )
+    </Box>
+  ))
 }
 
 const theme = {
@@ -68,16 +68,16 @@ const theme = {
  * The `Footer` component that will be displayed
  * at the bottom of every react web application of [dictyBase](http://dictybase.org).
  */
-let Footer = ({ items }: FooterProps) =>
+let Footer = ({ items }: FooterProps) => (
   <Provider theme={theme}>
     <FooterContainer
       width={1}
-      mt={50}
       justify="center"
       align={["center", "left", "left"]}
       direction={["column", "row", "row"]}>
       {footerSections(items)}
     </FooterContainer>
   </Provider>
+)
 
 export default Footer

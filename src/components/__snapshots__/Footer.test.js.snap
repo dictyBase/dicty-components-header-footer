@@ -30,7 +30,6 @@ exports[`matching a snapshot of Footer 1`] = `
 .c3 {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 50px;
 }
 
 .c4 {
