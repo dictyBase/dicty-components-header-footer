@@ -51,10 +51,13 @@
     "styleguide:build": "styleguidist build"
   },
   "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
     "font-awesome": "^4.7.0",
     "react-fontawesome": "^1.6.1",
     "rebass": "^1.0.0",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.1",
+    "typeface-roboto": "0.0.54"
   },
   "peerDependencies": {
     "react": "15.x"

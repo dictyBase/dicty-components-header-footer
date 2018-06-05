@@ -44,13 +44,6 @@ type HeaderProps = {
   children: Node,
 }
 
-//const headerItems = (items: Array<ItemType>) =>
-//items.map((link, i) => (
-//<Link key={i} href={link.url}>
-//<FontAwesome name={link.icon} /> {link.text}
-//</Link>
-//))
-
 /**
  * The `Header` component that will be displayed
  * on top of navigation bar in every react web application of [dictyBase](http://dictybase.org).
