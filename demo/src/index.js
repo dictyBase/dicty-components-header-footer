@@ -17,15 +17,19 @@ const RouterLink = styled(Link)`
 const generateLinks = (link, i) => {
   return link.isRouter ? (
     <RouterLink key={i} href={link.url}>
-      <FontAwesome name={link.icon} size="lg" />
-      &nbsp;
-      {link.text}
+      <center>
+        <FontAwesome name={link.icon} size="2x" />
+        <br />
+        {link.text}
+      </center>
     </RouterLink>
   ) : (
     <Link key={i} href={link.url}>
-      <FontAwesome name={link.icon} />
-      &nbsp;
-      {link.text}
+      <center>
+        <FontAwesome name={link.icon} size="2x" />
+        <br />
+        {link.text}
+      </center>
     </Link>
   )
 }
