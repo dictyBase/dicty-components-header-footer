@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import type { Node } from "react"
 import logo from "../images/logo.png"
-import { Img, Link } from "../styles/header"
+import Link from "../styles/header/Link"
 import { headerStyles as styles } from "../styles/header/headerStyles"
 import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
@@ -69,7 +69,7 @@ class Header extends Component<Props, State> {
           lg={3}
           className={classes.logoContainer}>
           <Link href={home}>
-            <Img src={logo} />
+            <img src={logo} alt="dictyBase logo" className={classes.image} />
           </Link>
         </Grid>
         {!isExpanded && (

@@ -1,324 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Header 1`] = `
-.c6 {
+.c1 {
   color: #ff6b81;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-}
-
-.c1 {
-  width: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  height: 100px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-flex-basis: calc(33.33333333333333% - 8px);
-  -ms-flex-basis: calc(33.33333333333333% - 8px);
-  flex-basis: calc(33.33333333333333% - 8px);
-}
-
-.c2 {
   color: #15317e;
-  margin-right: 8px;
+  padding: 15px;
   text-decoration: none;
 }
 
-.c3 {
-  max-width: 220px;
-  height: 78px;
-}
-
-.c4 {
-  width: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  padding: 20px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 5px;
-  -webkit-flex-basis: 100%;
-  -ms-flex-basis: 100%;
-  flex-basis: 100%;
-  font-size: 14px;
-}
-
-.c7 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c8 {
-  cursor: not-allowed;
-  border: 1px solid rgb(204, 204, 204);
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  width: 50%;
-  height: 30px;
-  color: #555;
-  padding: 0px 0px 0px 5px;
-}
-
-.c9 {
-  height: 30px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0px 7px;
-  cursor: not-allowed;
-  border: 1px solid rgb(204, 204, 204);
-  border-width: 1px 1px 1px 0px;
-  border-color: rgb(204, 204, 204);
-  border-style: solid;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-@media only screen and (max-width: 800px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-order: initial;
-    -ms-flex-order: initial;
-    order: initial;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .c4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-order: initial;
-    -ms-flex-order: initial;
-    order: initial;
-    padding: 0px 5px 5px 0px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .c5 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-order: initial;
-    -ms-flex-order: initial;
-    order: initial;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .c8 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-order: initial;
-    -ms-flex-order: initial;
-    order: initial;
-  }
-}
-
 <div
-  className="c0"
+  className="MuiGrid-container-8 MuiGrid-spacing-xs-8-29 Header-root-1"
 >
   <div
-    className="c1"
+    className="MuiGrid-item-9 MuiGrid-grid-xs-12-46 MuiGrid-grid-sm-5-52 MuiGrid-grid-md-3-63 MuiGrid-grid-lg-3-76 Header-logoContainer-2"
   >
     <a
-      className="c2"
+      className="c0"
       href="http://dictybase.org"
     >
       <img
-        className="c3"
+        alt="dictyBase logo"
+        className="Header-image-3"
         src="test-file-stub"
       />
     </a>
   </div>
   <div
-    className="c4"
+    className="MuiGrid-item-9 MuiGrid-grid-xs-12-46 MuiGrid-grid-sm-7-54 MuiGrid-grid-md-5-65 MuiGrid-grid-lg-5-78 Header-searchContainer-4"
   >
     <div
-      className="c5"
+      className="MuiFormControl-root-99 Header-textField-5"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-      <a
-        className="c6 c2"
-        href="/login"
+      <label
+        className="MuiFormLabel-root-108 MuiInputLabel-root-103 MuiInputLabel-formControl-104 MuiInputLabel-animated-107"
+        data-shrink={false}
+        htmlFor="guided-search"
       >
-        <span
-          aria-hidden={true}
-          className="fa fa-sign-in"
-        />
-        Login
-      </a>
-      <a
-        className="c2"
-        href="/cite"
-      >
-        <span
-          aria-hidden={true}
-          className="fa fa-plus"
-        />
-        Cite Us
-      </a>
-      <a
-        className="c2"
-        href="/downloads"
-      >
-        <span
-          aria-hidden={true}
-          className="fa fa-download"
-        />
-        Downloads
-      </a>
-      <a
-        className="c2"
-        href="/info"
-      >
-        <span
-          aria-hidden={true}
-          className="fa fa-info-circle"
-        />
-        About dictyBase
-      </a>
-    </div>
-    <div
-      className="c7"
-    >
-      <input
-        className="c8"
-        disabled={true}
-        placeholder="Guided Search (coming soon)"
-      />
+        Guided Search
+      </label>
       <div
-        className="c9"
+        className="MuiInput-root-113 MuiInput-formControl-114 MuiInput-underline-117"
+        onClick={[Function]}
       >
-        <span
-          aria-hidden={true}
-          className="fa fa-search"
+        <input
+          aria-invalid={false}
+          aria-required={false}
+          autoComplete={undefined}
+          autoFocus={undefined}
+          className="MuiInput-input-121"
+          defaultValue={undefined}
+          disabled={false}
+          id="input-with-icon-adornment"
+          name={undefined}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={undefined}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value={undefined}
         />
+        <div
+          className="MuiInputAdornment-root-126 MuiInputAdornment-positionEnd-128"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-129"
+            color={undefined}
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <g>
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </g>
+          </svg>
+        </div>
       </div>
     </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 MuiGrid-grid-xs-12-46 MuiGrid-grid-sm-12-59 MuiGrid-grid-md-4-64 MuiGrid-grid-lg-4-77 Header-linkContainer-7"
+  >
+    <a
+      className="c1 c0"
+      href="/login"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-sign-in"
+      />
+      Login
+    </a>
+    <a
+      className="c0"
+      href="/cite"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-plus"
+      />
+      Cite Us
+    </a>
+    <a
+      className="c0"
+      href="/downloads"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-download"
+      />
+      Downloads
+    </a>
+    <a
+      className="c0"
+      href="/info"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-info-circle"
+      />
+      About dictyBase
+    </a>
   </div>
 </div>
 `;
