@@ -50,6 +50,8 @@ const styles = theme => ({
     marginRight: theme.spacing.unit,
     marginTop: 20,
     width: "90%",
+    // boxShadow:
+    //   "rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px",
   },
   linkBox: {
     marginTop: 20,
@@ -62,6 +64,7 @@ const styles = theme => ({
  * The `Header` component that will be displayed
  * on top of navigation bar in every react web application of [dictyBase](http://dictybase.org).
  */
+
 let Header = ({ classes, children, items, home = Home }: HeaderProps) => {
   return (
     // <Container>
@@ -87,39 +90,15 @@ let Header = ({ classes, children, items, home = Home }: HeaderProps) => {
         <Link href={home}>
           <Img src={logo} />
         </Link>
-        {/* <img
-            src="https://raw.githubusercontent.com/dictyBase/Dicty-Stock-Center/develop/src/static/dicty-logo.png"
-            alt="DictyBase logo"
-            className={classes.image}
-          /> */}
       </Grid>
       <Grid item xs={12} sm={4} md={4} lg={5}>
-        {/* <TextField
-            id="guided-search"
-            label="Guided Search (coming soon)"
-            className={classes.textField}
-            type="search"
-            margin="normal"
-          />
-          <br /> */}
-        {/* <Grid container spacing={8} alignItems="flex-end">
-            <Grid item xs={11}>
-              <TextField
-                className={classes.textField}
-                id="input-with-icon-grid"
-                label="With a grid"
-              />
-            </Grid>
-            <Grid item xs={1}>
-              <Search />
-            </Grid>
-          </Grid> */}
         <FormControl className={classes.textField}>
           <InputLabel htmlFor="guided-search">
             Guided Search (coming soon)
           </InputLabel>
           <Input
             id="input-with-icon-adornment"
+            // disabled
             endAdornment={
               <InputAdornment position="end">
                 <Search />
