@@ -39,7 +39,7 @@ const footerSubSections = (items: Array<FooterItemType>) =>
   items.map((c, i) => (
     <Box key={i} p={10}>
       <FooterItemsHeader p={0}>
-        <FooterLink href={c.header.link} color="#ccffcc" fontSize={14}>
+        <FooterLink href={c.header.link} color="#19d6a0" fontSize={14}>
           {c.header.description}
         </FooterLink>
       </FooterItemsHeader>
@@ -60,8 +60,8 @@ const footerSections = (items: Array<Array<FooterItemType>>) => {
 
 const theme = {
   breakpoints: [40, 52, 64],
-  font: "helvetica,arial,sans-serif",
-  background: "linear-gradient(#15317E, #0099FF)",
+  font: "Roboto, sans-serif",
+  background: "linear-gradient(#2c3e50, #3498db)",
 }
 
 /**
@@ -71,11 +71,10 @@ const theme = {
 let Footer = ({ items }: FooterProps) => (
   <Provider theme={theme}>
     <FooterContainer
-      width={1}
-      mt={50}
+      width={"100%"}
       justify="center"
-      align={["left", "left", "left"]}
-      direction={["column", "row", "row"]}>
+      align={["left", "left", "left", "left"]}
+      direction={["row", "row", "row", "row"]}>
       {footerSections(items)}
     </FooterContainer>
   </Provider>
