@@ -73,8 +73,8 @@ let Footer = ({ items }: FooterProps) => (
     <FooterContainer
       width={"100%"}
       justify="center"
-      align={["left", "left", "left", "left"]}
-      direction={["row", "row", "row", "row"]}>
+      align={["center", "left", "left", "left"]}
+      direction={["column", "row", "row", "row"]}>
       {footerSections(items)}
     </FooterContainer>
   </Provider>

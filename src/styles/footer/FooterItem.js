@@ -7,9 +7,8 @@ const ItemStyle = styled.li`
   ${space};
 `
 
-const FooterItem = ({ children, ...props }) =>
-  <ItemStyle {...props}>
-    {children}
-  </ItemStyle>
+const FooterItem = ({ children, ...props }) => (
+  <ItemStyle {...props}>{children}</ItemStyle>
+)
 
 export default FooterItem
