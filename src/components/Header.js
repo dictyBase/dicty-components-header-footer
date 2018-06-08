@@ -45,7 +45,7 @@ type State = {
 
 /**
  * The `Header` component that will be displayed
- * on top of navigation bar in every react web application of [dictyBase](http://dictybase.org).
+ * on top of navigation bar in every React web application of [dictyBase](http://dictybase.org).
  */
 
 class Header extends Component<Props, State> {

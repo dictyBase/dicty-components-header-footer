@@ -1,419 +1,243 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Footer 1`] = `
-.c0 {
-  font-family: helvetica,arial,sans-serif;
-}
-
-.c1 {
-  background: linear-gradient(#15317E, #0099FF);
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: left;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.c4 {
-  box-sizing: border-box;
-  width: 16.666666666666664%;
-}
-
-.c5 {
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.c6 {
-  padding: 0px;
-}
-
-.c7 {
-  text-decoration: none;
-  font-size: 14px;
-  color: #ccffcc;
-}
-
-.c7:hover {
-  text-decoration: underline;
-}
-
-.c10 {
-  text-decoration: none;
-  font-size: 11px;
-  color: #d8d8d8;
-}
-
-.c10:hover {
-  text-decoration: underline;
-}
-
-.c8 {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.c9 {
-  list-style: none;
-  margin: 0px;
-  padding: 4px;
-}
-
-@media screen and (min-width: 40em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 52em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .c2 {
-    -webkit-align-items: left;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-  }
-}
-
-@media screen and (min-width: 52em) {
-  .c2 {
-    -webkit-align-items: left;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-  }
-}
-
-@media (max-width: 40em) : {
-  .c6 {
-    textAlign: center;
-  }
-}
-
-@media (max-width: 40em) : {
-  .c8 {
-    textAlign: center;
-  }
-}
-
 <div
-  className="c0"
+  className="MuiGrid-container-8 MuiGrid-justify-xs-center-25 Footer-root-1"
 >
   <div
-    className="c1 c2 c3"
-    direction={
-      Array [
-        "column",
-        "row",
-        "row",
-      ]
-    }
-    width={1}
+    className="MuiGrid-item-9 Footer-gridItem-7"
   >
     <div
-      className="c4"
-      width={0.16666666666666666}
+      className="Footer-subsectionItem-4"
     >
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <div>
+        <ul
+          className="Footer-headerLink-6"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
+            className="Footer-ulLink-5"
             href="http://yahoo.com"
           >
             Genomes
           </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://cnn.com"
-            >
-              Genomes Home
-            </a>
-          </li>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <ul>
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
+            className="Footer-link-3"
+            href="http://cnn.com"
+          >
+            Genomes Home
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-6"
+        >
+          <a
+            className="Footer-ulLink-5"
             href="http://dictybase.org/tools"
           >
             Tools
           </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Tools home
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              New Genomes browser
-            </a>
-          </li>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <ul>
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Tools home
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            New Genomes browser
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-6"
+        >
+          <a
+            className="Footer-ulLink-5"
             href="http://dictybase.org/tools"
           >
             Research
           </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Research home
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Anatomy ontology
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Codon bias table
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Nomenclature Guidelines
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Phenotyping
-            </a>
-          </li>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <ul>
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Research home
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Anatomy ontology
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Codon bias table
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Nomenclature Guidelines
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/tools"
+          >
+            Phenotyping
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-6"
+        >
+          <a
+            className="Footer-ulLink-5"
             href="http://dictybase.org/cite"
           >
             Please Cite
           </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org"
-            >
-              dictyBase
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/stock"
-            >
-              Dicty stock center
-            </a>
-          </li>
         </ul>
       </div>
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <ul>
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
+            className="Footer-link-3"
+            href="http://dictybase.org"
+          >
+            dictyBase
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/stock"
+          >
+            Dicty stock center
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-6"
+        >
+          <a
+            className="Footer-ulLink-5"
             href="http://dictybase.org/support"
           >
             Supported By
           </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              NIH
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              GMOD
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              Gene ontology
-            </a>
-          </li>
         </ul>
       </div>
+      <ul>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/nih"
+          >
+            NIH
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/nih"
+          >
+            GMOD
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-3"
+            href="http://dictybase.org/nih"
+          >
+            Gene ontology
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

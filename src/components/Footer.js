@@ -28,14 +28,14 @@ type FooterProps = {
 
 /**
  * The `Footer` component that will be displayed
- * at the bottom of every react web application of [dictyBase](http://dictybase.org).
+ * at the bottom of every React web application of [dictyBase](http://dictybase.org).
  */
 
 class Footer extends Component<FooterProps> {
   footerItems = (items: Array<ItemType>) => {
     const { classes } = this.props
     return items.map((c, i) => (
-      <li item key={i} className={classes.listItem}>
+      <li key={i} className={classes.listItem}>
         <a href={c.link} className={classes.link}>
           {c.description}
         </a>
