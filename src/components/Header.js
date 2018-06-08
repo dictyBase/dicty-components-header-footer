@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from "react"
-import type { Node } from "react"
 import logo from "../images/logo.png"
 import Link from "../styles/Link"
 import { headerStyles as styles } from "../styles/headerStyles"
@@ -35,7 +34,9 @@ type Props = {
   /** Link for the logo, that goes to the home page */
   home?: string,
   /** Children react node which renders the links in the header */
-  children: Node,
+  children: any,
+  /** Material-UI's classes object for styling */
+  classes: Object,
 }
 
 type State = {
