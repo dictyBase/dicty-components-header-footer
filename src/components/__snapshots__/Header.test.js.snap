@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Header 1`] = `
-.c1 {
-  color: #ff6b81;
-}
-
 .c0 {
   color: #15317e;
   padding: 15px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  color: #ff6b81;
 }
 
 <div
