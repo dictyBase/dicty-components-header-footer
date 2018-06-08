@@ -22,6 +22,8 @@ type FooterItemType = {
 type FooterProps = {
   /** List of footer items, inside a nested list */
   items: Array<Array<FooterItemType>>,
+  /** Material-UI's classes object */
+  classes: Object,
 }
 
 /**
@@ -29,7 +31,7 @@ type FooterProps = {
  * at the bottom of every react web application of [dictyBase](http://dictybase.org).
  */
 
-class Footer extends Component {
+class Footer extends Component<FooterProps> {
   footerItems = (items: Array<ItemType>) => {
     const { classes } = this.props
     return items.map((c, i) => (
