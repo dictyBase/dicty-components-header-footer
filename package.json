@@ -1,11 +1,15 @@
 {
   "name": "dicty-components-header-footer",
   "version": "5.0.0",
-  "description":
-    "React component for header and footer of dictyBase web applications",
+  "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["css", "es", "lib", "umd"],
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -25,13 +29,14 @@
       "!<rootDir>/lib/"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "scripts": {
     "build": "nwb build-react-component --no-demo --copy-files",
@@ -58,33 +63,38 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-preset-react-app": "^3.0.1",
+    "babel-preset-react-app": "^3.1.1",
     "css-loader": "^0.28.4",
-    "eslint": "^3.19.0",
-    "eslint-config-react-app": "^1.0.5",
-    "eslint-loader": "^1.7.1",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "^1.9.0",
     "eslint-plugin-flowtype": "^2.33.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.9.1",
     "flow-bin": "^0.49.1",
-    "flow-typed": "^2.1.2",
+    "flow-typed": "^2.4.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.10.0",
     "lint-staged": "^4.0.1",
-    "nwb": "0.18.x",
+    "nwb": "^0.22.0",
     "prettier": "^1.10.2",
     "react": "^15.6.1",
     "react-dev-utils": "^3.0.2",
     "react-dom": "^15.6.1",
-    "react-styleguidist": "^5.5.10",
+    "react-styleguidist": "^7.0.17",
     "react-test-renderer": "^15.6.1",
     "style-loader": "^0.18.2"
   },
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
-  "keywords": ["react-component"]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
+  },
+  "keywords": [
+    "react-component"
+  ]
 }
