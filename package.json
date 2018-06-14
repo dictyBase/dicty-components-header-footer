@@ -1,6 +1,6 @@
 {
   "name": "dicty-components-header-footer",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
