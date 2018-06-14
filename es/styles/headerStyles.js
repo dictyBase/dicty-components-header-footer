@@ -35,7 +35,7 @@ export var headerStyles = function headerStyles(theme) {
     linkContainer: {
       marginTop: 15,
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "flex-end",
       paddingBottom: 0,
       fontSize: "0.8em"
     }
@@ -49,7 +49,15 @@ export var headerStyles = function headerStyles(theme) {
       justifyContent: "center"
     },
     linkContainer: {
-      marginTop: 0
+      marginTop: 0,
+      justifyContent: "center"
+    },
+    searchContainer: {
+      marginTop: 5
+    }
+  }, _ref[theme.breakpoints.only("sm")] = {
+    searchContainer: {
+      marginTop: 12
     }
   }, _ref[theme.breakpoints.up("sm")] = {
     textField: {

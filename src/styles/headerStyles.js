@@ -32,7 +32,7 @@ export const headerStyles = theme => ({
   linkContainer: {
     marginTop: 15,
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     paddingBottom: 0,
     fontSize: "0.8em",
   },
@@ -47,6 +47,15 @@ export const headerStyles = theme => ({
     },
     linkContainer: {
       marginTop: 0,
+      justifyContent: "center",
+    },
+    searchContainer: {
+      marginTop: 5,
+    },
+  },
+  [theme.breakpoints.only("sm")]: {
+    searchContainer: {
+      marginTop: 12,
     },
   },
   [theme.breakpoints.up("sm")]: {
