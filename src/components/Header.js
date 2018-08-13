@@ -13,7 +13,7 @@ import Grow from "@material-ui/core/Grow"
 import Search from "@material-ui/icons/Search"
 
 // set base URL for homepage
-const Home = "http://dictybase.org"
+const Home = "https://testdb.dictybase.org"
 
 type ItemType = {
   /** url link */
@@ -82,7 +82,9 @@ class Header extends Component<Props, State> {
             lg={5}
             className={classes.searchContainer}>
             <FormControl className={classes.textField}>
-              <InputLabel htmlFor="guided-search">Guided Search</InputLabel>
+              <InputLabel htmlFor="guided-search">
+                Guided Search (coming soon)
+              </InputLabel>
               <Input
                 id="input-with-icon-adornment"
                 onClick={this.onClick}

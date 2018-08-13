@@ -18,7 +18,7 @@ import Grow from "@material-ui/core/Grow";
 import Search from "@material-ui/icons/Search";
 
 // set base URL for homepage
-var Home = "http://dictybase.org";
+var Home = "https://testdb.dictybase.org";
 
 /**
  * The `Header` component that will be displayed
@@ -86,7 +86,7 @@ var Header = function (_Component) {
           React.createElement(
             InputLabel,
             { htmlFor: "guided-search" },
-            "Guided Search"
+            "Guided Search (coming soon)"
           ),
           React.createElement(Input, {
             id: "input-with-icon-adornment",
