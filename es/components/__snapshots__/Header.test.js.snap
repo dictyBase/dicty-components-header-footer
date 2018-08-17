@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Header 1`] = `
+.c1 {
+  color: #ff6b81;
+}
+
 .c0 {
   color: #15317e;
   padding: 15px;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c1 {
-  color: #ff6b81;
 }
 
 <div
@@ -20,7 +20,7 @@ exports[`matching a snapshot of Header 1`] = `
   >
     <a
       className="c0"
-      href="http://dictybase.org"
+      href="https://testdb.dictybase.org"
     >
       <img
         alt="dictyBase logo"
@@ -42,7 +42,7 @@ exports[`matching a snapshot of Header 1`] = `
         data-shrink={false}
         htmlFor="guided-search"
       >
-        Guided Search
+        Guided Search (coming soon)
       </label>
       <div
         className="MuiInput-root-113 MuiInput-formControl-114 MuiInput-underline-117"
@@ -51,24 +51,13 @@ exports[`matching a snapshot of Header 1`] = `
         <input
           aria-invalid={false}
           aria-required={false}
-          autoComplete={undefined}
-          autoFocus={undefined}
           className="MuiInput-input-121"
-          defaultValue={undefined}
           disabled={false}
           id="input-with-icon-adornment"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={undefined}
-          onKeyUp={undefined}
-          placeholder={undefined}
-          readOnly={undefined}
-          required={undefined}
-          rows={undefined}
           type="text"
-          value={undefined}
         />
         <div
           className="MuiInputAdornment-root-126 MuiInputAdornment-positionEnd-128"
@@ -76,7 +65,6 @@ exports[`matching a snapshot of Header 1`] = `
           <svg
             aria-hidden="true"
             className="MuiSvgIcon-root-129"
-            color={undefined}
             focusable="false"
             viewBox="0 0 24 24"
           >

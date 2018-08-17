@@ -7,7 +7,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import items from "../data/footer";
 import { FooterStyles as styles } from "../styles/FooterStyles";
 
 /**
@@ -82,7 +81,9 @@ var Footer = function (_Component) {
   }
 
   Footer.prototype.render = function render() {
-    var classes = this.props.classes;
+    var _props = this.props,
+        classes = _props.classes,
+        items = _props.items;
 
     return React.createElement(
       Grid,

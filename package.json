@@ -85,7 +85,7 @@
     "react": "^16.4.2",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.2",
-    "react-styleguidist": "^7.1.1",
+    "react-styleguidist": "^7.2.3",
     "react-test-renderer": "^16.4.0",
     "style-loader": "^0.18.2"
   },

@@ -14,12 +14,11 @@ exports[`matching a snapshot of Footer 1`] = `
         <ul
           className="Footer-headerLink-6"
         >
-          <a
-            className="Footer-ulLink-5"
-            href="http://yahoo.com"
+          <div
+            className="Footer-ulHeader-5"
           >
             Genomes
-          </a>
+          </div>
         </ul>
       </div>
       <ul>
@@ -46,12 +45,11 @@ exports[`matching a snapshot of Footer 1`] = `
         <ul
           className="Footer-headerLink-6"
         >
-          <a
-            className="Footer-ulLink-5"
-            href="http://dictybase.org/tools"
+          <div
+            className="Footer-ulHeader-5"
           >
             Tools
-          </a>
+          </div>
         </ul>
       </div>
       <ul>
@@ -88,12 +86,11 @@ exports[`matching a snapshot of Footer 1`] = `
         <ul
           className="Footer-headerLink-6"
         >
-          <a
-            className="Footer-ulLink-5"
-            href="http://dictybase.org/tools"
+          <div
+            className="Footer-ulHeader-5"
           >
             Research
-          </a>
+          </div>
         </ul>
       </div>
       <ul>
@@ -160,12 +157,11 @@ exports[`matching a snapshot of Footer 1`] = `
         <ul
           className="Footer-headerLink-6"
         >
-          <a
-            className="Footer-ulLink-5"
-            href="http://dictybase.org/cite"
+          <div
+            className="Footer-ulHeader-5"
           >
             Please Cite
-          </a>
+          </div>
         </ul>
       </div>
       <ul>
@@ -198,12 +194,11 @@ exports[`matching a snapshot of Footer 1`] = `
         <ul
           className="Footer-headerLink-6"
         >
-          <a
-            className="Footer-ulLink-5"
-            href="http://dictybase.org/support"
+          <div
+            className="Footer-ulHeader-5"
           >
             Supported By
-          </a>
+          </div>
         </ul>
       </div>
       <ul>

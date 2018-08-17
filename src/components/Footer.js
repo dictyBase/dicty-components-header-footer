@@ -2,7 +2,6 @@
 import React, { Component } from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import items from "../data/footer"
 import { FooterStyles as styles } from "../styles/FooterStyles"
 
 type ItemType = {
@@ -66,7 +65,7 @@ class Footer extends Component<FooterProps> {
     ))
   }
   render() {
-    const { classes } = this.props
+    const { classes, items } = this.props
     return (
       <Grid container className={classes.root} justify="center">
         {this.footerSections(items)}
