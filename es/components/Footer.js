@@ -55,8 +55,8 @@ var Footer = function (_Component) {
               "ul",
               { className: classes.headerLink },
               React.createElement(
-                "a",
-                { href: c.header.link, className: classes.ulLink },
+                "div",
+                { className: classes.ulHeader },
                 c.header.description
               )
             )

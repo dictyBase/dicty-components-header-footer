@@ -49,9 +49,7 @@ class Footer extends Component<FooterProps> {
       <div key={i} className={classes.subsectionItem}>
         <div>
           <ul className={classes.headerLink}>
-            <a href={c.header.link} className={classes.ulLink}>
-              {c.header.description}
-            </a>
+            <div className={classes.ulHeader}>{c.header.description}</div>
           </ul>
         </div>
         <ul>{this.footerItems(c.items)}</ul>

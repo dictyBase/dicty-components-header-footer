@@ -24,13 +24,10 @@ export const FooterStyles = theme => ({
     paddingLeft: 10,
     paddingRight: 10,
   },
-  ulLink: {
+  ulHeader: {
     color: "#19d6a0",
     fontSize: 14,
     textDecoration: "none",
-    "&:hover": {
-      textDecoration: "underline",
-    },
   },
   // center text for all items/links at sm/xs breakpoints
   [theme.breakpoints.down("sm")]: {
