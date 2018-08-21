@@ -6,14 +6,22 @@ export var FooterStyles = function FooterStyles(theme) {
       width: "100%",
       fontFamily: "Roboto, sans-serif",
       background: "linear-gradient(#2c3e50, #3498db)",
-      paddingLeft: 20,
       paddingRight: 20,
-      paddingBottom: 5
+      paddingLeft: 20,
+      paddingBottom: 10
     },
     listItem: {
       margin: 0,
       padding: 1,
       listStyle: "none"
+    },
+    headerLink: {
+      textAlign: "left",
+      padding: 0
+    },
+    subsectionItem: {
+      paddingLeft: 15,
+      paddingRight: 15
     },
     link: {
       color: "#d8d8d8",
@@ -22,10 +30,6 @@ export var FooterStyles = function FooterStyles(theme) {
       "&:hover": {
         textDecoration: "underline"
       }
-    },
-    subsectionItem: {
-      paddingLeft: 10,
-      paddingRight: 10
     },
     ulHeader: {
       color: "#19d6a0",
@@ -37,7 +41,8 @@ export var FooterStyles = function FooterStyles(theme) {
       textAlign: "center"
     },
     headerLink: {
-      textAlign: "center"
+      textAlign: "center",
+      padding: 0
     }
   }, _ref[theme.breakpoints.down("xs")] = {
     root: {

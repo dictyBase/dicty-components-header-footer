@@ -51,7 +51,7 @@ class Footer extends Component<FooterProps> {
             <div className={classes.ulHeader}>{c.header.description}</div>
           </ul>
         </div>
-        <ul>{this.footerItems(c.items)}</ul>
+        <ul className={classes.listItem}>{this.footerItems(c.items)}</ul>
       </div>
     ))
   }

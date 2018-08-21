@@ -62,7 +62,7 @@ var Footer = function (_Component) {
           ),
           React.createElement(
             "ul",
-            null,
+            { className: classes.listItem },
             _this.footerItems(c.items)
           )
         );
