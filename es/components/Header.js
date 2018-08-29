@@ -18,7 +18,7 @@ import Grow from "@material-ui/core/Grow";
 import Search from "@material-ui/icons/Search";
 
 // set base URL for homepage
-var Home = "https://testdb.dictybase.org";
+var Home = "/";
 
 /**
  * The `Header` component that will be displayed

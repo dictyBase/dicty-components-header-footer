@@ -1,6 +1,6 @@
 {
   "name": "dicty-components-header-footer",
-  "version": "6.5.0",
+  "version": "6.6.0",
   "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -48,7 +48,8 @@
     "precommit": "lint-staged",
     "flow": "flow",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "cz": "git-cz"
   },
   "dependencies": {
     "@material-ui/core": "^1.2.0",
@@ -67,6 +68,7 @@
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^3.1.1",
     "css-loader": "^0.28.4",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.13.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "^1.7.1",
@@ -87,6 +89,7 @@
     "react-dom": "^16.4.2",
     "react-styleguidist": "^7.2.3",
     "react-test-renderer": "^16.4.0",
+    "recast": "^0.13.0",
     "style-loader": "^0.18.2"
   },
   "author": "",
@@ -97,5 +100,10 @@
   },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

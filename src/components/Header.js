@@ -13,7 +13,7 @@ import Grow from "@material-ui/core/Grow"
 import Search from "@material-ui/icons/Search"
 
 // set base URL for homepage
-const Home = "https://testdb.dictybase.org"
+const Home = "/"
 
 type ItemType = {
   /** url link */
