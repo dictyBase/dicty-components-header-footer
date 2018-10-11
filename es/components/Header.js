@@ -93,7 +93,7 @@ var Header = function (_Component) {
             onClick: this.onClick,
             endAdornment: React.createElement(
               InputAdornment,
-              { position: "end" },
+              { className: classes.searchIcon, position: "end" },
               React.createElement(Search, null)
             )
           })
@@ -116,15 +116,25 @@ var Header = function (_Component) {
             { className: classes.textFieldExpanded },
             React.createElement(
               InputLabel,
-              { htmlFor: "guided-search" },
+              {
+                htmlFor: "guided-search",
+                FormLabelClasses: {
+                  root: classes.searchLabel,
+                  focused: classes.searchFocused
+                } },
               "Guided Search"
             ),
             React.createElement(Input, {
+              classes: {
+                underline: classes.searchUnderline
+              },
               id: "input-with-icon-adornment",
               autoFocus: true,
               endAdornment: React.createElement(
                 InputAdornment,
-                { position: "end" },
+                {
+                  className: classes.searchIcon,
+                  position: "end" },
                 React.createElement(Search, null)
               )
             })

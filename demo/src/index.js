@@ -10,7 +10,7 @@ import FontAwesome from "react-fontawesome"
 import styled from "styled-components"
 
 const RouterLink = styled(Link)`
-  color: #1b9cfc;
+  color: #004080;
 `
 
 const generateLinks = (link, i) => {

@@ -36,6 +36,20 @@ export const headerStyles = theme => ({
     paddingBottom: 0,
     fontSize: "0.8em",
   },
+  searchLabel: {
+    "&$searchFocused": {
+      color: "#004080",
+    },
+  },
+  searchFocused: {},
+  searchUnderline: {
+    "&:after": {
+      borderBottomColor: "#004080",
+    },
+  },
+  searchIcon: {
+    color: "#004080",
+  },
   [theme.breakpoints.down("sm")]: {
     textField: {
       marginTop: 0,

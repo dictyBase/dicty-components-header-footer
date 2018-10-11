@@ -2,7 +2,7 @@ export const FooterStyles = theme => ({
   root: {
     width: "100%",
     fontFamily: "Roboto, sans-serif",
-    background: "linear-gradient(#2c3e50, #3498db)",
+    background: "#0b3861",
     paddingRight: 20,
     paddingLeft: 20,
     paddingBottom: 10,
@@ -29,7 +29,7 @@ export const FooterStyles = theme => ({
     },
   },
   ulHeader: {
-    color: "#19d6a0",
+    color: "#ebe97a",
     fontSize: 14,
     textDecoration: "none",
   },

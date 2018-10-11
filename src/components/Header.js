@@ -89,7 +89,7 @@ class Header extends Component<Props, State> {
                 id="input-with-icon-adornment"
                 onClick={this.onClick}
                 endAdornment={
-                  <InputAdornment position="end">
+                  <InputAdornment className={classes.searchIcon} position="end">
                     <Search />
                   </InputAdornment>
                 }
@@ -107,12 +107,24 @@ class Header extends Component<Props, State> {
               lg={5}
               className={classes.searchContainer}>
               <FormControl className={classes.textFieldExpanded}>
-                <InputLabel htmlFor="guided-search">Guided Search</InputLabel>
+                <InputLabel
+                  htmlFor="guided-search"
+                  FormLabelClasses={{
+                    root: classes.searchLabel,
+                    focused: classes.searchFocused,
+                  }}>
+                  Guided Search
+                </InputLabel>
                 <Input
+                  classes={{
+                    underline: classes.searchUnderline,
+                  }}
                   id="input-with-icon-adornment"
                   autoFocus
                   endAdornment={
-                    <InputAdornment position="end">
+                    <InputAdornment
+                      className={classes.searchIcon}
+                      position="end">
                       <Search />
                     </InputAdornment>
                   }

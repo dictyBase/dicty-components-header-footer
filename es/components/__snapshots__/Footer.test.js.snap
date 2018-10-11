@@ -12,24 +12,56 @@ exports[`matching a snapshot of Footer 1`] = `
     >
       <div>
         <ul
-          className="Footer-headerLink-6"
+          className="Footer-headerLink-3"
         >
           <div
-            className="Footer-ulHeader-5"
+            className="Footer-ulHeader-6"
           >
             Genomes
           </div>
         </ul>
       </div>
-      <ul>
+      <ul
+        className="Footer-listItem-2"
+      >
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://cnn.com"
+            className="Footer-link-5"
+            href="/"
           >
-            Genomes Home
+            Dictyostelium discoideum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/purpureum"
+          >
+            Dictyostelium purpureum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/fasciculatum"
+          >
+            Dictyostelium fasciculatum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/pallidum"
+          >
+            Polysphondylium pallium
           </a>
         </li>
       </ul>
@@ -43,34 +75,36 @@ exports[`matching a snapshot of Footer 1`] = `
     >
       <div>
         <ul
-          className="Footer-headerLink-6"
+          className="Footer-headerLink-3"
         >
           <div
-            className="Footer-ulHeader-5"
+            className="Footer-ulHeader-6"
           >
             Tools
           </div>
         </ul>
       </div>
-      <ul>
+      <ul
+        className="Footer-listItem-2"
+      >
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="http://dictybase.org/tools/jbrowse/?data=data/jbrowse/discoideum&loc=6:1..50011&tracks=reference,gene,transcript"
           >
-            Tools home
+            Genome Browser
           </a>
         </li>
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/dictyaccess"
           >
-            New Genomes browser
+            Dashboard
           </a>
         </li>
       </ul>
@@ -84,52 +118,117 @@ exports[`matching a snapshot of Footer 1`] = `
     >
       <div>
         <ul
-          className="Footer-headerLink-6"
+          className="Footer-headerLink-3"
         >
           <div
-            className="Footer-ulHeader-5"
+            className="Footer-ulHeader-6"
+          >
+            Explore
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/art"
+          >
+            Dicty Art
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/gallery"
+          >
+            Gallery
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/learn"
+          >
+            Learn About Dicty
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/teach"
+          >
+            Teaching Protocols
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/links"
+          >
+            Useful Links
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Research
           </div>
         </ul>
       </div>
-      <ul>
+      <ul
+        className="Footer-listItem-2"
+      >
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/research/ontology"
           >
-            Research home
+            Anatomy Ontology
           </a>
         </li>
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/research/codon"
           >
-            Anatomy ontology
+            Codon Bias Table
           </a>
         </li>
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
-          >
-            Codon bias table
-          </a>
-        </li>
-        <li
-          className="Footer-listItem-2"
-        >
-          <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/research/nomenclature"
           >
             Nomenclature Guidelines
           </a>
@@ -138,10 +237,20 @@ exports[`matching a snapshot of Footer 1`] = `
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/research/phenotyping"
           >
             Phenotyping
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/research/techniques"
+          >
+            Techniques
           </a>
         </li>
       </ul>
@@ -155,22 +264,170 @@ exports[`matching a snapshot of Footer 1`] = `
     >
       <div>
         <ul
-          className="Footer-headerLink-6"
+          className="Footer-headerLink-3"
         >
           <div
-            className="Footer-ulHeader-5"
+            className="Footer-ulHeader-6"
+          >
+            Dicty Stock Center
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter"
+          >
+            Stock Center Home
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter/information/order"
+          >
+            Order Information
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter/information/faq"
+          >
+            FAQ
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
+          >
+            Community
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/citation"
+          >
+            Cite Us
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/conference"
+          >
+            Dicty Annual Conferences
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/listserv"
+          >
+            Dicty Email Forum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/labs"
+          >
+            Dicty Labs
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/history"
+          >
+            History
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/jobs"
+          >
+            Jobs
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/meetings"
+          >
+            Upcoming Meetings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Please Cite
           </div>
         </ul>
       </div>
-      <ul>
+      <ul
+        className="Footer-listItem-2"
+      >
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org"
+            className="Footer-link-5"
+            href=""
           >
             dictyBase
           </a>
@@ -179,35 +436,41 @@ exports[`matching a snapshot of Footer 1`] = `
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/stock"
+            className="Footer-link-5"
+            href="/stockcenter"
           >
-            Dicty stock center
+            Dicty Stock Center
           </a>
         </li>
       </ul>
     </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
     <div
       className="Footer-subsectionItem-4"
     >
       <div>
         <ul
-          className="Footer-headerLink-6"
+          className="Footer-headerLink-3"
         >
           <div
-            className="Footer-ulHeader-5"
+            className="Footer-ulHeader-6"
           >
             Supported By
           </div>
         </ul>
       </div>
-      <ul>
+      <ul
+        className="Footer-listItem-2"
+      >
         <li
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/nih"
+            className="Footer-link-5"
+            href="https://www.nih.gov/"
           >
             NIH
           </a>
@@ -216,8 +479,8 @@ exports[`matching a snapshot of Footer 1`] = `
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/nih"
+            className="Footer-link-5"
+            href="http://gmod.org/wiki/Main_Page"
           >
             GMOD
           </a>
@@ -226,10 +489,10 @@ exports[`matching a snapshot of Footer 1`] = `
           className="Footer-listItem-2"
         >
           <a
-            className="Footer-link-3"
-            href="http://dictybase.org/nih"
+            className="Footer-link-5"
+            href="http://www.geneontology.org/"
           >
-            Gene ontology
+            Gene Ontology
           </a>
         </li>
       </ul>
