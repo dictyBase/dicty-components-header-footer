@@ -1,11 +1,8 @@
 // @flow
-import React from "react"
-import { Provider, Box } from "rebass"
-import FooterContainer from "../styles/footer/FooterContainer"
-import FooterItemsHeader from "../styles/footer/FooterItemsHeader"
-import FooterLink from "../styles/footer/FooterLink"
-import FooterItemsContainer from "../styles/footer/FooterItemsContainer"
-import FooterItem from "../styles/footer/FooterItem"
+import React, { Component } from "react"
+import { withStyles } from "@material-ui/core/styles"
+import Grid from "@material-ui/core/Grid"
+import { FooterStyles as styles } from "../styles/FooterStyles"
 
 type ItemType = {
   /** url link */
@@ -24,60 +21,57 @@ type FooterItemType = {
 type FooterProps = {
   /** List of footer items, inside a nested list */
   items: Array<Array<FooterItemType>>,
-}
-
-const footerItems = (items: Array<ItemType>) =>
-  items.map((c, i) => (
-    <FooterItem key={i} m={0} p={1}>
-      <FooterLink href={c.link} color="#d8d8d8" fontSize={11}>
-        {c.description}
-      </FooterLink>
-    </FooterItem>
-  ))
-
-const footerSubSections = (items: Array<FooterItemType>) =>
-  items.map((c, i) => (
-    <Box key={i} p={10}>
-      <FooterItemsHeader p={0}>
-        <FooterLink href={c.header.link} color="#ccffcc" fontSize={14}>
-          {c.header.description}
-        </FooterLink>
-      </FooterItemsHeader>
-      <FooterItemsContainer m={0} p={0}>
-        {footerItems(c.items)}
-      </FooterItemsContainer>
-    </Box>
-  ))
-
-const footerSections = (items: Array<Array<FooterItemType>>) => {
-  const fraction = 1 / (items.length + 2)
-  return items.map((c, i) => (
-    <Box width={fraction} key={i}>
-      {footerSubSections(c)}
-    </Box>
-  ))
-}
-
-const theme = {
-  breakpoints: [40, 52, 64],
-  font: "helvetica,arial,sans-serif",
-  background: "linear-gradient(#15317E, #0099FF)",
+  /** Material-UI's classes object */
+  classes: Object,
 }
 
 /**
  * The `Footer` component that will be displayed
- * at the bottom of every react web application of [dictyBase](http://dictybase.org).
+ * at the bottom of every React web application of [dictyBase](http://dictybase.org).
  */
-let Footer = ({ items }: FooterProps) => (
-  <Provider theme={theme}>
-    <FooterContainer
-      width={1}
-      justify="center"
-      align={["center", "left", "left"]}
-      direction={["column", "row", "row"]}>
-      {footerSections(items)}
-    </FooterContainer>
-  </Provider>
-)
 
-export default Footer
+class Footer extends Component<FooterProps> {
+  footerItems = (items: Array<ItemType>) => {
+    const { classes } = this.props
+    return items.map((c, i) => (
+      <li key={i} className={classes.listItem}>
+        <a href={c.link} className={classes.link}>
+          {c.description}
+        </a>
+      </li>
+    ))
+  }
+
+  footerSubSections = (items: Array<FooterItemType>) => {
+    const { classes } = this.props
+    return items.map((c, i) => (
+      <div key={i} className={classes.subsectionItem}>
+        <div>
+          <ul className={classes.headerLink}>
+            <div className={classes.ulHeader}>{c.header.description}</div>
+          </ul>
+        </div>
+        <ul className={classes.listItem}>{this.footerItems(c.items)}</ul>
+      </div>
+    ))
+  }
+
+  footerSections = (items: Array<Array<FooterItemType>>) => {
+    const { classes } = this.props
+    return items.map((c, i) => (
+      <Grid item key={i} className={classes.gridItem}>
+        {this.footerSubSections(c)}
+      </Grid>
+    ))
+  }
+  render() {
+    const { classes, items } = this.props
+    return (
+      <Grid container className={classes.root} justify="center">
+        {this.footerSections(items)}
+      </Grid>
+    )
+  }
+}
+
+export default withStyles(styles)(Footer)

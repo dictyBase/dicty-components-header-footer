@@ -1,11 +1,15 @@
 {
   "name": "dicty-components-header-footer",
-  "version": "5.1.0",
-  "description":
-    "React component for header and footer of dictyBase web applications",
+  "version": "7.0.0",
+  "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": ["css", "es", "lib", "umd"],
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -25,13 +29,14 @@
       "!<rootDir>/lib/"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "scripts": {
     "build": "nwb build-react-component --no-demo --copy-files",
@@ -43,51 +48,62 @@
     "precommit": "lint-staged",
     "flow": "flow",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "cz": "git-cz"
   },
   "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
     "font-awesome": "^4.7.0",
     "react-fontawesome": "^1.6.1",
-    "rebass": "^1.0.0",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.4.1",
+    "typeface-roboto": "0.0.54"
   },
   "peerDependencies": {
-    "react": "15.x"
+    "react": ">= 15.5"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "babel-jest": "^20.0.3",
+    "babel-jest": "^23.0.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^3.1.1",
     "css-loader": "^0.28.4",
-    "eslint": "^4.13.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.13.0",
     "eslint-config-react-app": "^2.1.0",
-    "eslint-loader": "^1.9.0",
+    "eslint-loader": "^1.7.1",
     "eslint-plugin-flowtype": "^2.49.3",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.9.1",
-    "flow-bin": "^0.49.1",
-    "flow-typed": "^2.4.0",
+    "flow-bin": "^0.78.0",
+    "flow-typed": "^2.1.2",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
-    "jest-styled-components": "^4.10.0",
-    "lint-staged": "^4.0.1",
-    "nwb": "^0.22.0",
-    "prettier": "^1.10.2",
-    "react": "^15.6.1",
-    "react-dev-utils": "^3.0.2",
-    "react-dom": "^15.6.1",
-    "react-styleguidist": "^7.0.17",
-    "react-test-renderer": "^15.6.1",
+    "jest": "^23.5.0",
+    "jest-styled-components": "^6.0.1",
+    "lint-staged": "^7.1.3",
+    "nwb": "^0.23.0",
+    "prettier": "^1.13.4",
+    "react": "^16.4.2",
+    "react-dev-utils": "^5.0.1",
+    "react-dom": "^16.4.2",
+    "react-styleguidist": "^7.2.3",
+    "react-test-renderer": "^16.4.0",
+    "recast": "^0.13.0",
     "style-loader": "^0.18.2"
   },
   "author": "",
-  "homepage": "",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
   },
-  "keywords": ["react-component"]
+  "keywords": [
+    "react-component"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

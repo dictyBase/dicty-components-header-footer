@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./Header"
 import renderer from "react-test-renderer"
 import items from "../data/header"
-import { Link } from "../styles/header"
+import Link from "../styles/Link"
 import styled from "styled-components"
 import "jest-styled-components"
 // $FlowFixMe

@@ -1,4 +1,4 @@
-var _templateObject = _taggedTemplateLiteralLoose(["\n  color: #15317e;\n  margin-right: 8px;\n  text-decoration: none;\n"], ["\n  color: #15317e;\n  margin-right: 8px;\n  text-decoration: none;\n"]);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  color: #004080;\n  padding: 15px;\n  text-decoration: none;\n"], ["\n  color: #004080;\n  padding: 15px;\n  text-decoration: none;\n"]);
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 

@@ -1,418 +1,501 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Footer 1`] = `
-.c0 {
-  font-family: helvetica,arial,sans-serif;
-}
-
-.c1 {
-  background: linear-gradient(#15317E, #0099FF);
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.c4 {
-  box-sizing: border-box;
-  width: 16.666666666666664%;
-}
-
-.c5 {
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.c6 {
-  padding: 0px;
-}
-
-.c7 {
-  text-decoration: none;
-  font-size: 14px;
-  color: #ccffcc;
-}
-
-.c7:hover {
-  text-decoration: underline;
-}
-
-.c10 {
-  text-decoration: none;
-  font-size: 11px;
-  color: #d8d8d8;
-}
-
-.c10:hover {
-  text-decoration: underline;
-}
-
-.c8 {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.c9 {
-  list-style: none;
-  margin: 0px;
-  padding: 4px;
-}
-
-@media screen and (min-width: 40em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 52em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .c2 {
-    -webkit-align-items: left;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-  }
-}
-
-@media screen and (min-width: 52em) {
-  .c2 {
-    -webkit-align-items: left;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-  }
-}
-
-@media (max-width: 40em) : {
-  .c6 {
-    textAlign: center;
-  }
-}
-
-@media (max-width: 40em) : {
-  .c8 {
-    textAlign: center;
-  }
-}
-
 <div
-  className="c0"
+  className="MuiGrid-container-8 MuiGrid-justify-xs-center-25 Footer-root-1"
 >
   <div
-    className="c1 c2 c3"
-    direction={
-      Array [
-        "column",
-        "row",
-        "row",
-      ]
-    }
-    width={1}
+    className="MuiGrid-item-9 Footer-gridItem-7"
   >
     <div
-      className="c4"
-      width={0.16666666666666666}
+      className="Footer-subsectionItem-4"
     >
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
+      <div>
+        <ul
+          className="Footer-headerLink-3"
         >
-          <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
-            href="http://yahoo.com"
+          <div
+            className="Footer-ulHeader-6"
           >
             Genomes
-          </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://cnn.com"
-            >
-              Genomes Home
-            </a>
-          </li>
+          </div>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
+      <ul
+        className="Footer-listItem-2"
       >
-        <div
-          className="c6"
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="/"
+          >
+            Dictyostelium discoideum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/purpureum"
+          >
+            Dictyostelium purpureum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/fasciculatum"
+          >
+            Dictyostelium fasciculatum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://genomes.dictybase.org/pallidum"
+          >
+            Polysphondylium pallium
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Tools
-          </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Tools home
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              New Genomes browser
-            </a>
-          </li>
+          </div>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
+      <ul
+        className="Footer-listItem-2"
       >
-        <div
-          className="c6"
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
-            href="http://dictybase.org/tools"
+            className="Footer-link-5"
+            href="http://dictybase.org/tools/jbrowse/?data=data/jbrowse/discoideum&loc=6:1..50011&tracks=reference,gene,transcript"
+          >
+            Genome Browser
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/dictyaccess"
+          >
+            Dashboard
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
+          >
+            Explore
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/art"
+          >
+            Dicty Art
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/gallery"
+          >
+            Gallery
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/learn"
+          >
+            Learn About Dicty
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/teach"
+          >
+            Teaching Protocols
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/explore/links"
+          >
+            Useful Links
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Research
-          </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Research home
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Anatomy ontology
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Codon bias table
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Nomenclature Guidelines
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/tools"
-            >
-              Phenotyping
-            </a>
-          </li>
+          </div>
         </ul>
       </div>
-    </div>
-    <div
-      className="c4"
-      width={0.16666666666666666}
-    >
-      <div
-        className="c5"
+      <ul
+        className="Footer-listItem-2"
       >
-        <div
-          className="c6"
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
-            href="http://dictybase.org/cite"
+            className="Footer-link-5"
+            href="/research/ontology"
+          >
+            Anatomy Ontology
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/research/codon"
+          >
+            Codon Bias Table
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/research/nomenclature"
+          >
+            Nomenclature Guidelines
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/research/phenotyping"
+          >
+            Phenotyping
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/research/techniques"
+          >
+            Techniques
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
+          >
+            Dicty Stock Center
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter"
+          >
+            Stock Center Home
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter/information/order"
+          >
+            Order Information
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter/information/faq"
+          >
+            FAQ
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
+          >
+            Community
+          </div>
+        </ul>
+      </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/citation"
+          >
+            Cite Us
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/conference"
+          >
+            Dicty Annual Conferences
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/listserv"
+          >
+            Dicty Email Forum
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/labs"
+          >
+            Dicty Labs
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/history"
+          >
+            History
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/jobs"
+          >
+            Jobs
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/community/meetings"
+          >
+            Upcoming Meetings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Please Cite
-          </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org"
-            >
-              dictyBase
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/stock"
-            >
-              Dicty stock center
-            </a>
-          </li>
+          </div>
         </ul>
       </div>
-      <div
-        className="c5"
+      <ul
+        className="Footer-listItem-2"
       >
-        <div
-          className="c6"
+        <li
+          className="Footer-listItem-2"
         >
           <a
-            className="c7"
-            color="#ccffcc"
-            fontSize={14}
-            href="http://dictybase.org/support"
+            className="Footer-link-5"
+            href=""
+          >
+            dictyBase
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="/stockcenter"
+          >
+            Dicty Stock Center
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item-9 Footer-gridItem-7"
+  >
+    <div
+      className="Footer-subsectionItem-4"
+    >
+      <div>
+        <ul
+          className="Footer-headerLink-3"
+        >
+          <div
+            className="Footer-ulHeader-6"
           >
             Supported By
-          </a>
-        </div>
-        <ul
-          className="c8"
-        >
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              NIH
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              GMOD
-            </a>
-          </li>
-          <li
-            className="c9"
-          >
-            <a
-              className="c10"
-              color="#d8d8d8"
-              fontSize={11}
-              href="http://dictybase.org/nih"
-            >
-              Gene ontology
-            </a>
-          </li>
+          </div>
         </ul>
       </div>
+      <ul
+        className="Footer-listItem-2"
+      >
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="https://www.nih.gov/"
+          >
+            NIH
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://gmod.org/wiki/Main_Page"
+          >
+            GMOD
+          </a>
+        </li>
+        <li
+          className="Footer-listItem-2"
+        >
+          <a
+            className="Footer-link-5"
+            href="http://www.geneontology.org/"
+          >
+            Gene Ontology
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
