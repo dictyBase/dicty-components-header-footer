@@ -5,7 +5,7 @@ export var FooterStyles = function FooterStyles(theme) {
     root: {
       width: "100%",
       fontFamily: "Roboto, sans-serif",
-      background: "#0b3861",
+      background: "#004080",
       paddingRight: 20,
       paddingLeft: 20,
       paddingBottom: 10
