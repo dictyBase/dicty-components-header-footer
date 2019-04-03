@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Header 1`] = `
-.c1 {
-  color: #ff6b81;
-}
-
 .c0 {
   color: #004080;
   padding: 15px;
@@ -12,11 +8,15 @@ exports[`matching a snapshot of Header 1`] = `
   text-decoration: none;
 }
 
+.c1 {
+  color: #ff6b81;
+}
+
 <div
-  className="MuiGrid-container-12 MuiGrid-spacing-xs-8-33 Header-root-1"
+  className="MuiGrid-container-12 MuiGrid-spacing-xs-8-34 Header-root-1"
 >
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-50 MuiGrid-grid-sm-5-56 MuiGrid-grid-md-3-67 MuiGrid-grid-lg-3-80 Header-logoContainer-2"
+    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-5-59 MuiGrid-grid-md-3-71 MuiGrid-grid-lg-3-85 Header-logoContainer-2"
   >
     <a
       className="c0"
@@ -30,56 +30,69 @@ exports[`matching a snapshot of Header 1`] = `
     </a>
   </div>
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-50 MuiGrid-grid-sm-7-58 MuiGrid-grid-md-5-69 MuiGrid-grid-lg-5-82 Header-searchContainer-4"
+    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-7-61 MuiGrid-grid-md-5-73 MuiGrid-grid-lg-5-87 Header-searchContainer-4"
   >
     <div
-      className="MuiFormControl-root-103 Header-textField-5"
-      onBlur={[Function]}
-      onFocus={[Function]}
+      className="MuiFormControl-root-109 Header-textField-5"
     >
       <label
-        className="MuiFormLabel-root-112 MuiInputLabel-root-107 MuiInputLabel-formControl-108 MuiInputLabel-animated-111"
+        className="MuiFormLabel-root-124 MuiInputLabel-root-113 MuiInputLabel-formControl-118 MuiInputLabel-animated-121"
         data-shrink={false}
         htmlFor="guided-search"
       >
         Guided Search (coming soon)
       </label>
       <div
-        className="MuiInput-root-117 MuiInput-formControl-118 MuiInput-underline-121"
+        className="MuiInputBase-root-144 MuiInput-root-131 MuiInput-underline-135 MuiInputBase-formControl-145 MuiInput-formControl-132 MuiInputBase-adornedEnd-149"
         onClick={[Function]}
       >
         <input
+          aria-describedby={undefined}
           aria-invalid={false}
-          aria-required={false}
-          className="MuiInput-input-125"
+          autoComplete={undefined}
+          autoFocus={undefined}
+          className="MuiInputBase-input-154 MuiInput-input-139 MuiInputBase-inputAdornedEnd-160"
+          defaultValue={undefined}
           disabled={false}
           id="input-with-icon-adornment"
+          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          onKeyDown={undefined}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={false}
+          rows={undefined}
           type="text"
+          value={undefined}
         />
         <div
-          className="MuiInputAdornment-root-130 MuiInputAdornment-positionEnd-132 Header-searchIcon-11"
+          className="MuiInputAdornment-root-161 MuiInputAdornment-positionEnd-164 Header-searchIcon-11"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-133"
+            className="MuiSvgIcon-root-166"
+            color={undefined}
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
-            <g>
-              <path
-                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-              />
-            </g>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
           </svg>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-50 MuiGrid-grid-sm-12-63 MuiGrid-grid-md-4-68 MuiGrid-grid-lg-4-81 Header-linkContainer-7"
+    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-12-66 MuiGrid-grid-md-4-72 MuiGrid-grid-lg-4-86 Header-linkContainer-7"
   >
     <a
       className="c1 c0"

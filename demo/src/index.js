@@ -13,8 +13,8 @@ const RouterLink = styled(Link)`
   color: #004080;
 `
 
-const generateLinks = (link, i) => {
-  return link.isRouter ? (
+const generateLinks = (link, i) =>
+  link.isRouter ? (
     <RouterLink key={i} href={link.url}>
       <center>
         <FontAwesome name={link.icon} size="2x" />
@@ -31,7 +31,6 @@ const generateLinks = (link, i) => {
       </center>
     </Link>
   )
-}
 
 const Demo = () => (
   <React.Fragment>

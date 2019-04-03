@@ -1,18 +1,17 @@
 ## Default header component
 
-```example
-
+```jsx
 const aStyle = {
   color: "#15317e",
   marginRight: "8px",
-  textDecoration: "none"
-};
+  textDecoration: "none",
+}
 
 const rStyle = {
   color: "#1B9CFC",
   marginRight: "8px",
-  textDecoration: "none"
-};
+  textDecoration: "none",
+}
 
 const items = [
   {
@@ -36,8 +35,7 @@ const items = [
     text: "Login",
     isRouter: true,
   },
-];
-
+]
 
 const generateLinks = (link, i) => {
   return link.isRouter ? (
@@ -49,9 +47,7 @@ const generateLinks = (link, i) => {
       {link.text}
     </a>
   )
-};
+}
 
-<Header items={items}>
-    {items => items.map(generateLinks)}
-</Header>
+;<Header items={items}>{items => items.map(generateLinks)}</Header>
 ```
