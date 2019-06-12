@@ -2,10 +2,10 @@
 
 exports[`matching a snapshot of Footer 1`] = `
 <div
-  className="MuiGrid-container-8 MuiGrid-justify-xs-center-25 Footer-root-1"
+  className="MuiGrid-root Footer-root-1 MuiGrid-container MuiGrid-justify-xs-center"
 >
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -68,7 +68,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -111,7 +111,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -184,7 +184,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -257,7 +257,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -310,7 +310,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -403,7 +403,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"
@@ -446,7 +446,7 @@ exports[`matching a snapshot of Footer 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-9 Footer-gridItem-7"
+    className="MuiGrid-root Footer-gridItem-7 MuiGrid-item"
   >
     <div
       className="Footer-subsectionItem-4"

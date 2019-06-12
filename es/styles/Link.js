@@ -1,13 +1,14 @@
-var _templateObject = _taggedTemplateLiteralLoose(["\n  color: #004080;\n  padding: 15px;\n  text-decoration: none;\n"], ["\n  color: #004080;\n  padding: 15px;\n  text-decoration: none;\n"]);
-
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
 import React from "react";
-import styled from "styled-components";
+import { styled } from "@material-ui/styles";
 
-var LinkStyle = styled.a(_templateObject);
+var LinkStyle = styled("a")({
+  color: "#004080",
+  padding: "15px",
+  textDecoration: "none"
+});
+
 var Link = function Link(_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);

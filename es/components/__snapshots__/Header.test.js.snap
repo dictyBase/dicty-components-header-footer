@@ -1,25 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matching a snapshot of Header 1`] = `
-.c0 {
-  color: #004080;
-  padding: 15px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 {
-  color: #ff6b81;
-}
-
 <div
-  className="MuiGrid-container-12 MuiGrid-spacing-xs-8-34 Header-root-1"
+  className="MuiGrid-root Header-root-1 MuiGrid-container MuiGrid-spacing-xs-8"
 >
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-5-59 MuiGrid-grid-md-3-71 MuiGrid-grid-lg-3-85 Header-logoContainer-2"
+    className="MuiGrid-root Header-logoContainer-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-5 MuiGrid-grid-md-3 MuiGrid-grid-lg-3"
   >
     <a
-      className="c0"
+      className="a-root-115"
       href="/"
     >
       <img
@@ -30,51 +19,39 @@ exports[`matching a snapshot of Header 1`] = `
     </a>
   </div>
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-7-61 MuiGrid-grid-md-5-73 MuiGrid-grid-lg-5-87 Header-searchContainer-4"
+    className="MuiGrid-root Header-searchContainer-4 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-7 MuiGrid-grid-md-5 MuiGrid-grid-lg-5"
   >
     <div
-      className="MuiFormControl-root-109 Header-textField-5"
+      className="MuiFormControl-root Header-textField-5"
     >
       <label
-        className="MuiFormLabel-root-124 MuiInputLabel-root-113 MuiInputLabel-formControl-118 MuiInputLabel-animated-121"
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
         data-shrink={false}
         htmlFor="guided-search"
       >
         Guided Search (coming soon)
       </label>
       <div
-        className="MuiInputBase-root-144 MuiInput-root-131 MuiInput-underline-135 MuiInputBase-formControl-145 MuiInput-formControl-132 MuiInputBase-adornedEnd-149"
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
         onClick={[Function]}
       >
         <input
-          aria-describedby={undefined}
           aria-invalid={false}
-          autoComplete={undefined}
-          autoFocus={undefined}
-          className="MuiInputBase-input-154 MuiInput-input-139 MuiInputBase-inputAdornedEnd-160"
-          defaultValue={undefined}
+          className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
           disabled={false}
           id="input-with-icon-adornment"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={undefined}
-          onKeyUp={undefined}
-          placeholder={undefined}
-          readOnly={undefined}
           required={false}
-          rows={undefined}
           type="text"
-          value={undefined}
         />
         <div
-          className="MuiInputAdornment-root-161 MuiInputAdornment-positionEnd-164 Header-searchIcon-11"
+          className="MuiInputAdornment-root Header-searchIcon-11 MuiInputAdornment-positionEnd"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-166"
-            color={undefined}
+            className="MuiSvgIcon-root"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -92,10 +69,10 @@ exports[`matching a snapshot of Header 1`] = `
     </div>
   </div>
   <div
-    className="MuiGrid-item-13 MuiGrid-grid-xs-12-52 MuiGrid-grid-sm-12-66 MuiGrid-grid-md-4-72 MuiGrid-grid-lg-4-86 Header-linkContainer-7"
+    className="MuiGrid-root Header-linkContainer-7 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
   >
     <a
-      className="c1 c0"
+      className="a-root-115 Link-root-181"
       href="/login"
     >
       <span
@@ -105,7 +82,7 @@ exports[`matching a snapshot of Header 1`] = `
       Login
     </a>
     <a
-      className="c0"
+      className="a-root-115"
       href="/cite"
     >
       <span
@@ -115,7 +92,7 @@ exports[`matching a snapshot of Header 1`] = `
       Cite Us
     </a>
     <a
-      className="c0"
+      className="a-root-115"
       href="/downloads"
     >
       <span
@@ -125,7 +102,7 @@ exports[`matching a snapshot of Header 1`] = `
       Downloads
     </a>
     <a
-      className="c0"
+      className="a-root-115"
       href="/info"
     >
       <span

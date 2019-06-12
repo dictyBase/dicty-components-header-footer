@@ -19,15 +19,11 @@ export var headerStyles = function headerStyles(theme) {
       justifyContent: "center"
     },
     textField: {
-      marginLeft: theme.spacing.unit,
-      marginRight: theme.spacing.unit,
       marginTop: 20,
       width: "50%",
       paddingBottom: 0
     },
     textFieldExpanded: {
-      marginLeft: theme.spacing.unit,
-      marginRight: theme.spacing.unit,
       marginTop: 20,
       width: "75%",
       paddingBottom: 0
