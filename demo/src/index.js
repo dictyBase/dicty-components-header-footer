@@ -1,17 +1,16 @@
 import React from "react"
 import { render } from "react-dom"
-
 import { Header, Footer } from "../../src"
 import links from "../../src/data/header"
 import items from "../../src/data/footer"
 import Link from "../../src/styles/Link"
 import "font-awesome/css/font-awesome.min.css"
 import FontAwesome from "react-fontawesome"
-import styled from "styled-components"
+import { styled } from "@material-ui/styles"
 
-const RouterLink = styled(Link)`
-  color: #004080;
-`
+const RouterLink = styled(Link)({
+  color: "#004080",
+})
 
 const generateLinks = (link, i) =>
   link.isRouter ? (
