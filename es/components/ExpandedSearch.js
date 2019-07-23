@@ -9,6 +9,10 @@ import FormControl from "@material-ui/core/FormControl";
 import Grow from "@material-ui/core/Grow";
 import Search from "@material-ui/icons/Search";
 
+/**
+ * ExpandedSearch handles the expanded appearance of the search box.
+ */
+
 var ExpandedSearch = function ExpandedSearch(props) {
   var classes = props.classes,
       isExpanded = props.isExpanded;

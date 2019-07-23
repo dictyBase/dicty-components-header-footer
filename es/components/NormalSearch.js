@@ -8,6 +8,10 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import Search from "@material-ui/icons/Search";
 
+/**
+ * NormalSearch handles the unexpanded appearance of the search box.
+ */
+
 var NormalSearch = function NormalSearch(props) {
   var classes = props.classes,
       handleClick = props.handleClick;
