@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import { headerStyles as styles } from "../styles/headerStyles"
 import { withStyles } from "@material-ui/core/styles"
@@ -9,7 +10,18 @@ import FormControl from "@material-ui/core/FormControl"
 import Grow from "@material-ui/core/Grow"
 import Search from "@material-ui/icons/Search"
 
-const ExpandedSearch = props => {
+type Props = {
+  /** Material-UI styling */
+  classes: Object,
+  /** Represents if search box is expanded or not */
+  isExpanded: boolean,
+}
+
+/**
+ * ExpandedSearch handles the expanded appearance of the search box.
+ */
+
+const ExpandedSearch = (props: Props) => {
   const { classes, isExpanded } = props
 
   return (

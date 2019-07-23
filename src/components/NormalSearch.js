@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import { headerStyles as styles } from "../styles/headerStyles"
 import { withStyles } from "@material-ui/core/styles"
@@ -8,7 +9,18 @@ import InputAdornment from "@material-ui/core/InputAdornment"
 import FormControl from "@material-ui/core/FormControl"
 import Search from "@material-ui/icons/Search"
 
-const NormalSearch = props => {
+type Props = {
+  /** Material-UI styling */
+  classes: Object,
+  /** Function called when Input is clicked */
+  handleClick: Function,
+}
+
+/**
+ * NormalSearch handles the unexpanded appearance of the search box.
+ */
+
+const NormalSearch = (props: Props) => {
   const { classes, handleClick } = props
 
   return (
