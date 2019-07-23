@@ -1,11 +1,16 @@
 import React from "react"
+import { shallow, configure } from "enzyme"
+import Adapter from "enzyme-adapter-react-16"
 import Header from "./Header"
-import renderer from "react-test-renderer"
-import items from "../data/header"
 import Link from "../styles/Link"
 import { styled } from "@material-ui/styles"
+import items from "../data/header"
 import "font-awesome/css/font-awesome.min.css"
 import FontAwesome from "react-fontawesome"
+import Grid from "@material-ui/core/Grid"
+import NormalSearch from "./NormalSearch"
+
+configure({ adapter: new Adapter() })
 
 const RouterLink = styled(Link)({
   color: "#ff6b81",
@@ -24,10 +29,19 @@ const generateLinks = (link, i) =>
     </Link>
   )
 
-test("matching a snapshot of Header", () => {
-  const component = renderer.create(
+describe("Header", () => {
+  const wrapper = shallow(
     <Header items={items}>{items => items.map(generateLinks)}</Header>,
-  )
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  ).dive()
+
+  describe("initial render", () => {
+    it("renders without crashing", () => {
+      expect(wrapper).toHaveLength(1)
+    })
+
+    it("renders initial components", () => {
+      expect(wrapper.find(Grid)).toHaveLength(3)
+      expect(wrapper.find(NormalSearch)).toHaveLength(1)
+    })
+  })
 })

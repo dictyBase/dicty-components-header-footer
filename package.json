@@ -1,6 +1,6 @@
 {
   "name": "dicty-components-header-footer",
-  "version": "7.1.0",
+  "version": "0.0.0-semantically-released",
   "description": "React component for header and footer of dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -10,6 +10,17 @@
     "lib",
     "umd"
   ],
+  "scripts": {
+    "build": "nwb build-react-component --no-demo --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "flow": "flow",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "cz": "git-cz"
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -57,18 +68,6 @@
       "@babel/react"
     ]
   },
-  "scripts": {
-    "build": "nwb build-react-component --no-demo --copy-files",
-    "clean": "nwb clean-module && nwb clean-demo",
-    "start": "nwb serve-react-demo",
-    "test": "jest --updateSnapshot",
-    "test:run": "jest --updateSnapshot && jest",
-    "test:watch": "jest --watch",
-    "flow": "flow",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "cz": "git-cz"
-  },
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
@@ -88,6 +87,8 @@
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^9.0.0",
     "cz-conventional-changelog": "^3.0.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-loader": "^2.1.2",
@@ -111,6 +112,7 @@
     "react-fontawesome": "^1.6.1",
     "react-styleguidist": "^9.1.11",
     "react-test-renderer": "^16.8.6",
+    "sinon": "^7.3.2",
     "typeface-roboto": "0.0.75"
   },
   "author": "",
