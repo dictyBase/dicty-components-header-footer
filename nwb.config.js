@@ -9,7 +9,7 @@ var eslintWebpack = {
             options: {
               formatter: require("react-dev-utils/eslintFormatter"),
             },
-            loader: require.resolve("eslint-loader"),
+            loader: "eslint-loader",
           },
         ],
         exclude: /node_modules/,
