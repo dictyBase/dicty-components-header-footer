@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from "react"
+import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import { FooterStyles as styles } from "../styles/FooterStyles"
@@ -30,48 +30,42 @@ type FooterProps = {
  * at the bottom of every React web application of [dictyBase](http://dictybase.org).
  */
 
-class Footer extends Component<FooterProps> {
-  footerItems = (items: Array<ItemType>) => {
-    const { classes } = this.props
-    return items.map((c, i) => (
+const Footer = (props: FooterProps) => {
+  const { classes, items } = props
+
+  const footerItems = (items: Array<ItemType>) =>
+    items.map((c, i) => (
       <li key={i} className={classes.listItem}>
         <a href={c.link} className={classes.link}>
           {c.description}
         </a>
       </li>
     ))
-  }
 
-  footerSubSections = (items: Array<FooterItemType>) => {
-    const { classes } = this.props
-    return items.map((c, i) => (
+  const footerSubSections = (items: Array<FooterItemType>) =>
+    items.map((c, i) => (
       <div key={i} className={classes.subsectionItem}>
         <div>
           <ul className={classes.headerLink}>
             <div className={classes.ulHeader}>{c.header.description}</div>
           </ul>
         </div>
-        <ul className={classes.listItem}>{this.footerItems(c.items)}</ul>
+        <ul className={classes.listItem}>{footerItems(c.items)}</ul>
       </div>
     ))
-  }
 
-  footerSections = (items: Array<Array<FooterItemType>>) => {
-    const { classes } = this.props
-    return items.map((c, i) => (
+  const footerSections = (items: Array<Array<FooterItemType>>) =>
+    items.map((c, i) => (
       <Grid item key={i} className={classes.gridItem}>
-        {this.footerSubSections(c)}
+        {footerSubSections(c)}
       </Grid>
     ))
-  }
-  render() {
-    const { classes, items } = this.props
-    return (
-      <Grid container className={classes.root} justify="center">
-        {this.footerSections(items)}
-      </Grid>
-    )
-  }
+
+  return (
+    <Grid container className={classes.root} justify="center">
+      {footerSections(items)}
+    </Grid>
+  )
 }
 
 export default withStyles(styles)(Footer)
