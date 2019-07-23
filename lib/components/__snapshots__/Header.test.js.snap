@@ -2,7 +2,7 @@
 
 exports[`matching a snapshot of Header 1`] = `
 <div
-  className="MuiGrid-root Header-root-1 MuiGrid-container MuiGrid-spacing-xs-8"
+  className="MuiGrid-root Header-root-1 MuiGrid-container"
 >
   <div
     className="MuiGrid-root Header-logoContainer-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-5 MuiGrid-grid-md-3 MuiGrid-grid-lg-3"
@@ -19,10 +19,10 @@ exports[`matching a snapshot of Header 1`] = `
     </a>
   </div>
   <div
-    className="MuiGrid-root Header-searchContainer-4 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-7 MuiGrid-grid-md-5 MuiGrid-grid-lg-5"
+    className="MuiGrid-root NormalSearch-searchContainer-119 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-7 MuiGrid-grid-md-5 MuiGrid-grid-lg-5"
   >
     <div
-      className="MuiFormControl-root Header-textField-5"
+      className="MuiFormControl-root NormalSearch-textField-120"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -47,7 +47,7 @@ exports[`matching a snapshot of Header 1`] = `
           type="text"
         />
         <div
-          className="MuiInputAdornment-root Header-searchIcon-11 MuiInputAdornment-positionEnd"
+          className="MuiInputAdornment-root NormalSearch-searchIcon-126 MuiInputAdornment-positionEnd"
         >
           <svg
             aria-hidden="true"
@@ -68,7 +68,7 @@ exports[`matching a snapshot of Header 1`] = `
     className="MuiGrid-root Header-linkContainer-7 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
   >
     <a
-      className="a-root-115 Link-root-182"
+      className="a-root-115 Link-root-193"
       href="/login"
     >
       <span
