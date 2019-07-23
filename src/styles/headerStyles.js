@@ -1,6 +1,5 @@
 export const headerStyles = theme => ({
   root: {
-    width: "100%",
     padding: 5,
     fontFamily: "Roboto, sans-serif",
   },
@@ -49,18 +48,17 @@ export const headerStyles = theme => ({
   [theme.breakpoints.down("sm")]: {
     textField: {
       marginTop: 0,
-      width: "70%",
+      width: "85%",
+    },
+    textFieldExpanded: {
+      marginTop: 0,
     },
     logoContainer: {
       display: "flex",
       justifyContent: "center",
     },
     linkContainer: {
-      marginTop: 0,
       justifyContent: "center",
-    },
-    searchContainer: {
-      marginTop: 5,
     },
   },
   [theme.breakpoints.only("sm")]: {
