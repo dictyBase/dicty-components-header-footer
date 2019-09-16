@@ -13,7 +13,7 @@ export var headerStyles = function headerStyles(theme) {
       fontWeight: 400,
       fontSize: "1.1rem",
       // color: "#004080", #142a70
-      color: "#142a70",
+      color: "#54575c",
       paddingTop: "38px"
     },
     left: {
