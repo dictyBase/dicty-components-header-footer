@@ -11,7 +11,7 @@ export var headerStyles = function headerStyles(theme) {
     },
     dcr: {
       fontWeight: 400,
-      fontSize: "1.5rem",
+      fontSize: "1.2rem",
       // color: "#004080", #142a70
       color: "#54575c",
       paddingLeft: "18px"
@@ -22,23 +22,24 @@ export var headerStyles = function headerStyles(theme) {
     },
     searchContainer: {
       display: "flex",
-      justifyContent: "flex-end",
-      height: "40px"
+      justifyContent: "center"
     },
     textField: {
+      marginTop: 20,
       width: "50%",
       paddingBottom: 0
     },
     textFieldExpanded: {
+      marginTop: 20,
       width: "75%",
       paddingBottom: 0
     },
     linkContainer: {
+      marginTop: 15,
       display: "flex",
       justifyContent: "flex-end",
       paddingBottom: 0,
-      fontSize: "0.8em",
-      height: "25px"
+      fontSize: "0.8em"
     },
     searchLabel: {
       "&$searchFocused": {
@@ -72,6 +73,10 @@ export var headerStyles = function headerStyles(theme) {
   }, _ref[theme.breakpoints.only("sm")] = {
     searchContainer: {
       marginTop: 12
+    }
+  }, _ref[theme.breakpoints.up("sm")] = {
+    textField: {
+      marginTop: 20
     }
   }, _ref;
 };

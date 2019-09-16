@@ -16,16 +16,16 @@ const generateLinks = (link, i) =>
   link.isRouter ? (
     <RouterLink key={i} href={link.url}>
       <center>
-        <FontAwesome name={link.icon} size="lg" />
-        &nbsp;
+        <FontAwesome name={link.icon} size="2x" />
+        <br />
         {link.text}
       </center>
     </RouterLink>
   ) : (
     <Link key={i} href={link.url}>
       <center>
-        <FontAwesome name={link.icon} size="lg" />
-        &nbsp;
+        <FontAwesome name={link.icon} size="2x" />
+        <br />
         {link.text}
       </center>
     </Link>
