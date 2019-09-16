@@ -33,7 +33,7 @@ var Header = function Header(props) {
 
   return React.createElement(
     Grid,
-    { container: true, className: classes.root },
+    { container: true, className: classes.root, alignItems: "center" },
     React.createElement(
       Grid,
       { item: true, xs: 12, sm: 5, md: 3, lg: 3, className: classes.logoContainer },
@@ -41,6 +41,15 @@ var Header = function Header(props) {
         Link,
         { href: home },
         React.createElement("img", { src: logo, alt: "dictyBase logo", className: classes.image })
+      ),
+      React.createElement(
+        "div",
+        { className: classes.dcr },
+        React.createElement(
+          "em",
+          null,
+          "Dicty Community Resource"
+        )
       )
     ),
     isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { handleClick: handleClick }),
