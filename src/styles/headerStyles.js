@@ -8,7 +8,7 @@ export const headerStyles = theme => ({
   },
   dcr: {
     fontWeight: 400,
-    fontSize: "1.2rem",
+    fontSize: "1.5rem",
     // color: "#004080", #142a70
     color: "#54575c",
     paddingLeft: "18px",
@@ -19,24 +19,23 @@ export const headerStyles = theme => ({
   },
   searchContainer: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-end",
+    height: "40px",
   },
   textField: {
-    marginTop: 20,
     width: "50%",
     paddingBottom: 0,
   },
   textFieldExpanded: {
-    marginTop: 20,
     width: "75%",
     paddingBottom: 0,
   },
   linkContainer: {
-    marginTop: 15,
     display: "flex",
     justifyContent: "flex-end",
     paddingBottom: 0,
     fontSize: "0.8em",
+    height: "25px",
   },
   searchLabel: {
     "&$searchFocused": {
@@ -73,9 +72,9 @@ export const headerStyles = theme => ({
       marginTop: 12,
     },
   },
-  [theme.breakpoints.up("sm")]: {
-    textField: {
-      marginTop: 20,
-    },
-  },
+  // [theme.breakpoints.up("sm")]: {
+  //   textField: {
+  //     marginTop: 20,
+  //   },
+  // },
 })

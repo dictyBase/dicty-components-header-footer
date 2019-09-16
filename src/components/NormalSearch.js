@@ -24,7 +24,7 @@ const NormalSearch = (props: Props) => {
   const { classes, handleClick } = props
 
   return (
-    <Grid item xs={12} sm={7} md={5} lg={5} className={classes.searchContainer}>
+    <div className={classes.searchContainer}>
       <FormControl className={classes.textField}>
         <InputLabel htmlFor="guided-search">
           Guided Search (coming soon)
@@ -39,7 +39,7 @@ const NormalSearch = (props: Props) => {
           }
         />
       </FormControl>
-    </Grid>
+    </div>
   )
 }
 

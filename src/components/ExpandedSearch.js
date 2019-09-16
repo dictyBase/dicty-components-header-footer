@@ -26,13 +26,7 @@ const ExpandedSearch = (props: Props) => {
 
   return (
     <Grow in={isExpanded} timeout={500} style={{ opacity: 1 }}>
-      <Grid
-        item
-        xs={12}
-        sm={7}
-        md={5}
-        lg={5}
-        className={classes.searchContainer}>
+      <div className={classes.searchContainer}>
         <FormControl className={classes.textFieldExpanded}>
           <InputLabel
             htmlFor="guided-search"
@@ -55,7 +49,7 @@ const ExpandedSearch = (props: Props) => {
             }
           />
         </FormControl>
-      </Grid>
+      </div>
     </Grow>
   )
 }

@@ -50,26 +50,21 @@ const Header = (props: Props) => {
         <Link href={home}>
           <img src={logo} alt="dictyBase logo" className={classes.image} />
         </Link>
-        <div className={classes.dcr}>
-          <em>Dicty Community Resource</em>
-        </div>
       </Grid>
-      {isExpanded ? (
-        <ExpandedSearch isExpanded={isExpanded} />
-      ) : (
-        <NormalSearch handleClick={handleClick} />
-      )}
-      {/* <Grid item className={classes.dcr} xs={12} sm={7} md={5} lg={5}>
-        <center>Dicty Community Resource</center>
-      </Grid> */}
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={4}
-        lg={4}
-        className={classes.linkContainer}>
-        {children(items)}
+
+      <Grid item className={classes.dcr} xs={12} sm={7} md={5} lg={5}>
+        <center>
+          <br />
+          <em>Dicty Community Resource</em>
+        </center>
+      </Grid>
+      <Grid item xs={12} sm={12} md={4} lg={4}>
+        <div className={classes.linkContainer}>{children(items)}</div>
+        {isExpanded ? (
+          <ExpandedSearch isExpanded={isExpanded} />
+        ) : (
+          <NormalSearch handleClick={handleClick} />
+        )}
       </Grid>
     </Grid>
   )
