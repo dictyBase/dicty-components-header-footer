@@ -28,7 +28,7 @@ var ExpandedSearch = function ExpandedSearch(props) {
         xs: 12,
         sm: 7,
         md: 5,
-        lg: 5,
+        lg: 4,
         className: classes.searchContainer },
       React.createElement(
         FormControl,

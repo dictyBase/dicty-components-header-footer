@@ -31,7 +31,7 @@ const ExpandedSearch = (props: Props) => {
         xs={12}
         sm={7}
         md={5}
-        lg={5}
+        lg={4}
         className={classes.searchContainer}>
         <FormControl className={classes.textFieldExpanded}>
           <InputLabel

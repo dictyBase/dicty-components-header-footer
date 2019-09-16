@@ -8,10 +8,14 @@ export const headerStyles = theme => ({
   },
   dcr: {
     fontWeight: 400,
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     // color: "#004080", #142a70
     color: "#142a70",
-    paddingLeft: "18px",
+    paddingTop: "38px",
+  },
+  left: {
+    display: "flex",
+    alignItems: "center",
   },
   image: {
     maxWidth: 220,

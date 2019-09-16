@@ -19,7 +19,7 @@ var NormalSearch = function NormalSearch(props) {
 
   return React.createElement(
     Grid,
-    { item: true, xs: 12, sm: 7, md: 5, lg: 5, className: classes.searchContainer },
+    { item: true, xs: 12, sm: 7, md: 5, lg: 4, className: classes.searchContainer },
     React.createElement(
       FormControl,
       { className: classes.textField },
