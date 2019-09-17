@@ -44,11 +44,6 @@ var Header = function Header(props) {
           Grid,
           { item: true, xs: 12, className: classes.left },
           React.createElement(
-            Link,
-            { href: home },
-            React.createElement("img", { src: logo, alt: "dictyBase logo", className: classes.image })
-          ),
-          React.createElement(
             "span",
             { className: classes.dcr },
             React.createElement(
@@ -56,6 +51,11 @@ var Header = function Header(props) {
               null,
               "Dicty Community Resource"
             )
+          ),
+          React.createElement(
+            Link,
+            { href: home },
+            React.createElement("img", { src: logo, alt: "dictyBase logo", className: classes.image })
           )
         )
       )

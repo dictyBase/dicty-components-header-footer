@@ -49,12 +49,12 @@ const Header = (props: Props) => {
       <Grid item xs={12} sm={5} md={3} lg={4} className={classes.logoContainer}>
         <Grid container alignItems="flex-start">
           <Grid item xs={12} className={classes.left}>
-            <Link href={home}>
-              <img src={logo} alt="dictyBase logo" className={classes.image} />
-            </Link>
             <span className={classes.dcr}>
               <em>Dicty Community Resource</em>
             </span>
+            <Link href={home}>
+              <img src={logo} alt="dictyBase logo" className={classes.image} />
+            </Link>
           </Grid>
         </Grid>
       </Grid>
