@@ -14,7 +14,8 @@ export var headerStyles = function headerStyles(theme) {
       fontSize: "1.2rem",
       // color: "#004080", #142a70
       color: "#142a70",
-      paddingLeft: "18px"
+      paddingLeft: "18px",
+      paddingBottom: "5px"
     },
     image: {
       maxWidth: 220,

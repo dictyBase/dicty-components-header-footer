@@ -47,12 +47,12 @@ const Header = (props: Props) => {
   return (
     <Grid container className={classes.root} alignItems="center">
       <Grid item xs={12} sm={5} md={3} lg={3} className={classes.logoContainer}>
-        <Link href={home}>
-          <img src={logo} alt="dictyBase logo" className={classes.image} />
-        </Link>
         <div className={classes.dcr}>
           <em>Dicty Community Resource</em>
         </div>
+        <Link href={home}>
+          <img src={logo} alt="dictyBase logo" className={classes.image} />
+        </Link>
       </Grid>
       {isExpanded ? (
         <ExpandedSearch isExpanded={isExpanded} />

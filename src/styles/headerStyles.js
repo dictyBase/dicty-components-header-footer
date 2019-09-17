@@ -12,6 +12,7 @@ export const headerStyles = theme => ({
     // color: "#004080", #142a70
     color: "#142a70",
     paddingLeft: "18px",
+    paddingBottom: "5px",
   },
   image: {
     maxWidth: 220,
