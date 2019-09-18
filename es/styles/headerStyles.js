@@ -9,6 +9,17 @@ export var headerStyles = function headerStyles(theme) {
     logoContainer: {
       paddingBottom: 0
     },
+    dcr: {
+      fontWeight: 400,
+      fontSize: "1.1rem",
+      // color: "#004080"
+      color: "#142a70",
+      paddingTop: "38px"
+    },
+    left: {
+      display: "flex",
+      alignItems: "center"
+    },
     image: {
       maxWidth: 220,
       height: 78

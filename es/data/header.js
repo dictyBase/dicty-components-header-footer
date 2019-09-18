@@ -1,9 +1,4 @@
 module.exports = [{
-  url: "/login",
-  icon: "sign-in",
-  text: "Login",
-  isRouter: true
-}, {
   url: "/cite",
   icon: "plus",
   text: "Cite Us"
@@ -15,4 +10,9 @@ module.exports = [{
   url: "/info",
   icon: "info-circle",
   text: "About dictyBase"
+}, {
+  url: "/login",
+  icon: "sign-in",
+  text: "Login",
+  isRouter: true
 }];
