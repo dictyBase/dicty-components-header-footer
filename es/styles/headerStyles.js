@@ -26,7 +26,8 @@ export var headerStyles = function headerStyles(theme) {
     },
     searchContainer: {
       display: "flex",
-      justifyContent: "center"
+      justifyContent: "center",
+      alignItems: "center"
     },
     inputLabel: {
       fontSize: "12px"
@@ -62,11 +63,22 @@ export var headerStyles = function headerStyles(theme) {
     searchIcon: {
       color: "#004080"
     }
-  }, _ref[theme.breakpoints.down("md")] = {
+  }, _ref[theme.breakpoints.only("md")] = {
     left: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
+      display: "inline-block",
+      textAlign: "left"
+    },
+    dcr: {
+      paddingLeft: "15px"
+    }
+  }, _ref[theme.breakpoints.only("sm")] = {
+    textFieldExpanded: {
+      width: "40%"
+    }
+  }, _ref[theme.breakpoints.down("md")] = {
+    dcr: {
+      paddingTop: "10px",
+      paddingBottom: "5px"
     },
     textField: {
       marginTop: 0
@@ -81,6 +93,10 @@ export var headerStyles = function headerStyles(theme) {
     },
     linkContainer: {
       justifyContent: "center"
+    }
+  }, _ref[theme.breakpoints.down("sm")] = {
+    left: {
+      display: "inline-block"
     }
   }, _ref;
 };

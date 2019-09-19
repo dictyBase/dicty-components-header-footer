@@ -35,7 +35,7 @@ var Header = function Header(_ref) {
     { container: true, className: classes.root },
     React.createElement(
       Grid,
-      { item: true, xs: 12, lg: 4, className: classes.logoContainer },
+      { item: true, xs: 12, md: 3, lg: 4, className: classes.logoContainer },
       React.createElement(
         Grid,
         { container: true, alignItems: "flex-start" },
@@ -48,7 +48,7 @@ var Header = function Header(_ref) {
             React.createElement("img", { src: logo, alt: "dictyBase logo", className: classes.image })
           ),
           React.createElement(
-            "span",
+            "div",
             { className: classes.dcr },
             React.createElement(
               "em",
@@ -61,12 +61,12 @@ var Header = function Header(_ref) {
     ),
     React.createElement(
       Grid,
-      { item: true, xs: 12, lg: 4, className: classes.searchContainer },
+      { item: true, xs: 12, md: 5, lg: 4, className: classes.searchContainer },
       isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { handleClick: handleClick })
     ),
     React.createElement(
       Grid,
-      { item: true, xs: 12, lg: 4, className: classes.linkContainer },
+      { item: true, xs: 12, md: 4, className: classes.linkContainer },
       children(items)
     )
   );

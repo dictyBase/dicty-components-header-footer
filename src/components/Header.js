@@ -45,26 +45,26 @@ const Header = ({ classes, home = Home, children, items }: Props) => {
 
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={12} lg={4} className={classes.logoContainer}>
+      <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
         <Grid container alignItems="flex-start">
           <Grid item xs={12} className={classes.left}>
             <Link href={home}>
               <img src={logo} alt="dictyBase logo" className={classes.image} />
             </Link>
-            <span className={classes.dcr}>
+            <div className={classes.dcr}>
               <em>Dicty Community Resource</em>
-            </span>
+            </div>
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} lg={4} className={classes.searchContainer}>
+      <Grid item xs={12} md={5} lg={4} className={classes.searchContainer}>
         {isExpanded ? (
           <ExpandedSearch isExpanded={isExpanded} />
         ) : (
           <NormalSearch handleClick={handleClick} />
         )}
       </Grid>
-      <Grid item xs={12} lg={4} className={classes.linkContainer}>
+      <Grid item xs={12} md={4} className={classes.linkContainer}>
         {children(items)}
       </Grid>
     </Grid>
