@@ -26,8 +26,7 @@ export var headerStyles = function headerStyles(theme) {
     },
     searchContainer: {
       display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
+      justifyContent: "center"
     },
     inputLabel: {
       fontSize: "12px"
@@ -70,6 +69,9 @@ export var headerStyles = function headerStyles(theme) {
     },
     dcr: {
       paddingLeft: "15px"
+    },
+    searchContainer: {
+      alignItems: "center"
     }
   }, _ref[theme.breakpoints.only("sm")] = {
     textFieldExpanded: {

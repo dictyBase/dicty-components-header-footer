@@ -24,7 +24,6 @@ export const headerStyles = theme => ({
   searchContainer: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
   },
   inputLabel: {
     fontSize: "12px",
@@ -67,6 +66,9 @@ export const headerStyles = theme => ({
     },
     dcr: {
       paddingLeft: "15px",
+    },
+    searchContainer: {
+      alignItems: "center",
     },
   },
   [theme.breakpoints.only("sm")]: {
