@@ -1,5 +1,5 @@
 // @flow
-import React, { useState } from "react"
+import React from "react"
 import logo from "../images/logo.png"
 import Link from "../styles/Link"
 import { headerStyles as styles } from "../styles/headerStyles"
@@ -37,11 +37,7 @@ type Props = {
  */
 
 const Header = ({ classes, home = Home, children, items }: Props) => {
-  const [isExpanded, setIsExpanded] = useState(false)
-
-  const handleClick = () => {
-    setIsExpanded(!isExpanded)
-  }
+  const [isExpanded, setIsExpanded] = React.useState(false)
 
   return (
     <Grid container className={classes.root}>
@@ -61,7 +57,7 @@ const Header = ({ classes, home = Home, children, items }: Props) => {
         {isExpanded ? (
           <ExpandedSearch isExpanded={isExpanded} />
         ) : (
-          <NormalSearch handleClick={handleClick} />
+          <NormalSearch isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         )}
       </Grid>
       <Grid item xs={12} md={4} className={classes.linkContainer}>

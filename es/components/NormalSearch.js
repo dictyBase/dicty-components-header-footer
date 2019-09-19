@@ -11,10 +11,14 @@ import Search from "@material-ui/icons/Search";
  * NormalSearch handles the unexpanded appearance of the search box.
  */
 
-var NormalSearch = function NormalSearch(props) {
-  var classes = props.classes,
-      handleClick = props.handleClick;
+var NormalSearch = function NormalSearch(_ref) {
+  var classes = _ref.classes,
+      isExpanded = _ref.isExpanded,
+      setIsExpanded = _ref.setIsExpanded;
 
+  var handleClick = function handleClick() {
+    setIsExpanded(!isExpanded);
+  };
 
   return React.createElement(
     FormControl,

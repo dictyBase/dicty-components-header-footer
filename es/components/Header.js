@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../images/logo.png";
 import Link from "../styles/Link";
 import { headerStyles as styles } from "../styles/headerStyles";
@@ -22,13 +22,9 @@ var Header = function Header(_ref) {
       children = _ref.children,
       items = _ref.items;
 
-  var _useState = useState(false),
-      isExpanded = _useState[0],
-      setIsExpanded = _useState[1];
-
-  var handleClick = function handleClick() {
-    setIsExpanded(!isExpanded);
-  };
+  var _React$useState = React.useState(false),
+      isExpanded = _React$useState[0],
+      setIsExpanded = _React$useState[1];
 
   return React.createElement(
     Grid,
@@ -62,7 +58,7 @@ var Header = function Header(_ref) {
     React.createElement(
       Grid,
       { item: true, xs: 12, md: 5, lg: 4, className: classes.searchContainer },
-      isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { handleClick: handleClick })
+      isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { isExpanded: isExpanded, setIsExpanded: setIsExpanded })
     ),
     React.createElement(
       Grid,

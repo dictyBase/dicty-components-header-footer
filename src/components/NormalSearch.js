@@ -11,16 +11,20 @@ import Search from "@material-ui/icons/Search"
 type Props = {
   /** Material-UI styling */
   classes: Object,
-  /** Function called when Input is clicked */
-  handleClick: Function,
+  /** Whether search box is expanded */
+  isExpanded: boolean,
+  /** Function to toggle search box expansion */
+  setIsExpanded: Function,
 }
 
 /**
  * NormalSearch handles the unexpanded appearance of the search box.
  */
 
-const NormalSearch = (props: Props) => {
-  const { classes, handleClick } = props
+const NormalSearch = ({ classes, isExpanded, setIsExpanded }: Props) => {
+  const handleClick = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <FormControl className={classes.textField}>
