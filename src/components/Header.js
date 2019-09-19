@@ -1,5 +1,5 @@
 // @flow
-import React, { useState } from "react"
+import React from "react"
 import logo from "../images/logo.png"
 import Link from "../styles/Link"
 import { headerStyles as styles } from "../styles/headerStyles"
@@ -36,33 +36,31 @@ type Props = {
  * on top of the navigation bar in every React web application of [dictyBase](http://dictybase.org).
  */
 
-const Header = (props: Props) => {
-  const [isExpanded, setIsExpanded] = useState(false)
-  const { classes, home = Home, children, items } = props
-
-  const handleClick = () => {
-    setIsExpanded(!isExpanded)
-  }
+const Header = ({ classes, home = Home, children, items }: Props) => {
+  const [isExpanded, setIsExpanded] = React.useState(false)
 
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={12} sm={5} md={3} lg={3} className={classes.logoContainer}>
-        <Link href={home}>
-          <img src={logo} alt="dictyBase logo" className={classes.image} />
-        </Link>
+      <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
+        <Grid container alignItems="flex-start">
+          <Grid item xs={12} className={classes.left}>
+            <Link href={home}>
+              <img src={logo} alt="dictyBase logo" className={classes.image} />
+            </Link>
+            <div className={classes.dcr}>
+              <em>Dicty Community Resource</em>
+            </div>
+          </Grid>
+        </Grid>
       </Grid>
-      {isExpanded ? (
-        <ExpandedSearch isExpanded={isExpanded} />
-      ) : (
-        <NormalSearch handleClick={handleClick} />
-      )}
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={4}
-        lg={4}
-        className={classes.linkContainer}>
+      <Grid item xs={12} md={5} lg={4} className={classes.searchContainer}>
+        {isExpanded ? (
+          <ExpandedSearch isExpanded={isExpanded} />
+        ) : (
+          <NormalSearch isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+        )}
+      </Grid>
+      <Grid item xs={12} md={4} className={classes.linkContainer}>
         {children(items)}
       </Grid>
     </Grid>

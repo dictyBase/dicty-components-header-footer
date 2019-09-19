@@ -2,7 +2,6 @@
 import React from "react"
 import { headerStyles as styles } from "../styles/headerStyles"
 import { withStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
 import Input from "@material-ui/core/Input"
 import InputLabel from "@material-ui/core/InputLabel"
 import InputAdornment from "@material-ui/core/InputAdornment"
@@ -12,34 +11,36 @@ import Search from "@material-ui/icons/Search"
 type Props = {
   /** Material-UI styling */
   classes: Object,
-  /** Function called when Input is clicked */
-  handleClick: Function,
+  /** Whether search box is expanded */
+  isExpanded: boolean,
+  /** Function to toggle search box expansion */
+  setIsExpanded: Function,
 }
 
 /**
  * NormalSearch handles the unexpanded appearance of the search box.
  */
 
-const NormalSearch = (props: Props) => {
-  const { classes, handleClick } = props
+const NormalSearch = ({ classes, isExpanded, setIsExpanded }: Props) => {
+  const handleClick = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   return (
-    <Grid item xs={12} sm={7} md={5} lg={5} className={classes.searchContainer}>
-      <FormControl className={classes.textField}>
-        <InputLabel htmlFor="guided-search">
-          Guided Search (coming soon)
-        </InputLabel>
-        <Input
-          id="input-with-icon-adornment"
-          onClick={handleClick}
-          endAdornment={
-            <InputAdornment className={classes.searchIcon} position="end">
-              <Search />
-            </InputAdornment>
-          }
-        />
-      </FormControl>
-    </Grid>
+    <FormControl className={classes.textField}>
+      <InputLabel className={classes.inputLabel} htmlFor="guided-search">
+        Guided Search (coming soon)
+      </InputLabel>
+      <Input
+        id="input-with-icon-adornment"
+        onClick={handleClick}
+        endAdornment={
+          <InputAdornment className={classes.searchIcon} position="end">
+            <Search />
+          </InputAdornment>
+        }
+      />
+    </FormControl>
   )
 }
 
