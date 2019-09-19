@@ -1,7 +1,6 @@
 import React from "react";
 import { headerStyles as styles } from "../styles/headerStyles";
 import { withStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -22,40 +21,30 @@ var ExpandedSearch = function ExpandedSearch(props) {
     Grow,
     { "in": isExpanded, timeout: 500, style: { opacity: 1 } },
     React.createElement(
-      Grid,
-      {
-        item: true,
-        xs: 12,
-        sm: 7,
-        md: 4,
-        lg: 4,
-        className: classes.searchContainer },
+      FormControl,
+      { className: classes.textFieldExpanded },
       React.createElement(
-        FormControl,
-        { className: classes.textFieldExpanded },
-        React.createElement(
-          InputLabel,
-          {
-            htmlFor: "guided-search",
-            classes: {
-              root: classes.searchLabel,
-              focused: classes.searchFocused
-            } },
-          "Guided Search"
-        ),
-        React.createElement(Input, {
+        InputLabel,
+        {
+          htmlFor: "guided-search",
           classes: {
-            underline: classes.searchUnderline
-          },
-          id: "input-with-icon-adornment",
-          autoFocus: true,
-          endAdornment: React.createElement(
-            InputAdornment,
-            { className: classes.searchIcon, position: "end" },
-            React.createElement(Search, null)
-          )
-        })
-      )
+            root: classes.searchLabel,
+            focused: classes.searchFocused
+          } },
+        "Guided Search (coming soon)"
+      ),
+      React.createElement(Input, {
+        classes: {
+          underline: classes.searchUnderline
+        },
+        id: "input-with-icon-adornment",
+        autoFocus: true,
+        endAdornment: React.createElement(
+          InputAdornment,
+          { className: classes.searchIcon, position: "end" },
+          React.createElement(Search, null)
+        )
+      })
     )
   );
 };

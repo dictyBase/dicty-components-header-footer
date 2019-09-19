@@ -11,28 +11,30 @@ export const headerStyles = theme => ({
     fontSize: "1.1rem",
     // color: "#004080"
     color: "#142a70",
-    paddingTop: "38px",
+    paddingTop: "25px",
   },
   left: {
     display: "flex",
     alignItems: "center",
   },
   image: {
-    maxWidth: 220,
-    height: 78,
+    maxWidth: 180,
+    // height: 78,
   },
   searchContainer: {
     display: "flex",
     justifyContent: "center",
   },
+  inputLabel: {
+    fontSize: "12px",
+  },
   textField: {
     marginTop: 20,
-    width: "50%",
     paddingBottom: 0,
   },
   textFieldExpanded: {
     marginTop: 20,
-    width: "75%",
+    width: "60%",
     paddingBottom: 0,
   },
   linkContainer: {
@@ -43,6 +45,7 @@ export const headerStyles = theme => ({
     fontSize: "0.8em",
   },
   searchLabel: {
+    fontSize: "13px",
     "&$searchFocused": {
       color: "#004080",
     },
@@ -56,10 +59,14 @@ export const headerStyles = theme => ({
   searchIcon: {
     color: "#004080",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
+    left: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
     textField: {
       marginTop: 0,
-      width: "85%",
     },
     textFieldExpanded: {
       marginTop: 0,
@@ -67,19 +74,10 @@ export const headerStyles = theme => ({
     logoContainer: {
       display: "flex",
       justifyContent: "center",
+      textAlign: "center",
     },
     linkContainer: {
       justifyContent: "center",
-    },
-  },
-  [theme.breakpoints.only("sm")]: {
-    searchContainer: {
-      marginTop: 12,
-    },
-  },
-  [theme.breakpoints.up("sm")]: {
-    textField: {
-      marginTop: 20,
     },
   },
 })

@@ -15,17 +15,16 @@ var Home = "/";
  * on top of the navigation bar in every React web application of [dictyBase](http://dictybase.org).
  */
 
-var Header = function Header(props) {
+var Header = function Header(_ref) {
+  var classes = _ref.classes,
+      _ref$home = _ref.home,
+      home = _ref$home === undefined ? Home : _ref$home,
+      children = _ref.children,
+      items = _ref.items;
+
   var _useState = useState(false),
       isExpanded = _useState[0],
       setIsExpanded = _useState[1];
-
-  var classes = props.classes,
-      _props$home = props.home,
-      home = _props$home === undefined ? Home : _props$home,
-      children = props.children,
-      items = props.items;
-
 
   var handleClick = function handleClick() {
     setIsExpanded(!isExpanded);
@@ -36,7 +35,7 @@ var Header = function Header(props) {
     { container: true, className: classes.root },
     React.createElement(
       Grid,
-      { item: true, xs: 12, sm: 5, md: 3, lg: 4, className: classes.logoContainer },
+      { item: true, xs: 12, lg: 4, className: classes.logoContainer },
       React.createElement(
         Grid,
         { container: true, alignItems: "flex-start" },
@@ -60,16 +59,14 @@ var Header = function Header(props) {
         )
       )
     ),
-    isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { handleClick: handleClick }),
     React.createElement(
       Grid,
-      {
-        item: true,
-        xs: 12,
-        sm: 12,
-        md: 4,
-        lg: 4,
-        className: classes.linkContainer },
+      { item: true, xs: 12, lg: 4, className: classes.searchContainer },
+      isExpanded ? React.createElement(ExpandedSearch, { isExpanded: isExpanded }) : React.createElement(NormalSearch, { handleClick: handleClick })
+    ),
+    React.createElement(
+      Grid,
+      { item: true, xs: 12, lg: 4, className: classes.linkContainer },
       children(items)
     )
   );

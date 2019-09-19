@@ -2,7 +2,6 @@
 import React from "react"
 import { headerStyles as styles } from "../styles/headerStyles"
 import { withStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
 import Input from "@material-ui/core/Input"
 import InputLabel from "@material-ui/core/InputLabel"
 import InputAdornment from "@material-ui/core/InputAdornment"
@@ -26,36 +25,28 @@ const ExpandedSearch = (props: Props) => {
 
   return (
     <Grow in={isExpanded} timeout={500} style={{ opacity: 1 }}>
-      <Grid
-        item
-        xs={12}
-        sm={7}
-        md={4}
-        lg={4}
-        className={classes.searchContainer}>
-        <FormControl className={classes.textFieldExpanded}>
-          <InputLabel
-            htmlFor="guided-search"
-            classes={{
-              root: classes.searchLabel,
-              focused: classes.searchFocused,
-            }}>
-            Guided Search
-          </InputLabel>
-          <Input
-            classes={{
-              underline: classes.searchUnderline,
-            }}
-            id="input-with-icon-adornment"
-            autoFocus
-            endAdornment={
-              <InputAdornment className={classes.searchIcon} position="end">
-                <Search />
-              </InputAdornment>
-            }
-          />
-        </FormControl>
-      </Grid>
+      <FormControl className={classes.textFieldExpanded}>
+        <InputLabel
+          htmlFor="guided-search"
+          classes={{
+            root: classes.searchLabel,
+            focused: classes.searchFocused,
+          }}>
+          Guided Search (coming soon)
+        </InputLabel>
+        <Input
+          classes={{
+            underline: classes.searchUnderline,
+          }}
+          id="input-with-icon-adornment"
+          autoFocus
+          endAdornment={
+            <InputAdornment className={classes.searchIcon} position="end">
+              <Search />
+            </InputAdornment>
+          }
+        />
+      </FormControl>
     </Grow>
   )
 }
