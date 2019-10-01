@@ -108,7 +108,7 @@
     "lint-staged": "^9.2.0",
     "nwb": "^0.23.0",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
+    "react": "^16.10.1",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
