@@ -56,7 +56,24 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 - Run `npm run build` to generate the library.
 - Commit all the changes and either merge to develop or send a pull request.
 
-## Tagging
+## Semantic Versioning
 
-- Run `git tag -a v1.0.0 -m "version 1.0.0"` where the version number is the one that needs to be updated
-- Push tag to branch, i.e. `git push origin v1.0.0`
+This app has been set up to use [semantic-release](https://github.com/semantic-release/semantic-release)
+and [commitizen](https://github.com/commitizen/cz-cli). After adding a new commit
+(`git add ...`), use `npm run cz` and follow the prompts to categorize and provide
+more details about your commit. Once complete, push your changes to whatever branch
+you are working on.
+
+When you are ready to push to prod, you can use `semantic-release` to automate the
+release process:
+
+- Merge your changes into `master`
+- Run `npx semantic-release`
+
+**Important:** you MUST have an env variable stored for `GH_TOKEN` or `GITHUB_TOKEN`
+that contains a GitHub [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
+You can either pass this in manually when you run the script (i.e. `GH_TOKEN=XXX npx semantic-release`)
+or you can [store your env variable locally](https://www.schrodinger.com/kb/1842).
+
+This will look at your most recent commits since the last `git tag` and automatically
+determine the appropriate version number for your release.
