@@ -78,16 +78,18 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/styles": "^4.2.1",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
+    "@semantic-release/git": "^7.0.16",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^9.0.0",
+    "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -114,6 +116,7 @@
     "react-fontawesome": "^1.6.1",
     "react-styleguidist": "^9.1.11",
     "react-test-renderer": "^16.8.6",
+    "semantic-release": "^15.13.24",
     "sinon": "^7.3.2",
     "typeface-roboto": "0.0.75"
   },
@@ -130,5 +133,20 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ],
+    "ci": false,
+    "tagFormat": "${version}",
+    "verifyConditions": [
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ]
   }
 }
