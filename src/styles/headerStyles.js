@@ -1,6 +1,5 @@
 export const headerStyles = theme => ({
   root: {
-    padding: 5,
     fontFamily: "Roboto, sans-serif",
   },
   logoContainer: {

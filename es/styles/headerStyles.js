@@ -3,7 +3,6 @@ export var headerStyles = function headerStyles(theme) {
 
   return _ref = {
     root: {
-      padding: 5,
       fontFamily: "Roboto, sans-serif"
     },
     logoContainer: {
