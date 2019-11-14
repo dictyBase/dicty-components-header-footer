@@ -1,7 +1,7 @@
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 import React from "react";
-import { styled } from "@material-ui/styles";
+import { styled } from "@material-ui/core/styles";
 
 var LinkStyle = styled("a")({
   color: "#004080",

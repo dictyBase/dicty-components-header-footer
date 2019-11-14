@@ -1,5 +1,5 @@
 import React from "react"
-import { styled } from "@material-ui/styles"
+import { styled } from "@material-ui/core/styles"
 
 const LinkStyle = styled("a")({
   color: "#004080",
