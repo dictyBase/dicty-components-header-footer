@@ -97,7 +97,7 @@
     "eslint-plugin-flowtype": "^2.50.3",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.5.0",
     "flow-bin": "^0.111.3",
     "flow-typed": "^2.6.2",
