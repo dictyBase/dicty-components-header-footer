@@ -113,7 +113,7 @@
     "react-dom": "^16.11.0",
     "react-fontawesome": "^1.6.1",
     "react-styleguidist": "^9.1.11",
-    "react-test-renderer": "^16.11.0",
+    "react-test-renderer": "^16.13.0",
     "semantic-release": "^15.13.31",
     "sinon": "^7.3.2",
     "typeface-roboto": "0.0.75"
