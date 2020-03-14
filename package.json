@@ -115,7 +115,7 @@
     "react-styleguidist": "^9.1.11",
     "react-test-renderer": "^16.13.0",
     "semantic-release": "^15.13.31",
-    "sinon": "^9.0.0",
+    "sinon": "^9.0.1",
     "typeface-roboto": "0.0.75"
   },
   "author": "",
