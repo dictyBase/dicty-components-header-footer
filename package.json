@@ -109,7 +109,7 @@
     "nwb": "^0.24.3",
     "prettier": "^1.19.1",
     "react": "^16.13.0",
-    "react-dev-utils": "^10.2.0",
+    "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",
     "react-styleguidist": "^11.0.4",
