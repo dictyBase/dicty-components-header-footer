@@ -107,7 +107,7 @@
     "jss": "^10.1.1",
     "lint-staged": "^10.0.10",
     "nwb": "^0.24.5",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
