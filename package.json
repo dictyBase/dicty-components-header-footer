@@ -18,13 +18,11 @@
     "test:watch": "jest --watch",
     "flow": "flow",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "cz": "git-cz"
+    "styleguide:build": "styleguidist build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
-      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
-      "git add"
+      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write"
     ]
   },
   "husky": {
@@ -81,14 +79,12 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@material-ui/core": "^4.9.11",
-    "@semantic-release/git": "^7.0.18",
+    "@semantic-release/git": "^9.0.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.3.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-react-app": "^9.1.2",
-    "commitizen": "^4.0.4",
-    "cz-conventional-changelog": "^3.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^5.16.0",
@@ -114,37 +110,17 @@
     "react-fontawesome": "^1.7.1",
     "react-styleguidist": "^11.0.5",
     "react-test-renderer": "^16.13.1",
-    "semantic-release": "^15.13.31",
+    "semantic-release": "^17.0.6",
     "sinon": "^9.0.2",
     "typeface-roboto": "0.0.75"
   },
   "author": "",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
   },
   "keywords": [
     "react-component"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
-    ],
-    "ci": false,
-    "tagFormat": "${version}",
-    "verifyConditions": [
-      "@semantic-release/git"
-    ],
-    "publish": [
-      "@semantic-release/github"
-    ]
-  }
+  ]
 }
