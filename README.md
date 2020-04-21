@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](LICENSE)  
 ![GitHub tag](https://img.shields.io/github/v/tag/dictyBase/dicty-components-header-footer)  
-![GitHub action](https://github.com/dictyBase/dicty-components-header-footer/workflows/Node%20CI/badge.svg)
+![GitHub action](https://github.com/dictyBase/dicty-components-header-footer/workflows/Testing/badge.svg)
 [![codecov](https://codecov.io/gh/dictyBase/dicty-components-header-footer/branch/develop/graph/badge.svg)](https://codecov.io/gh/dictyBase/dicty-components-header-footer)  
 [![Dependency Status](https://david-dm.org/dictyBase/dicty-components-header-footer/develop.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-header-footer/develop)
 [![devDependency Status](https://david-dm.org/dictyBase/dicty-components-header-footer/develop/dev-status.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-header-footer/develop?type=dev)  
@@ -47,34 +47,13 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 
 - Clone the `develop` branch of this repository
 - Run `npm install`
-- Create a feature branch (feature/foo) or `bug/foo` or `documentation/foo` or
-  `refactor/foo`, whatever suits the purpose of development
-- To run a demo during development  
-  `npm run start`
-- Write tests in the same folder as the component.
-- At the end of development, `npm run test:run` should pass.
-- Write documentation using `styleguidist` and build it using `npm run styleguide:build`.
-- Run `npm run build` to generate the library.
-- Commit all the changes and either merge to develop or send a pull request.
+- Create a new branch (i.e. `feature/foo-plugin`)
+- Complete any necessary work.
+- If creating a new plugin, there is a [guide](./documentation/bold.md) that
+  walks you through the process using the bold plugin as a guide.
+- Commit all changes and open a pull request. If all checks pass, it is ready
+  to merge to `develop`.
 
-## Semantic Versioning
-
-This app has been set up to use [semantic-release](https://github.com/semantic-release/semantic-release)
-and [commitizen](https://github.com/commitizen/cz-cli). After adding a new commit
-(`git add ...`), use `npm run cz` and follow the prompts to categorize and provide
-more details about your commit. Once complete, push your changes to whatever branch
-you are working on.
-
-When you are ready to push to prod, you can use `semantic-release` to automate the
-release process:
-
-- Merge your changes into `master`
-- Run `npx semantic-release`
-
-**Important:** you MUST have an env variable stored for `GH_TOKEN` or `GITHUB_TOKEN`
-that contains a GitHub [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
-You can either pass this in manually when you run the script (i.e. `GH_TOKEN=XXX npx semantic-release`)
-or you can [store your env variable locally](https://www.schrodinger.com/kb/1842).
-
-This will look at your most recent commits since the last `git tag` and automatically
-determine the appropriate version number for your release.
+If you are ready to cut a new release, you can then merge into `master`. This
+will trigger a GitHub Action that uses `semantic-release` to create a new tag
+automatically.
