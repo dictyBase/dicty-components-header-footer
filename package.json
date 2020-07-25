@@ -94,7 +94,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "flow-bin": "^0.129.0",
+    "flow-bin": "^0.130.0",
     "flow-typed": "^3.2.1",
     "font-awesome": "^4.7.0",
     "husky": "^4.2.5",
