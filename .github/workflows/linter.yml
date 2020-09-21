@@ -16,7 +16,7 @@ jobs:
           node-version: 12.x
       - name: check out code
         uses: actions/checkout@v2
-      - name: yarn install
+      - name: install
         run: yarn install
       - name: eslint
         run: yarn lint
