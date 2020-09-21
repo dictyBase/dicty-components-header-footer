@@ -45,7 +45,7 @@ jobs:
         id: wait-for-testing
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          checkName: Testing / test (pull_request)
+          checkName: Pull Request Testing / test (pull_request)
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: merge
         if: steps.wait-for-testing.outputs.conclusion == 'success'
