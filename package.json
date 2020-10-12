@@ -111,7 +111,7 @@
     "react-test-renderer": "^16.13.1",
     "semantic-release": "^17.1.2",
     "sinon": "^9.1.0",
-    "typeface-roboto": "0.0.75"
+    "typeface-roboto": "1.1.13"
   },
   "author": "",
   "license": "BSD-2-Clause",
