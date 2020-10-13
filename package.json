@@ -19,7 +19,8 @@
     "flow": "flow",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
