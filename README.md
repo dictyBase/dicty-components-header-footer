@@ -31,10 +31,10 @@ This is a React library for displaying the header and footer in all dictyBase we
 
 ## Install
 
-`npm i dictyBase/dicty-components-header-footer`
+`yarn add dictyBase/dicty-components-header-footer`
 
 For a particular version(checks tags/release first)  
- `npm i dictyBase/dicty-components-header-footer#v1.0.0`
+ `yarn add dictyBase/dicty-components-header-footer#v1.0.0`
 
 ## Usage and documentation
 
@@ -46,11 +46,10 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 ## Development
 
 - Clone the `develop` branch of this repository
-- Run `npm install`
+- Run `yarn`
 - Create a new branch (i.e. `feature/foo-plugin`)
 - Complete any necessary work.
-- If creating a new plugin, there is a [guide](./documentation/bold.md) that
-  walks you through the process using the bold plugin as a guide.
+- Update build (`yarn build`).
 - Commit all changes and open a pull request. If all checks pass, it is ready
   to merge to `develop`.
 
