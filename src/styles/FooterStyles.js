@@ -1,4 +1,4 @@
-export const FooterStyles = theme => ({
+export const FooterStyles = (theme) => ({
   root: {
     width: "100%",
     fontFamily: "Roboto, sans-serif",

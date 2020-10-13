@@ -35,7 +35,7 @@ describe("Header", () => {
 
   describe("initial render", () => {
     const wrapper = shallow(
-      <Header items={items}>{items => items.map(generateLinks)}</Header>,
+      <Header items={items}>{(items) => items.map(generateLinks)}</Header>,
     ).dive()
 
     it("renders without crashing", () => {
@@ -50,7 +50,7 @@ describe("Header", () => {
   describe("expanded search box", () => {
     jest.spyOn(React, "useState").mockImplementation(() => [true, jest.fn()])
     const wrapper = shallow(
-      <Header items={items}>{items => items.map(generateLinks)}</Header>,
+      <Header items={items}>{(items) => items.map(generateLinks)}</Header>,
     ).dive()
 
     it("displays ExpandedSearch when isExpanded", () => {

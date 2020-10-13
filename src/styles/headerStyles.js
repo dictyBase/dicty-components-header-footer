@@ -1,4 +1,4 @@
-export const headerStyles = theme => ({
+export const headerStyles = (theme) => ({
   root: {
     fontFamily: "Roboto, sans-serif",
   },
