@@ -110,7 +110,7 @@
     "prettier": "^2.1.2",
     "react": "^16.14.0",
     "react-dev-utils": "^11.0.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-fontawesome": "^1.7.1",
     "react-styleguidist": "^11.1.1",
     "react-test-renderer": "^16.13.1",
