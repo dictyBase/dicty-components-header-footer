@@ -98,7 +98,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "flow-bin": "^0.137.0",
+    "flow-bin": "^0.138.0",
     "flow-typed": "^3.2.1",
     "font-awesome": "^4.7.0",
     "fontsource-roboto": "^3.0.3",
