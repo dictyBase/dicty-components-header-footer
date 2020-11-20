@@ -3,6 +3,7 @@ on: [pull_request]
 jobs:
   automerge:
     runs-on: ubuntu-20.04
+    if: github.actor == 'dependabot[bot]'
     steps:
       - name: wait for unit tests to pass
         uses: fountainhead/action-wait-for-check@v1.0.0
