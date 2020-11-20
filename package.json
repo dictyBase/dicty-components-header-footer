@@ -114,7 +114,7 @@
     "react-fontawesome": "^1.7.1",
     "react-styleguidist": "^11.1.2",
     "react-test-renderer": "^16.14.0",
-    "semantic-release": "^17.2.2",
+    "semantic-release": "^17.2.4",
     "sinon": "^9.2.1"
   },
   "author": "",
