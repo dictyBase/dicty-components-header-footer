@@ -99,7 +99,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "flow-bin": "^0.145.0",
-    "flow-typed": "^3.2.1",
+    "flow-typed": "^3.3.1",
     "font-awesome": "^4.7.0",
     "fontsource-roboto": "^4.0.0",
     "husky": "^4.3.8",
