@@ -1,9 +1,9 @@
 import React from "react";
 declare type ItemType = {
     /** url link */
-    link: string;
+    link?: string;
     /** description of the link that will be displayed */
-    description: string;
+    description?: string;
 };
 declare type FooterItemType = {
     /** The header or title of every footer section */

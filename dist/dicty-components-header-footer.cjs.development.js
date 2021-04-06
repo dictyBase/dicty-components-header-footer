@@ -4,7 +4,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-require('fontsource-roboto');
 var React = _interopDefault(require('react'));
 var styles = require('@material-ui/core/styles');
 var Grid = _interopDefault(require('@material-ui/core/Grid'));
@@ -216,18 +215,107 @@ var NormalSearch = function NormalSearch(_ref) {
 
 var NormalSearch$1 = /*#__PURE__*/styles.withStyles(headerStyles)(NormalSearch);
 
+var useStyles = /*#__PURE__*/styles.makeStyles(function (theme) {
+  var _logoContainer, _dcr, _left, _searchContainer, _textField, _textFieldExpanded, _linkContainer;
+
+  return {
+    root: {
+      fontFamily: "Roboto, sans-serif"
+    },
+    logoContainer: (_logoContainer = {
+      paddingBottom: "0px"
+    }, _logoContainer[theme.breakpoints.down("md")] = {
+      display: "flex",
+      justifyContent: "center",
+      textAlign: "center"
+    }, _logoContainer),
+    dcr: (_dcr = {
+      fontWeight: 400,
+      fontSize: "1.1rem",
+      // color: "#004080"
+      color: "#142a70",
+      paddingTop: "25px"
+    }, _dcr[theme.breakpoints.only("md")] = {
+      paddingLeft: "15px"
+    }, _dcr[theme.breakpoints.down("md")] = {
+      paddingTop: "10px",
+      paddingBottom: "5px"
+    }, _dcr),
+    left: (_left = {
+      display: "flex",
+      alignItems: "center"
+    }, _left[theme.breakpoints.down("sm")] = {
+      display: "inline-block"
+    }, _left[theme.breakpoints.only("md")] = {
+      display: "inline-block",
+      textAlign: "left"
+    }, _left),
+    image: {
+      maxWidth: "180px"
+    },
+    searchContainer: (_searchContainer = {
+      display: "flex",
+      justifyContent: "center"
+    }, _searchContainer[theme.breakpoints.only("md")] = {
+      alignItems: "center"
+    }, _searchContainer),
+    inputLabel: {
+      fontSize: "12px"
+    },
+    textField: (_textField = {
+      marginTop: "20px",
+      paddingBottom: "0px"
+    }, _textField[theme.breakpoints.down("md")] = {
+      marginTop: "0px"
+    }, _textField),
+    textFieldExpanded: (_textFieldExpanded = {
+      marginTop: "20px",
+      width: "60%",
+      paddingBottom: "0px"
+    }, _textFieldExpanded[theme.breakpoints.only("sm")] = {
+      width: "40%"
+    }, _textFieldExpanded[theme.breakpoints.down("md")] = {
+      marginTop: "0px"
+    }, _textFieldExpanded),
+    linkContainer: (_linkContainer = {
+      marginTop: "15px",
+      display: "flex",
+      justifyContent: "flex-end",
+      paddingBottom: "0px",
+      fontSize: "0.8em"
+    }, _linkContainer[theme.breakpoints.down("md")] = {
+      justifyContent: "center"
+    }, _linkContainer),
+    searchLabel: {
+      fontSize: "13px",
+      "&$searchFocused": {
+        color: "#004080"
+      }
+    },
+    searchFocused: {},
+    searchUnderline: {
+      "&:after": {
+        borderBottomColor: "#004080"
+      }
+    },
+    searchIcon: {
+      color: "#004080"
+    }
+  };
+}); // set base URL for homepage
+
 var Home = "/";
 /**
  * The `Header` component that will be displayed
- * on top of the navigation bar in every React web application of [dictyBase](http://dictybase.org).
+ * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
  */
 
 var Header = function Header(_ref) {
-  var classes = _ref.classes,
-      _ref$home = _ref.home,
+  var _ref$home = _ref.home,
       home = _ref$home === void 0 ? Home : _ref$home,
       children = _ref.children,
       items = _ref.items;
+  var classes = useStyles();
 
   var _React$useState = React.useState(false),
       isExpanded = _React$useState[0],
@@ -274,10 +362,7 @@ var Header = function Header(_ref) {
     md: 4,
     className: classes.linkContainer
   }, children(items)));
-}; // @ts-ignore
-
-
-var Header$1 = /*#__PURE__*/styles.withStyles(headerStyles)(Header);
+};
 
 var FooterStyles = function FooterStyles(theme) {
   var _ref;
@@ -395,6 +480,6 @@ var Footer = function Footer(props) {
 var Footer$1 = /*#__PURE__*/styles.withStyles(FooterStyles)(Footer);
 
 exports.Footer = Footer$1;
-exports.Header = Header$1;
+exports.Header = Header;
 exports.HeaderLink = Link;
 //# sourceMappingURL=dicty-components-header-footer.cjs.development.js.map
