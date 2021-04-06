@@ -1,4 +1,4 @@
-module.exports = [
+const footerData = [
   [
     {
       header: { description: "Genomes" },
@@ -145,3 +145,5 @@ module.exports = [
     },
   ],
 ]
+
+export default footerData
