@@ -7,8 +7,8 @@ const LinkStyle = styled("a")({
   textDecoration: "none",
 })
 
-const Link = ({ children, ...props }: any) => (
+const HeaderLink = ({ children, ...props }: any) => (
   <LinkStyle {...props}>{children}</LinkStyle>
 )
 
-export default Link
+export default HeaderLink

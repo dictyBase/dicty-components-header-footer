@@ -1,7 +1,65 @@
 import React from "react"
-import { withStyles } from "@material-ui/core/styles"
+import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import { FooterStyles as styles } from "../styles/FooterStyles"
+
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: "100%",
+    fontFamily: "Roboto, sans-serif",
+    background: "#004080",
+    paddingRight: 20,
+    paddingLeft: 20,
+    paddingBottom: 10,
+  },
+  listItem: {
+    margin: 0,
+    padding: 1,
+    listStyle: "none",
+  },
+  headerLink: {
+    textAlign: "left",
+    padding: 0,
+  },
+  subsectionItem: {
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
+  link: {
+    color: "#d8d8d8",
+    fontSize: 11,
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+    },
+  },
+  ulHeader: {
+    color: "#ebe97a",
+    fontSize: 14,
+    textDecoration: "none",
+  },
+  // center text for all items/links at sm/xs breakpoints
+  [theme.breakpoints.down("sm")]: {
+    listItem: {
+      textAlign: "center",
+    },
+    headerLink: {
+      textAlign: "center",
+      padding: 0,
+    },
+  },
+  // tighten up spacing for xs breakpoints
+  [theme.breakpoints.down("xs")]: {
+    root: {
+      padding: 0,
+    },
+    gridItem: {
+      width: "50%",
+    },
+    subsectionItem: {
+      paddingLeft: 0,
+    },
+  },
+}))
 
 type ItemType = {
   /** url link */
@@ -20,8 +78,6 @@ type FooterItemType = {
 type FooterProps = {
   /** List of footer items, inside a nested list */
   items: Array<Array<FooterItemType>>
-  /** Material-UI's classes object */
-  classes: any
 }
 
 /**
@@ -29,8 +85,8 @@ type FooterProps = {
  * at the bottom of every React web application of [dictyBase](http://dictybase.org).
  */
 
-const Footer = (props: FooterProps) => {
-  const { classes, items } = props
+const Footer = ({ items }: FooterProps) => {
+  const classes = useStyles()
 
   const footerItems = (items: Array<ItemType>) =>
     items.map((c, i) => (
@@ -67,5 +123,4 @@ const Footer = (props: FooterProps) => {
   )
 }
 
-// @ts-ignore
-export default withStyles(styles)(Footer)
+export default Footer

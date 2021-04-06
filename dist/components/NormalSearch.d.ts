@@ -1,11 +1,12 @@
-import React from "react";
+/// <reference types="react" />
 declare type Props = {
-    /** Material-UI styling */
-    classes: any;
     /** Whether search box is expanded */
     isExpanded: boolean;
     /** Function to toggle search box expansion */
     setIsExpanded: (arg0: boolean) => void;
 };
-declare const _default: React.ComponentType<Pick<Props, "isExpanded" | "setIsExpanded"> & import("@material-ui/core/styles").StyledComponentProps<string>>;
-export default _default;
+/**
+ * NormalSearch handles the unexpanded appearance of the search box.
+ */
+declare const NormalSearch: ({ isExpanded, setIsExpanded }: Props) => JSX.Element;
+export default NormalSearch;
