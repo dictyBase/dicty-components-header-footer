@@ -4,6 +4,7 @@ import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import ExpandedSearch from "./ExpandedSearch"
 import NormalSearch from "./NormalSearch"
+import { HeaderItem } from "../types"
 
 const useStyles = makeStyles((theme: Theme) => ({
   logoContainer: {
@@ -66,18 +67,9 @@ const useStyles = makeStyles((theme: Theme) => ({
 // set base URL for homepage
 const Home = "/"
 
-type Item = {
-  /** url link */
-  url: string
-  /** FontAwesome icon to be displayed */
-  icon: string
-  /** description of the link that will be displayed */
-  text: string
-}
-
 type Props = {
   /** List of header items */
-  items: Array<Item>
+  items: Array<HeaderItem>
   /** Link for the logo that goes to the home page */
   home?: string
   /** Children react node which renders the links in the header */
