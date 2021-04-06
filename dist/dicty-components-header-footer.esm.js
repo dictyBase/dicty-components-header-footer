@@ -112,6 +112,9 @@ var NormalSearch = function NormalSearch(_ref) {
     htmlFor: "guided-search"
   }, "Guided Search (coming soon)"), React.createElement(Input, {
     id: "input-with-icon-adornment",
+    inputProps: {
+      "aria-label": "search"
+    },
     onClick: handleClick,
     endAdornment: React.createElement(InputAdornment, {
       className: classes.searchIcon,

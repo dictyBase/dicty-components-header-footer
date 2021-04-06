@@ -47,6 +47,7 @@ const NormalSearch = ({ isExpanded, setIsExpanded }: Props) => {
       </InputLabel>
       <Input
         id="input-with-icon-adornment"
+        inputProps={{ "aria-label": "search" }}
         onClick={handleClick}
         endAdornment={
           <InputAdornment className={classes.searchIcon} position="end">
