@@ -10,7 +10,6 @@
 ![GitHub tag](https://img.shields.io/github/v/tag/dictyBase/dicty-components-header-footer)
 ![GitHub action](https://github.com/dictyBase/dicty-components-header-footer/workflows/Node%20CI%20Develop/badge.svg)  
 [![codecov](https://codecov.io/gh/dictyBase/dicty-components-header-footer/branch/develop/graph/badge.svg)](https://codecov.io/gh/dictyBase/dicty-components-header-footer)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dictyBase/dicty-components-header-footer)
 [![Maintainability](https://badgen.net/codeclimate/maintainability/dictyBase/dicty-components-header-footer)](https://codeclimate.com/github/dictyBase/dicty-components-header-footer)  
 ![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-header-footer/develop)  
 [![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=10024726&icde=0)
@@ -26,7 +25,7 @@ For a particular version(checks tags/release first)
 
 ## Usage and documentation
 
-`import {Header, Footer} from "dicty-components-header-footer`
+`import { Header, Footer } from "dicty-components-header-footer`
 
 Documentation of `Header` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Header).  
 Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components-header-footer/#!/Footer).
@@ -36,10 +35,10 @@ Documentation of `Footer` is [here](https://dictybase.github.io/dicty-components
 - Clone the `develop` branch of this repository
 - Run `yarn`
 - Create a new branch (i.e. `feature/foo-plugin`)
-- Complete any necessary work.
-- Update build (`yarn build`).
+- Complete any necessary work
+- Update build (`yarn build`)
 - Commit all changes and open a pull request. If all checks pass, it is ready
-  to merge to `develop`.
+  to merge to `develop`
 
 If you are ready to cut a new release, you can then merge into `master`. This
 will trigger a GitHub Action that uses `semantic-release` to create a new tag
