@@ -6,9 +6,6 @@ import ExpandedSearch from "./ExpandedSearch"
 import NormalSearch from "./NormalSearch"
 
 const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    fontFamily: "Roboto, sans-serif",
-  },
   logoContainer: {
     paddingBottom: "0px",
     [theme.breakpoints.down("md")]: {
@@ -97,7 +94,7 @@ const Header = ({ home = Home, children, items }: Props) => {
   const [isExpanded, setIsExpanded] = React.useState(false)
 
   return (
-    <Grid container className={classes.root}>
+    <Grid container>
       <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
         <Grid container alignItems="flex-start">
           <Grid item xs={12} className={classes.left}>

@@ -5,7 +5,6 @@ import Grid from "@material-ui/core/Grid"
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: "100%",
-    fontFamily: "Roboto, sans-serif",
     background: "#004080",
     paddingRight: 20,
     paddingLeft: 20,

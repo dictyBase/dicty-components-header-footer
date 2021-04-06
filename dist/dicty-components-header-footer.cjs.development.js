@@ -130,9 +130,6 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
   var _logoContainer, _dcr, _left, _searchContainer, _linkContainer;
 
   return {
-    root: {
-      fontFamily: "Roboto, sans-serif"
-    },
     logoContainer: (_logoContainer = {
       paddingBottom: "0px"
     }, _logoContainer[theme.breakpoints.down("md")] = {
@@ -203,8 +200,7 @@ var Header = function Header(_ref) {
       setIsExpanded = _React$useState[1];
 
   return React.createElement(Grid, {
-    container: true,
-    className: classes.root
+    container: true
   }, React.createElement(Grid, {
     item: true,
     xs: 12,
@@ -252,7 +248,6 @@ var useStyles$3 = /*#__PURE__*/styles.makeStyles(function (theme) {
   return _ref = {
     root: {
       width: "100%",
-      fontFamily: "Roboto, sans-serif",
       background: "#004080",
       paddingRight: 20,
       paddingLeft: 20,

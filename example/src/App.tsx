@@ -23,7 +23,7 @@ const generateLinks = (link: Link, i: number) =>
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div style={{ fontFamily: "Roboto, sans-serif" }}>
       <Header items={headerLinks}>
         {(items: Link[]) => items.map(generateLinks)}
       </Header>
@@ -32,7 +32,7 @@ const App = () => {
       <br />
       <br />
       <Footer items={footerLinks} />
-    </React.Fragment>
+    </div>
   )
 }
 
