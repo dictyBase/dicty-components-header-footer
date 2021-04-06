@@ -1,27 +1,23 @@
 {
   "name": "dicty-components-header-footer",
   "version": "0.0.0-semantically-released",
-  "description": "React component for header and footer of dictyBase web applications",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "description": "React library for the header and footer of dictyBase web applications",
+  "main": "dist/index.js",
+  "module": "dist/dicty-components-header-footer.esm.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
+    "dist"
   ],
   "scripts": {
-    "build": "nwb build-react-component --no-demo --copy-files",
-    "clean": "nwb clean-module && nwb clean-demo",
-    "start": "nwb serve-react-demo",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "flow": "flow",
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "test-coverage": "tsdx test --passWithNoTests --coverage",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build && husky install",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "semantic-release": "semantic-release",
-    "prepare": "husky install"
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
@@ -45,81 +41,33 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "flow": true,
-          "typescript": false
-        }
-      ],
-      [
-        "@babel/env"
-      ],
-      "@babel/react"
-    ]
-  },
   "dependencies": {
     "@material-ui/icons": "^4.11.2"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.11.3",
-    "fontsource-roboto": "^4.0.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "@material-ui/core": ">=4.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
-    "@babel/preset-react": "^7.13.13",
     "@material-ui/core": "^4.11.3",
+    "@rollup/plugin-image": "^2.0.6",
     "@semantic-release/git": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "@typescript-eslint/parser": "^2.31.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.6.3",
-    "babel-loader": "^8.2.2",
-    "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-preset-react-app": "^10.0.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^4.7.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "flow-bin": "^0.148.0",
-    "flow-typed": "^3.3.1",
     "font-awesome": "^4.7.0",
     "fontsource-roboto": "^4.0.0",
     "husky": "6",
-    "jest": "^26.6.3",
-    "jss": "^10.6.0",
-    "lint-staged": "^10.5.4",
-    "nwb": "^0.23.0",
     "prettier": "^2.2.1",
     "react": "^16.14.0",
-    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.14.0",
     "react-fontawesome": "^1.7.1",
     "react-styleguidist": "^11.1.6",
-    "react-test-renderer": "^16.14.0",
+    "rollup-plugin-static-files": "^0.2.0",
     "semantic-release": "^17.4.2",
-    "sinon": "^10.0.0"
+    "tsdx": "^0.14.1"
   },
-  "author": "",
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
-  },
-  "keywords": [
-    "react-component"
-  ]
+  }
 }
