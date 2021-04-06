@@ -7,7 +7,5 @@ declare type HeaderItem = {
     icon: React.ReactElement<SvgIconProps>;
     /** description of the link that will be displayed */
     text: string;
-    /** Indicates if link should use React Router */
-    isRouter?: boolean;
 };
 export type { HeaderItem };
