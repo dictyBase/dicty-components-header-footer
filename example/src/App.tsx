@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(0.5),
   },
+  footer: {
+    fontFamily: "Roboto, sans-serif",
+  },
 }))
 
 const App = () => {
@@ -45,7 +48,9 @@ const App = () => {
           }
         </Header>
       </div>
-      <Footer items={footerLinks} />
+      <div className={classes.footer}>
+        <Footer items={footerLinks} />
+      </div>
     </React.Fragment>
   )
 }
