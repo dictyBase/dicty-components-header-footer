@@ -5,6 +5,7 @@
   "dependencies": {
     "@fontsource/roboto": "^4.2.2",
     "@material-ui/core": "file:../node_modules/@material-ui/core",
+    "@material-ui/icons": "file:../node_modules/@material-ui/icons",
     "dicty-components-header-footer": "file:..",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
