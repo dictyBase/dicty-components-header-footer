@@ -1,16 +1,109 @@
 import React from "react"
 import logo from "../images/logo.png"
 import Link from "../styles/Link"
-import { headerStyles as styles } from "../styles/headerStyles"
-import { withStyles } from "@material-ui/core/styles"
+import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import ExpandedSearch from "./ExpandedSearch"
 import NormalSearch from "./NormalSearch"
 
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    fontFamily: "Roboto, sans-serif",
+  },
+  logoContainer: {
+    paddingBottom: "0px",
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      justifyContent: "center",
+      textAlign: "center",
+    },
+  },
+  dcr: {
+    fontWeight: 400,
+    fontSize: "1.1rem",
+    // color: "#004080"
+    color: "#142a70",
+    paddingTop: "25px",
+    [theme.breakpoints.only("md")]: { paddingLeft: "15px" },
+    [theme.breakpoints.down("md")]: {
+      paddingTop: "10px",
+      paddingBottom: "5px",
+    },
+  },
+  left: {
+    display: "flex",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      display: "inline-block",
+    },
+    [theme.breakpoints.only("md")]: {
+      display: "inline-block",
+      textAlign: "left",
+    },
+  },
+  image: {
+    maxWidth: "180px",
+    // height: 78,
+  },
+  searchContainer: {
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.only("md")]: {
+      alignItems: "center",
+    },
+  },
+  inputLabel: {
+    fontSize: "12px",
+  },
+  textField: {
+    marginTop: "20px",
+    paddingBottom: "0px",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "0px",
+    },
+  },
+  textFieldExpanded: {
+    marginTop: "20px",
+    width: "60%",
+    paddingBottom: "0px",
+    [theme.breakpoints.only("sm")]: {
+      width: "40%",
+    },
+    [theme.breakpoints.down("md")]: {
+      marginTop: "0px",
+    },
+  },
+  linkContainer: {
+    marginTop: "15px",
+    display: "flex",
+    justifyContent: "flex-end",
+    paddingBottom: "0px",
+    fontSize: "0.8em",
+    [theme.breakpoints.down("md")]: {
+      justifyContent: "center",
+    },
+  },
+  searchLabel: {
+    fontSize: "13px",
+    "&$searchFocused": {
+      color: "#004080",
+    },
+  },
+  searchFocused: {},
+  searchUnderline: {
+    "&:after": {
+      borderBottomColor: "#004080",
+    },
+  },
+  searchIcon: {
+    color: "#004080",
+  },
+}))
+
 // set base URL for homepage
 const Home = "/"
 
-type ItemType = {
+type Item = {
   /** url link */
   url: string
   /** FontAwesome icon to be displayed */
@@ -20,22 +113,21 @@ type ItemType = {
 }
 
 type Props = {
-  /** List of header items, inside an array */
-  items: Array<ItemType>
-  /** Link for the logo, that goes to the home page */
+  /** List of header items */
+  items: Array<Item>
+  /** Link for the logo that goes to the home page */
   home?: string
   /** Children react node which renders the links in the header */
   children: any
-  /** Material-UI's classes object for styling */
-  classes: any
 }
 
 /**
  * The `Header` component that will be displayed
- * on top of the navigation bar in every React web application of [dictyBase](http://dictybase.org).
+ * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
  */
 
-const Header = ({ classes, home = Home, children, items }: Props) => {
+const Header = ({ home = Home, children, items }: Props) => {
+  const classes = useStyles()
   const [isExpanded, setIsExpanded] = React.useState(false)
 
   return (
@@ -66,5 +158,4 @@ const Header = ({ classes, home = Home, children, items }: Props) => {
   )
 }
 
-// @ts-ignore
-export default withStyles(styles)(Header)
+export default Header

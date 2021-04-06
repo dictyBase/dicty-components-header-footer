@@ -5,9 +5,9 @@ import { FooterStyles as styles } from "../styles/FooterStyles"
 
 type ItemType = {
   /** url link */
-  link: string
+  link?: string
   /** description of the link that will be displayed */
-  description: string
+  description?: string
 }
 
 type FooterItemType = {
