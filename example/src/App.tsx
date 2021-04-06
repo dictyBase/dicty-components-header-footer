@@ -14,6 +14,7 @@ type Link = {
 const useStyles = makeStyles((theme: Theme) => ({
   header: {
     fontFamily: "Roboto, sans-serif",
+    marginBottom: theme.spacing(20),
   },
   headerLink: {
     textAlign: "center",
@@ -28,26 +29,24 @@ const App = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.header}>
-      <Header items={headerLinks}>
-        {(items: Link[]) =>
-          items.map((link: Link, i: number) => (
-            <a key={i} href={link.url} className={classes.headerLink}>
-              <span>
-                {link.icon}
-                <br />
-                {link.text}
-              </span>
-            </a>
-          ))
-        }
-      </Header>
-      <br />
-      <br />
-      <br />
-      <br />
+    <React.Fragment>
+      <div className={classes.header}>
+        <Header items={headerLinks}>
+          {(items: Link[]) =>
+            items.map((link: Link, i: number) => (
+              <a key={i} href={link.url} className={classes.headerLink}>
+                <span>
+                  {link.icon}
+                  <br />
+                  {link.text}
+                </span>
+              </a>
+            ))
+          }
+        </Header>
+      </div>
       <Footer items={footerLinks} />
-    </div>
+    </React.Fragment>
   )
 }
 
