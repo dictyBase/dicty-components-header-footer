@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 declare type ItemType = {
     /** url link */
     link?: string;
@@ -14,8 +14,10 @@ declare type FooterItemType = {
 declare type FooterProps = {
     /** List of footer items, inside a nested list */
     items: Array<Array<FooterItemType>>;
-    /** Material-UI's classes object */
-    classes: any;
 };
-declare const _default: React.ComponentType<Pick<FooterProps, "items"> & import("@material-ui/core/styles").StyledComponentProps<string>>;
-export default _default;
+/**
+ * The `Footer` component that will be displayed
+ * at the bottom of every React web application of [dictyBase](http://dictybase.org).
+ */
+declare const Footer: ({ items }: FooterProps) => JSX.Element;
+export default Footer;

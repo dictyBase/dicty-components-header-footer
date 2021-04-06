@@ -1,6 +1,5 @@
 import React from "react"
 import logo from "../images/logo.png"
-import Link from "../styles/Link"
 import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import ExpandedSearch from "./ExpandedSearch"
@@ -41,6 +40,9 @@ const useStyles = makeStyles((theme: Theme) => ({
       textAlign: "left",
     },
   },
+  logo: {
+    padding: theme.spacing(1.5),
+  },
   image: {
     maxWidth: "180px",
     // height: 78,
@@ -52,27 +54,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       alignItems: "center",
     },
   },
-  inputLabel: {
-    fontSize: "12px",
-  },
-  textField: {
-    marginTop: "20px",
-    paddingBottom: "0px",
-    [theme.breakpoints.down("md")]: {
-      marginTop: "0px",
-    },
-  },
-  textFieldExpanded: {
-    marginTop: "20px",
-    width: "60%",
-    paddingBottom: "0px",
-    [theme.breakpoints.only("sm")]: {
-      width: "40%",
-    },
-    [theme.breakpoints.down("md")]: {
-      marginTop: "0px",
-    },
-  },
   linkContainer: {
     marginTop: "15px",
     display: "flex",
@@ -82,21 +63,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down("md")]: {
       justifyContent: "center",
     },
-  },
-  searchLabel: {
-    fontSize: "13px",
-    "&$searchFocused": {
-      color: "#004080",
-    },
-  },
-  searchFocused: {},
-  searchUnderline: {
-    "&:after": {
-      borderBottomColor: "#004080",
-    },
-  },
-  searchIcon: {
-    color: "#004080",
   },
 }))
 
@@ -135,9 +101,9 @@ const Header = ({ home = Home, children, items }: Props) => {
       <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
         <Grid container alignItems="flex-start">
           <Grid item xs={12} className={classes.left}>
-            <Link href={home}>
+            <a className={classes.logo} href={home}>
               <img src={logo} alt="dictyBase logo" className={classes.image} />
-            </Link>
+            </a>
             <div className={classes.dcr}>
               <em>Dicty Community Resource</em>
             </div>

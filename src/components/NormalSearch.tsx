@@ -1,15 +1,28 @@
 import React from "react"
-import { headerStyles as styles } from "../styles/headerStyles"
-import { withStyles } from "@material-ui/core/styles"
+import { makeStyles, Theme } from "@material-ui/core/styles"
 import Input from "@material-ui/core/Input"
 import InputLabel from "@material-ui/core/InputLabel"
 import InputAdornment from "@material-ui/core/InputAdornment"
 import FormControl from "@material-ui/core/FormControl"
 import Search from "@material-ui/icons/Search"
 
+const useStyles = makeStyles((theme: Theme) => ({
+  textField: {
+    marginTop: "20px",
+    paddingBottom: "0px",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "0px",
+    },
+  },
+  searchIcon: {
+    color: "#004080",
+  },
+  inputLabel: {
+    fontSize: "12px",
+  },
+}))
+
 type Props = {
-  /** Material-UI styling */
-  classes: any
   /** Whether search box is expanded */
   isExpanded: boolean
   /** Function to toggle search box expansion */
@@ -20,7 +33,9 @@ type Props = {
  * NormalSearch handles the unexpanded appearance of the search box.
  */
 
-const NormalSearch = ({ classes, isExpanded, setIsExpanded }: Props) => {
+const NormalSearch = ({ isExpanded, setIsExpanded }: Props) => {
+  const classes = useStyles()
+
   const handleClick = () => {
     setIsExpanded(!isExpanded)
   }
@@ -43,5 +58,4 @@ const NormalSearch = ({ classes, isExpanded, setIsExpanded }: Props) => {
   )
 }
 
-// @ts-ignore
-export default withStyles(styles)(NormalSearch)
+export default NormalSearch
