@@ -142,7 +142,6 @@ var headerStyles = function headerStyles(theme) {
   }, _ref;
 };
 
-// @flow
 /**
  * ExpandedSearch handles the expanded appearance of the search box.
  */
@@ -333,7 +332,6 @@ var FooterStyles = function FooterStyles(theme) {
   }, _ref;
 };
 
-// @flow
 /**
  * The `Footer` component that will be displayed
  * at the bottom of every React web application of [dictyBase](http://dictybase.org).

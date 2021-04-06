@@ -1,4 +1,4 @@
-module.exports = [
+const headerData = [
   {
     url: "/cite",
     icon: "plus",
@@ -21,3 +21,5 @@ module.exports = [
     isRouter: true,
   },
 ]
+
+export default headerData
