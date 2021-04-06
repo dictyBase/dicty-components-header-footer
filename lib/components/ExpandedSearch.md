@@ -1,3 +1,0 @@
-```js
-<ExpandedSearch isExpanded={true} />
-```
