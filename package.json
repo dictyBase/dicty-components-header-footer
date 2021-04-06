@@ -8,6 +8,11 @@
   "files": [
     "dist"
   ],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -18,28 +23,6 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "semantic-release": "semantic-release"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json}": [
-      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write"
-    ]
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/es/",
-      "<rootDir>/lib/"
-    ],
-    "collectCoverageFrom": [
-      "src/components/*.js",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/es/",
-      "!<rootDir>/lib/"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
   },
   "dependencies": {
     "@material-ui/icons": "^4.11.2"
@@ -65,9 +48,21 @@
     "semantic-release": "^17.4.2",
     "tsdx": "^0.14.1"
   },
-  "license": "BSD-2-Clause",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/dist/"
+    ],
+    "collectCoverageFrom": [
+      "src/components/*.{ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/dist/"
+    ]
   }
 }
