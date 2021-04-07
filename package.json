@@ -16,7 +16,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
+    "test": "tsdx test --passWithNoTests --watch",
     "test-coverage": "tsdx test --passWithNoTests --coverage",
     "lint": "tsdx lint",
     "prepare": "tsdx build && husky install",
@@ -34,7 +34,9 @@
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@rollup/plugin-image": "^2.0.6",
+    "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.1",
     "husky": "6",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
@@ -61,6 +63,9 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
-    }
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ]
   }
 }
