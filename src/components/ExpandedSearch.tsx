@@ -63,7 +63,8 @@ const ExpandedSearch = ({ isExpanded }: Props) => {
           classes={{
             underline: classes.searchUnderline,
           }}
-          id="input-with-icon-adornment"
+          id="expanded-search-box"
+          inputProps={{ "aria-label": "expanded search" }}
           autoFocus
           endAdornment={
             <InputAdornment className={classes.searchIcon} position="end">

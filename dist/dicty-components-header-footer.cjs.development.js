@@ -71,7 +71,7 @@ var ExpandedSearch = function ExpandedSearch(_ref) {
     classes: {
       underline: classes.searchUnderline
     },
-    id: "input-with-icon-adornment",
+    id: "expanded-search-box",
     autoFocus: true,
     endAdornment: React.createElement(InputAdornment, {
       className: classes.searchIcon,
@@ -117,7 +117,7 @@ var NormalSearch = function NormalSearch(_ref) {
     className: classes.inputLabel,
     htmlFor: "guided-search"
   }, "Guided Search (coming soon)"), React.createElement(Input, {
-    id: "input-with-icon-adornment",
+    id: "normal-search-box",
     inputProps: {
       "aria-label": "search"
     },
