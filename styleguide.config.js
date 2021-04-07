@@ -1,6 +1,29 @@
 module.exports = {
   styleguideDir: "styleguide",
-  components: "src/**/[A-Z]*.js",
+  title: "dicty-components-header-footer",
   ignore: ["**/*.test.{js,jsx,ts,tsx}", "src/styles/**"],
-  webpackConfig: require("react-scripts/config/webpack.config")("development"),
+  propsParser: require("react-docgen-typescript").withCustomConfig(
+    "./tsconfig.json",
+  ).parse,
+  // Custom webpack - only for Styleguidist
+  webpackConfig: {
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          loader: "ts-loader",
+          options: { configFile: "tsconfig.styleguidist.json" },
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: "file-loader",
+            },
+          ],
+        },
+      ],
+    },
+  },
 }

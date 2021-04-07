@@ -72,6 +72,9 @@ var ExpandedSearch = function ExpandedSearch(_ref) {
       underline: classes.searchUnderline
     },
     id: "expanded-search-box",
+    inputProps: {
+      "aria-label": "expanded search"
+    },
     autoFocus: true,
     endAdornment: React.createElement(InputAdornment, {
       className: classes.searchIcon,
