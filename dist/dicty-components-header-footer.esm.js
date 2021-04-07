@@ -277,7 +277,9 @@ var useStyles$3 = /*#__PURE__*/makeStyles(function (theme) {
     ulHeader: {
       color: "#ebe97a",
       fontSize: 14,
-      textDecoration: "none"
+      textDecoration: "none",
+      listStyle: "none",
+      marginBottom: theme.spacing(1)
     }
   }, _ref[theme.breakpoints.down("sm")] = {
     listItem: {
@@ -310,7 +312,7 @@ var Footer = function Footer(_ref2) {
 
   var footerItems = function footerItems(items) {
     return items.map(function (c, i) {
-      return React.createElement("li", {
+      return React.createElement("div", {
         key: i,
         className: classes.listItem
       }, React.createElement("a", {
@@ -325,13 +327,13 @@ var Footer = function Footer(_ref2) {
       return React.createElement("div", {
         key: i,
         className: classes.subsectionItem
-      }, React.createElement("div", null, React.createElement("ul", {
+      }, React.createElement("ul", {
         className: classes.headerLink
-      }, React.createElement("div", {
+      }, React.createElement("li", {
         className: classes.ulHeader
-      }, c.header.description))), React.createElement("ul", {
+      }, c.header.description), React.createElement("li", {
         className: classes.listItem
-      }, footerItems(c.items)));
+      }, footerItems(c.items))));
     });
   };
 

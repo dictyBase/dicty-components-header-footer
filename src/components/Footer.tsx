@@ -35,6 +35,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: "#ebe97a",
     fontSize: 14,
     textDecoration: "none",
+    listStyle: "none",
+    marginBottom: theme.spacing(1),
   },
   // center text for all items/links at sm/xs breakpoints
   [theme.breakpoints.down("sm")]: {
@@ -89,22 +91,20 @@ const Footer = ({ items }: FooterProps) => {
 
   const footerItems = (items: Array<ItemType>) =>
     items.map((c, i) => (
-      <li key={i} className={classes.listItem}>
+      <div key={i} className={classes.listItem}>
         <a href={c.link} className={classes.link}>
           {c.description}
         </a>
-      </li>
+      </div>
     ))
 
   const footerSubSections = (items: Array<FooterItemType>) =>
     items.map((c, i) => (
       <div key={i} className={classes.subsectionItem}>
-        <div>
-          <ul className={classes.headerLink}>
-            <div className={classes.ulHeader}>{c.header.description}</div>
-          </ul>
-        </div>
-        <ul className={classes.listItem}>{footerItems(c.items)}</ul>
+        <ul className={classes.headerLink}>
+          <li className={classes.ulHeader}>{c.header.description}</li>
+          <li className={classes.listItem}>{footerItems(c.items)}</li>
+        </ul>
       </div>
     ))
 
