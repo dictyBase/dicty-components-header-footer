@@ -3,7 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description": "React library for the header and footer of dictyBase web applications",
   "main": "dist/index.js",
-  "module": "dist/dicty-components-header-footer.esm.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
@@ -20,8 +20,8 @@
     "test-coverage": "tsdx test --passWithNoTests --coverage",
     "lint": "tsdx lint",
     "prepare": "tsdx build && husky install",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
+    "styleguide": "FAST_REFRESH=false styleguidist server",
+    "styleguide:build": "FAST_REFRESH=false styleguidist build",
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {
@@ -37,13 +37,17 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^13.1.1",
+    "file-loader": "^6.2.0",
     "husky": "6",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "react": "^16.14.0",
+    "react-docgen-typescript": "^1.22.0",
     "react-dom": "^16.14.0",
     "react-styleguidist": "^11.1.6",
-    "tsdx": "^0.14.1"
+    "ts-loader": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "webpack": "4"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
