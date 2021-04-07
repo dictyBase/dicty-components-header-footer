@@ -46,7 +46,7 @@ const NormalSearch = ({ isExpanded, setIsExpanded }: Props) => {
         Guided Search (coming soon)
       </InputLabel>
       <Input
-        id="input-with-icon-adornment"
+        id="normal-search-box"
         inputProps={{ "aria-label": "search" }}
         onClick={handleClick}
         endAdornment={
