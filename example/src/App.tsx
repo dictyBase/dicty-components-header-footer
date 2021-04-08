@@ -2,6 +2,8 @@ import React from "react"
 import { Header, Footer } from "dicty-components-header-footer"
 import { makeStyles, Theme } from "@material-ui/core/styles"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
+import Container from "@material-ui/core/Container"
+import CondensedFooter from "./CondensedFooter"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
 
@@ -14,7 +16,7 @@ type Link = {
 const useStyles = makeStyles((theme: Theme) => ({
   header: {
     fontFamily: "Roboto, sans-serif",
-    marginBottom: theme.spacing(20),
+    marginBottom: theme.spacing(15),
   },
   headerLink: {
     textAlign: "center",
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   footer: {
     fontFamily: "Roboto, sans-serif",
+    marginBottom: theme.spacing(10),
   },
 }))
 
@@ -51,6 +54,9 @@ const App = () => {
       <div className={classes.footer}>
         <Footer items={footerLinks} />
       </div>
+      <Container>
+        <CondensedFooter />
+      </Container>
     </React.Fragment>
   )
 }
