@@ -92,7 +92,9 @@ const LightFooterDCR = () => {
       <Divider />
       <Grid container justify="center">
         <Grid item container justify="center" className={classes.dcr}>
-          <img className={classes.logo} src={logo} alt="dictyBase logo" />
+          <a href="/">
+            <img className={classes.logo} src={logo} alt="dictyBase logo" />
+          </a>
         </Grid>
         {footerSections(footerLinks)}
       </Grid>
