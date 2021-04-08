@@ -39,21 +39,6 @@ const links = [
   },
 ]
 
-// const support = [
-//   {
-//     url: "/",
-//     description: "NIH",
-//   },
-//   {
-//     url: "/",
-//     description: "GMOD",
-//   },
-//   {
-//     url: "/",
-//     description: "Gene Ontology",
-//   },
-// ]
-
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
     marginTop: theme.spacing(2),
