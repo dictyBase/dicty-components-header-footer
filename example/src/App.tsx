@@ -5,6 +5,7 @@ import { SvgIconProps } from "@material-ui/core/SvgIcon"
 import Container from "@material-ui/core/Container"
 import CondensedFooter from "./CondensedFooter"
 import LightFooter from "./LightFooter"
+import LightFooterDCR from "./LightFooterDCR"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
 
@@ -62,6 +63,9 @@ const App = () => {
       </div>
       <div className={classes.footer}>
         <LightFooter />
+      </div>
+      <div className={classes.footer}>
+        <LightFooterDCR />
       </div>
     </React.Fragment>
   )
