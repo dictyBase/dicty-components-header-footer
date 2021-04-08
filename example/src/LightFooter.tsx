@@ -6,6 +6,9 @@ import Typography from "@material-ui/core/Typography"
 import footerLinks from "./data/footer"
 
 const useStyles = makeStyles((theme: Theme) => ({
+  container: {
+    backgroundColor: "#edf2f7",
+  },
   gridItem: {
     [theme.breakpoints.down("xs")]: {
       width: "50%",
@@ -29,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     listStyle: "none",
   },
   link: {
-    color: "rgb(55, 65, 81)",
+    color: "#374151",
     fontSize: "0.8em",
     textDecoration: "none",
     "&:hover": {
@@ -82,7 +85,7 @@ const LightFooter = () => {
   return (
     <React.Fragment>
       <Divider />
-      <Grid container justify="center">
+      <Grid container justify="center" className={classes.container}>
         {footerSections(footerLinks)}
       </Grid>
     </React.Fragment>
