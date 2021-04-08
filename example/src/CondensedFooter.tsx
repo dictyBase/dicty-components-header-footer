@@ -54,13 +54,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: "#142a70",
   },
   link: {
-    color: "#004080",
+    color: "#374151",
     textDecoration: "none",
-    "&:visited": {
-      color: "#004080",
-    },
     "&:hover": {
-      textDecoration: "underline",
+      color: "#004080",
     },
   },
   support: {
