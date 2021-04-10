@@ -4,7 +4,7 @@ import { makeStyles, Theme } from "@material-ui/core/styles"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
 import Container from "@material-ui/core/Container"
 import CondensedFooter from "./CondensedFooter"
-import LightFooter from "./LightFooter"
+import SiteMapFooter from "./SiteMapFooter"
 import LightFooterDCR from "./LightFooterDCR"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
@@ -32,6 +32,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: theme.spacing(8),
   },
 }))
+
+const lightColors = {
+  background: "#edf2f7",
+  listHeader: "#004080",
+  link: "#374151",
+  linkHover: "#004080",
+}
+
+const darkColors = {
+  background: "#004080",
+  listHeader: "#57CAC8",
+  link: "#d8d8d8",
+  linkHover: "#fff",
+}
 
 const App = () => {
   const classes = useStyles()
@@ -62,7 +76,10 @@ const App = () => {
         </Container>
       </div>
       <div className={classes.footer}>
-        <LightFooter />
+        <SiteMapFooter colors={darkColors} />
+      </div>
+      <div className={classes.footer}>
+        <SiteMapFooter colors={lightColors} />
       </div>
       <div className={classes.footer}>
         <LightFooterDCR />

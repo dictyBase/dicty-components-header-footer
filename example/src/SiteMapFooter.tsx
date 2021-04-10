@@ -6,9 +6,9 @@ import Typography from "@material-ui/core/Typography"
 import footerLinks from "./data/footer"
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
-    backgroundColor: "#edf2f7",
-  },
+  container: (props: Props) => ({
+    backgroundColor: props.colors.background,
+  }),
   gridItem: {
     [theme.breakpoints.down("xs")]: {
       width: "50%",
@@ -19,26 +19,26 @@ const useStyles = makeStyles((theme: Theme) => ({
   list: {
     padding: "0px",
   },
-  listHeader: {
-    color: "#004080",
+  listHeader: (props: Props) => ({
+    color: props.colors.listHeader,
     fontSize: "1.2em",
     textDecoration: "none",
     listStyle: "none",
     marginBottom: theme.spacing(1),
-  },
+  }),
   listItem: {
     margin: "0px",
     padding: "0px",
     listStyle: "none",
   },
-  link: {
-    color: "#374151",
+  link: (props: Props) => ({
+    color: props.colors.link,
     fontSize: "0.8em",
     textDecoration: "none",
     "&:hover": {
-      color: "#004080",
+      color: props.colors.linkHover,
     },
-  },
+  }),
 }))
 
 type ItemType = {
@@ -55,8 +55,17 @@ type FooterItemType = {
   items: Array<ItemType>
 }
 
-const LightFooter = () => {
-  const classes = useStyles()
+type Props = {
+  colors: {
+    background: string
+    listHeader: string
+    link: string
+    linkHover: string
+  }
+}
+
+const SiteMapFooter = (props: Props) => {
+  const classes = useStyles(props)
 
   const footerItems = (items: Array<ItemType>) =>
     items.map((c, i) => (
@@ -92,4 +101,4 @@ const LightFooter = () => {
   )
 }
 
-export default LightFooter
+export default SiteMapFooter
