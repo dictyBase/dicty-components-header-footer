@@ -1,114 +1,97 @@
 import React from "react"
-import { makeStyles, Theme } from "@material-ui/core/styles"
+import { makeStyles, Theme as MuiTheme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
+import Divider from "@material-ui/core/Divider"
+import Typography from "@material-ui/core/Typography"
 
-const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    width: "100%",
-    background: "#004080",
-    paddingRight: 20,
-    paddingLeft: 20,
-    paddingBottom: 10,
-  },
-  listItem: {
-    margin: 0,
-    padding: 1,
-    listStyle: "none",
-  },
-  headerLink: {
-    textAlign: "left",
-    padding: 0,
-  },
-  subsectionItem: {
-    paddingLeft: 15,
-    paddingRight: 15,
-  },
-  link: {
-    color: "#d8d8d8",
-    fontSize: 11,
-    textDecoration: "none",
-    "&:hover": {
-      textDecoration: "underline",
+const useStyles = makeStyles((theme: MuiTheme) => ({
+  container: (props: Theme) => ({
+    backgroundColor: props.primary,
+  }),
+  gridItem: {
+    [theme.breakpoints.down("xs")]: {
+      width: "50%",
     },
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
   },
-  ulHeader: {
-    color: "#ebe97a",
-    fontSize: 14,
+  list: {
+    padding: "0px",
+  },
+  listHeader: (props: Theme) => ({
+    color: props.secondary,
+    fontSize: "1.2em",
     textDecoration: "none",
     listStyle: "none",
     marginBottom: theme.spacing(1),
+  }),
+  listItem: {
+    margin: "0px",
+    padding: "0px",
+    listStyle: "none",
   },
-  // center text for all items/links at sm/xs breakpoints
-  [theme.breakpoints.down("sm")]: {
-    listItem: {
-      textAlign: "center",
+  link: (props: Theme) => ({
+    color: props.text,
+    fontSize: "0.8em",
+    textDecoration: "none",
+    "&:hover": {
+      color: theme.palette.getContrastText(props.primary),
+      textDecoration: "underline",
     },
-    headerLink: {
-      textAlign: "center",
-      padding: 0,
-    },
-  },
-  // tighten up spacing for xs breakpoints
-  [theme.breakpoints.down("xs")]: {
-    root: {
-      padding: 0,
-    },
-    gridItem: {
-      width: "50%",
-    },
-    subsectionItem: {
-      paddingLeft: 0,
-    },
-  },
+  }),
 }))
 
-type ItemType = {
+type FooterLink = {
   /** url link */
   link?: string
   /** description of the link that will be displayed */
   description?: string
 }
 
-type FooterItemType = {
+type FooterItem = {
   /** The header or title of every footer section */
-  header: ItemType
+  header: FooterLink
   /** List of entry under the header */
-  items: Array<ItemType>
+  items: Array<FooterLink>
 }
 
-type FooterProps = {
-  /** List of footer items, inside a nested list */
-  items: Array<Array<FooterItemType>>
+type Theme = {
+  /** RGB, hex or CSS color string used as background color for footer and hovered links */
+  primary: string
+  /** RGB, hex or CSS color string used for list headers */
+  secondary: string
+  /** RGB, hex or CSS color string used as primary text color */
+  text: string
 }
 
-/**
- * The `Footer` component that will be displayed
- * at the bottom of every React web application of [dictyBase](https://dictycr.org).
- */
+type Props = {
+  /** Colors used as part of footer theme */
+  theme: Theme
+  /** List of items to display in footer */
+  items: Array<Array<FooterItem>>
+}
 
-const Footer = ({ items }: FooterProps) => {
-  const classes = useStyles()
+const Footer = ({ items, theme }: Props) => {
+  const classes = useStyles(theme)
 
-  const footerItems = (items: Array<ItemType>) =>
+  const footerItems = (items: Array<FooterLink>) =>
     items.map((c, i) => (
-      <div key={i} className={classes.listItem}>
+      <Typography key={i}>
         <a href={c.link} className={classes.link}>
           {c.description}
         </a>
-      </div>
+      </Typography>
     ))
 
-  const footerSubSections = (items: Array<FooterItemType>) =>
+  const footerSubSections = (items: Array<FooterItem>) =>
     items.map((c, i) => (
-      <div key={i} className={classes.subsectionItem}>
-        <ul className={classes.headerLink}>
-          <li className={classes.ulHeader}>{c.header.description}</li>
-          <li className={classes.listItem}>{footerItems(c.items)}</li>
-        </ul>
-      </div>
+      <ul key={i} className={classes.list}>
+        <li className={classes.listHeader}>{c.header.description}</li>
+        <li className={classes.listItem}>{footerItems(c.items)}</li>
+      </ul>
     ))
 
-  const footerSections = (items: Array<Array<FooterItemType>>) =>
+  const footerSections = (items: Props["items"]) =>
     items.map((c, i) => (
       <Grid item key={i} className={classes.gridItem}>
         {footerSubSections(c)}
@@ -116,9 +99,12 @@ const Footer = ({ items }: FooterProps) => {
     ))
 
   return (
-    <Grid container className={classes.root} justify="center">
-      {footerSections(items)}
-    </Grid>
+    <React.Fragment>
+      <Divider />
+      <Grid container justify="center" className={classes.container}>
+        {footerSections(items)}
+      </Grid>
+    </React.Fragment>
   )
 }
 

@@ -245,152 +245,12 @@ var Header = function Header(_ref) {
 };
 
 var useStyles$3 = /*#__PURE__*/makeStyles(function (theme) {
-  var _ref;
-
-  return _ref = {
-    root: {
-      width: "100%",
-      background: "#004080",
-      paddingRight: 20,
-      paddingLeft: 20,
-      paddingBottom: 10
-    },
-    listItem: {
-      margin: 0,
-      padding: 1,
-      listStyle: "none"
-    },
-    headerLink: {
-      textAlign: "left",
-      padding: 0
-    },
-    subsectionItem: {
-      paddingLeft: 15,
-      paddingRight: 15
-    },
-    link: {
-      color: "#d8d8d8",
-      fontSize: 11,
-      textDecoration: "none",
-      "&:hover": {
-        textDecoration: "underline"
-      }
-    },
-    ulHeader: {
-      color: "#ebe97a",
-      fontSize: 14,
-      textDecoration: "none",
-      listStyle: "none",
-      marginBottom: theme.spacing(1)
-    }
-  }, _ref[theme.breakpoints.down("sm")] = {
-    listItem: {
-      textAlign: "center"
-    },
-    headerLink: {
-      textAlign: "center",
-      padding: 0
-    }
-  }, _ref[theme.breakpoints.down("xs")] = {
-    root: {
-      padding: 0
-    },
-    gridItem: {
-      width: "50%"
-    },
-    subsectionItem: {
-      paddingLeft: 0
-    }
-  }, _ref;
-});
-/**
- * The `Footer` component that will be displayed
- * at the bottom of every React web application of [dictyBase](https://dictycr.org).
- */
-
-var Footer = function Footer(_ref2) {
-  var items = _ref2.items;
-  var classes = useStyles$3();
-
-  var footerItems = function footerItems(items) {
-    return items.map(function (c, i) {
-      return React.createElement("div", {
-        key: i,
-        className: classes.listItem
-      }, React.createElement("a", {
-        href: c.link,
-        className: classes.link
-      }, c.description));
-    });
-  };
-
-  var footerSubSections = function footerSubSections(items) {
-    return items.map(function (c, i) {
-      return React.createElement("div", {
-        key: i,
-        className: classes.subsectionItem
-      }, React.createElement("ul", {
-        className: classes.headerLink
-      }, React.createElement("li", {
-        className: classes.ulHeader
-      }, c.header.description), React.createElement("li", {
-        className: classes.listItem
-      }, footerItems(c.items))));
-    });
-  };
-
-  var footerSections = function footerSections(items) {
-    return items.map(function (c, i) {
-      return React.createElement(Grid, {
-        item: true,
-        key: i,
-        className: classes.gridItem
-      }, footerSubSections(c));
-    });
-  };
-
-  return React.createElement(Grid, {
-    container: true,
-    className: classes.root,
-    justify: "center"
-  }, footerSections(items));
-};
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-var LinkStyle = /*#__PURE__*/styled("a")({
-  color: "#004080",
-  padding: "15px",
-  textDecoration: "none"
-});
-
-var HeaderLink = function HeaderLink(_ref) {
-  var children = _ref.children,
-      props = _objectWithoutPropertiesLoose(_ref, ["children"]);
-
-  return React.createElement(LinkStyle, Object.assign({}, props), children);
-};
-
-var useStyles$4 = /*#__PURE__*/makeStyles(function (theme) {
   var _gridItem;
 
   return {
     container: function container(props) {
       return {
-        backgroundColor: props.background
+        backgroundColor: props.primary
       };
     },
     gridItem: (_gridItem = {}, _gridItem[theme.breakpoints.down("xs")] = {
@@ -401,7 +261,7 @@ var useStyles$4 = /*#__PURE__*/makeStyles(function (theme) {
     },
     listHeader: function listHeader(props) {
       return {
-        color: props.listHeader,
+        color: props.secondary,
         fontSize: "1.2em",
         textDecoration: "none",
         listStyle: "none",
@@ -415,21 +275,22 @@ var useStyles$4 = /*#__PURE__*/makeStyles(function (theme) {
     },
     link: function link(props) {
       return {
-        color: props.link,
+        color: props.text,
         fontSize: "0.8em",
         textDecoration: "none",
         "&:hover": {
-          color: props.linkHover
+          color: theme.palette.getContrastText(props.primary),
+          textDecoration: "underline"
         }
       };
     }
   };
 });
 
-var SiteMapFooter = function SiteMapFooter(_ref) {
+var Footer = function Footer(_ref) {
   var items = _ref.items,
-      colors = _ref.colors;
-  var classes = useStyles$4(colors);
+      theme = _ref.theme;
+  var classes = useStyles$3(theme);
 
   var footerItems = function footerItems(items) {
     return items.map(function (c, i) {
@@ -472,5 +333,33 @@ var SiteMapFooter = function SiteMapFooter(_ref) {
   }, footerSections(items)));
 };
 
-export { Footer, Header, HeaderLink, SiteMapFooter };
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+var LinkStyle = /*#__PURE__*/styled("a")({
+  color: "#004080",
+  padding: "15px",
+  textDecoration: "none"
+});
+
+var HeaderLink = function HeaderLink(_ref) {
+  var children = _ref.children,
+      props = _objectWithoutPropertiesLoose(_ref, ["children"]);
+
+  return React.createElement(LinkStyle, Object.assign({}, props), children);
+};
+
+export { Footer, Header, HeaderLink };
 //# sourceMappingURL=dicty-components-header-footer.esm.js.map
