@@ -1,23 +1,29 @@
 /// <reference types="react" />
-declare type ItemType = {
+declare type FooterLink = {
     /** url link */
     link?: string;
     /** description of the link that will be displayed */
     description?: string;
 };
-declare type FooterItemType = {
+declare type FooterItem = {
     /** The header or title of every footer section */
-    header: ItemType;
+    header: FooterLink;
     /** List of entry under the header */
-    items: Array<ItemType>;
+    items: Array<FooterLink>;
 };
-declare type FooterProps = {
-    /** List of footer items, inside a nested list */
-    items: Array<Array<FooterItemType>>;
+declare type Theme = {
+    /** RGB, hex or CSS color string used as background color for footer and hovered links */
+    primary: string;
+    /** RGB, hex or CSS color string used for list headers */
+    secondary: string;
+    /** RGB, hex or CSS color string used as primary text color */
+    text: string;
 };
-/**
- * The `Footer` component that will be displayed
- * at the bottom of every React web application of [dictyBase](https://dictycr.org).
- */
-declare const Footer: ({ items }: FooterProps) => JSX.Element;
+declare type Props = {
+    /** Colors used as part of footer theme */
+    theme: Theme;
+    /** List of items to display in footer */
+    items: Array<Array<FooterItem>>;
+};
+declare const Footer: ({ items, theme }: Props) => JSX.Element;
 export default Footer;

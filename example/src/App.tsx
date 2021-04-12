@@ -4,7 +4,7 @@ import { makeStyles, Theme } from "@material-ui/core/styles"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
 import Container from "@material-ui/core/Container"
 import CondensedFooter from "./CondensedFooter"
-import SiteMapFooter from "./SiteMapFooter"
+import OldFooter from "./OldFooter"
 import LightFooterDCR from "./LightFooterDCR"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
@@ -33,13 +33,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }))
 
-const lightColors = {
+const lightTheme = {
   primary: "#edf2f7",
   secondary: "#004080",
   text: "#374151",
 }
 
-const darkColors = {
+const darkTheme = {
   primary: "#004080",
   secondary: "#57CAC8",
   text: "#d8d8d8",
@@ -66,7 +66,7 @@ const App = () => {
         </Header>
       </div>
       <div className={classes.footer}>
-        <Footer items={footerLinks} />
+        <OldFooter items={footerLinks} />
       </div>
       <div className={classes.footer}>
         <Container>
@@ -74,10 +74,10 @@ const App = () => {
         </Container>
       </div>
       <div className={classes.footer}>
-        <SiteMapFooter items={footerLinks} colors={darkColors} />
+        <Footer items={footerLinks} theme={darkTheme} />
       </div>
       <div className={classes.footer}>
-        <SiteMapFooter items={footerLinks} colors={lightColors} />
+        <Footer items={footerLinks} theme={lightTheme} />
       </div>
       <div className={classes.footer}>
         <LightFooterDCR />
