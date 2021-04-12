@@ -34,17 +34,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 }))
 
 const lightColors = {
-  background: "#edf2f7",
-  listHeader: "#004080",
-  link: "#374151",
-  linkHover: "#004080",
+  primary: "#edf2f7",
+  secondary: "#004080",
+  text: "#374151",
 }
 
 const darkColors = {
-  background: "#004080",
-  listHeader: "#57CAC8",
-  link: "#d8d8d8",
-  linkHover: "#fff",
+  primary: "#004080",
+  secondary: "#57CAC8",
+  text: "#d8d8d8",
 }
 
 const App = () => {
@@ -76,10 +74,10 @@ const App = () => {
         </Container>
       </div>
       <div className={classes.footer}>
-        <SiteMapFooter colors={darkColors} />
+        <SiteMapFooter items={footerLinks} colors={darkColors} />
       </div>
       <div className={classes.footer}>
-        <SiteMapFooter colors={lightColors} />
+        <SiteMapFooter items={footerLinks} colors={lightColors} />
       </div>
       <div className={classes.footer}>
         <LightFooterDCR />
