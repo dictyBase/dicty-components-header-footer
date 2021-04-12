@@ -18,13 +18,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   dcr: {
     fontWeight: 400,
     fontSize: "1.1rem",
-    // color: "#004080"
-    color: "#142a70",
-    paddingTop: "25px",
-    [theme.breakpoints.only("md")]: { paddingLeft: "15px" },
+    color: "#004080",
+    paddingTop: theme.spacing(3),
+    [theme.breakpoints.only("md")]: { paddingLeft: theme.spacing(2) },
     [theme.breakpoints.down("md")]: {
-      paddingTop: "10px",
-      paddingBottom: "5px",
+      paddingTop: theme.spacing(1),
+      paddingBottom: theme.spacing(0.5),
     },
   },
   left: {
@@ -43,7 +42,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   image: {
     maxWidth: "180px",
-    // height: 78,
   },
   searchContainer: {
     display: "flex",
@@ -53,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   linkContainer: {
-    marginTop: "15px",
+    marginTop: theme.spacing(2),
     display: "flex",
     justifyContent: "flex-end",
     paddingBottom: "0px",
@@ -69,19 +67,22 @@ const Home = "/"
 
 type Props = {
   /** List of header items */
-  items: Array<HeaderItem>
+  items: HeaderItem[]
   /** Link for the logo that goes to the home page */
   home?: string
-  /** Children react node which renders the links in the header */
-  children: any
+  /** Render function to display list of links in header */
+  render: ({ items }: { items: HeaderItem[] }) => JSX.Element
 }
+
+// render uses component injections
+// https://americanexpress.io/faccs-are-an-antipattern/
 
 /**
  * The `Header` component that will be displayed
  * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
  */
 
-const Header = ({ home = Home, children, items }: Props) => {
+const Header = ({ home = Home, render: Links, items }: Props) => {
   const classes = useStyles()
   const [isExpanded, setIsExpanded] = React.useState(false)
 
@@ -107,7 +108,7 @@ const Header = ({ home = Home, children, items }: Props) => {
         )}
       </Grid>
       <Grid item xs={12} md={4} className={classes.linkContainer}>
-        {children(items)}
+        <Links items={items} />
       </Grid>
     </Grid>
   )

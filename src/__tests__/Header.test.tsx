@@ -26,18 +26,20 @@ const headerLinks = [
 ]
 
 describe("Header", () => {
-  const MockComponent = () => {
+  const Links = ({ items }: { items: HeaderItem[] }) => {
     return (
-      <Header items={headerLinks}>
-        {(items: HeaderItem[]) =>
-          items.map((link: HeaderItem, i: number) => (
-            <a key={i} href={link.url}>
-              {link.text}
-            </a>
-          ))
-        }
-      </Header>
+      <React.Fragment>
+        {items.map((link: HeaderItem, i: number) => (
+          <a key={i} href={link.url}>
+            {link.text}
+          </a>
+        ))}
+      </React.Fragment>
     )
+  }
+
+  const MockComponent = () => {
+    return <Header render={Links} items={headerLinks} />
   }
 
   it("should render four links", () => {

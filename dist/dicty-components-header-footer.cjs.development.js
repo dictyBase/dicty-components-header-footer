@@ -148,14 +148,13 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
     dcr: (_dcr = {
       fontWeight: 400,
       fontSize: "1.1rem",
-      // color: "#004080"
-      color: "#142a70",
-      paddingTop: "25px"
+      color: "#004080",
+      paddingTop: theme.spacing(3)
     }, _dcr[theme.breakpoints.only("md")] = {
-      paddingLeft: "15px"
+      paddingLeft: theme.spacing(2)
     }, _dcr[theme.breakpoints.down("md")] = {
-      paddingTop: "10px",
-      paddingBottom: "5px"
+      paddingTop: theme.spacing(1),
+      paddingBottom: theme.spacing(0.5)
     }, _dcr),
     left: (_left = {
       display: "flex",
@@ -179,7 +178,7 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
       alignItems: "center"
     }, _searchContainer),
     linkContainer: (_linkContainer = {
-      marginTop: "15px",
+      marginTop: theme.spacing(2),
       display: "flex",
       justifyContent: "flex-end",
       paddingBottom: "0px",
@@ -190,7 +189,9 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
   };
 }); // set base URL for homepage
 
-var Home = "/";
+var Home = "/"; // render uses component injections
+// https://americanexpress.io/faccs-are-an-antipattern/
+
 /**
  * The `Header` component that will be displayed
  * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
@@ -199,7 +200,7 @@ var Home = "/";
 var Header = function Header(_ref) {
   var _ref$home = _ref.home,
       home = _ref$home === void 0 ? Home : _ref$home,
-      children = _ref.children,
+      Links = _ref.render,
       items = _ref.items;
   var classes = useStyles$2();
 
@@ -247,7 +248,9 @@ var Header = function Header(_ref) {
     xs: 12,
     md: 4,
     className: classes.linkContainer
-  }, children(items)));
+  }, React.createElement(Links, {
+    items: items
+  })));
 };
 
 var useStyles$3 = /*#__PURE__*/styles.makeStyles(function (theme) {
