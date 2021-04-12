@@ -45,25 +45,31 @@ const darkTheme = {
   text: "#d8d8d8",
 }
 
+const HeaderLinks = ({ items }: { items: Link[] }) => {
+  const classes = useStyles()
+
+  return (
+    <React.Fragment>
+      {items.map((link: Link, i: number) => (
+        <a key={i} href={link.url} className={classes.headerLink}>
+          <span>
+            {link.icon}
+            <br />
+            {link.text}
+          </span>
+        </a>
+      ))}
+    </React.Fragment>
+  )
+}
+
 const App = () => {
   const classes = useStyles()
 
   return (
     <React.Fragment>
       <div className={classes.header}>
-        <Header items={headerLinks}>
-          {(items: Link[]) =>
-            items.map((link: Link, i: number) => (
-              <a key={i} href={link.url} className={classes.headerLink}>
-                <span>
-                  {link.icon}
-                  <br />
-                  {link.text}
-                </span>
-              </a>
-            ))
-          }
-        </Header>
+        <Header items={headerLinks} render={HeaderLinks} />
       </div>
       <div className={classes.footer}>
         <OldFooter items={footerLinks} />
