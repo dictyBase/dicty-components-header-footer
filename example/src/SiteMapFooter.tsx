@@ -3,11 +3,10 @@ import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Divider from "@material-ui/core/Divider"
 import Typography from "@material-ui/core/Typography"
-import footerLinks from "./data/footer"
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: (props: Props) => ({
-    backgroundColor: props.colors.background,
+  container: (props: Color) => ({
+    backgroundColor: props.primary,
   }),
   gridItem: {
     [theme.breakpoints.down("xs")]: {
@@ -19,8 +18,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   list: {
     padding: "0px",
   },
-  listHeader: (props: Props) => ({
-    color: props.colors.listHeader,
+  listHeader: (props: Color) => ({
+    color: props.secondary,
     fontSize: "1.2em",
     textDecoration: "none",
     listStyle: "none",
@@ -31,43 +30,48 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: "0px",
     listStyle: "none",
   },
-  link: (props: Props) => ({
-    color: props.colors.link,
+  link: (props: Color) => ({
+    color: props.text,
     fontSize: "0.8em",
     textDecoration: "none",
     "&:hover": {
-      color: props.colors.linkHover,
+      color: theme.palette.getContrastText(props.primary),
     },
   }),
 }))
 
-type ItemType = {
+type FooterLink = {
   /** url link */
   link?: string
   /** description of the link that will be displayed */
   description?: string
 }
 
-type FooterItemType = {
+type FooterItem = {
   /** The header or title of every footer section */
-  header: ItemType
+  header: FooterLink
   /** List of entry under the header */
-  items: Array<ItemType>
+  items: Array<FooterLink>
+}
+
+type Color = {
+  /** RGB, hex or CSS color string used as background color for footer and hovered links */
+  primary: string
+  /** RGB, hex or CSS color string used for list headers */
+  secondary: string
+  /** RGB, hex or CSS color string used as primary text color */
+  text: string
 }
 
 type Props = {
-  colors: {
-    background: string
-    listHeader: string
-    link: string
-    linkHover: string
-  }
+  colors: Color
+  items: Array<Array<FooterItem>>
 }
 
-const SiteMapFooter = (props: Props) => {
-  const classes = useStyles(props)
+const SiteMapFooter = ({ items, colors }: Props) => {
+  const classes = useStyles(colors)
 
-  const footerItems = (items: Array<ItemType>) =>
+  const footerItems = (items: Array<FooterLink>) =>
     items.map((c, i) => (
       <Typography key={i}>
         <a href={c.link} className={classes.link}>
@@ -76,7 +80,7 @@ const SiteMapFooter = (props: Props) => {
       </Typography>
     ))
 
-  const footerSubSections = (items: Array<FooterItemType>) =>
+  const footerSubSections = (items: Array<FooterItem>) =>
     items.map((c, i) => (
       <ul key={i} className={classes.list}>
         <li className={classes.listHeader}>{c.header.description}</li>
@@ -84,7 +88,7 @@ const SiteMapFooter = (props: Props) => {
       </ul>
     ))
 
-  const footerSections = (items: Array<Array<FooterItemType>>) =>
+  const footerSections = (items: Props["items"]) =>
     items.map((c, i) => (
       <Grid item key={i} className={classes.gridItem}>
         {footerSubSections(c)}
@@ -95,7 +99,7 @@ const SiteMapFooter = (props: Props) => {
     <React.Fragment>
       <Divider />
       <Grid container justify="center" className={classes.container}>
-        {footerSections(footerLinks)}
+        {footerSections(items)}
       </Grid>
     </React.Fragment>
   )

@@ -83,7 +83,7 @@ type FooterProps = {
 
 /**
  * The `Footer` component that will be displayed
- * at the bottom of every React web application of [dictyBase](http://dictybase.org).
+ * at the bottom of every React web application of [dictyBase](https://dictycr.org).
  */
 
 const Footer = ({ items }: FooterProps) => {
