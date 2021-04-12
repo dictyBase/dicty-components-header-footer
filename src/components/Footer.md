@@ -4,10 +4,11 @@
 const items = [
   [
     {
-      header: { link: "http://yahoo.com", description: "Yahoo" },
+      header: { description: "Random" },
       items: [
         { link: "http://cnn.com", description: "CNN" },
         { link: "http://nytimes.com", description: "Nytimes" },
+        { link: "http://yahoo.com", description: "Yahoo" },
       ],
     },
   ],
@@ -45,5 +46,11 @@ const items = [
   ],
 ]
 
-;<Footer items={items} />
+const theme = {
+  primary: "#004080",
+  secondary: "#57CAC8",
+  text: "#d8d8d8",
+}
+
+;<Footer items={items} theme={theme} />
 ```

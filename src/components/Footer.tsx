@@ -3,6 +3,7 @@ import { makeStyles, Theme as MuiTheme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Divider from "@material-ui/core/Divider"
 import Typography from "@material-ui/core/Typography"
+import { FooterItem, FooterLink, Theme } from "../types"
 
 const useStyles = makeStyles((theme: MuiTheme) => ({
   container: (props: Theme) => ({
@@ -41,34 +42,11 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
   }),
 }))
 
-type FooterLink = {
-  /** url link */
-  link?: string
-  /** description of the link that will be displayed */
-  description?: string
-}
-
-type FooterItem = {
-  /** The header or title of every footer section */
-  header: FooterLink
-  /** List of entry under the header */
-  items: Array<FooterLink>
-}
-
-type Theme = {
-  /** RGB, hex or CSS color string used as background color for footer and hovered links */
-  primary: string
-  /** RGB, hex or CSS color string used for list headers */
-  secondary: string
-  /** RGB, hex or CSS color string used as primary text color */
-  text: string
-}
-
 type Props = {
   /** Colors used as part of footer theme */
   theme: Theme
   /** List of items to display in footer */
-  items: Array<Array<FooterItem>>
+  items: FooterItem[][]
 }
 
 const Footer = ({ items, theme }: Props) => {
