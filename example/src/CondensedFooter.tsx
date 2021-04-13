@@ -54,25 +54,27 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
     color: "#ebe97a",
+    textAlign: "center",
   },
   link: {
     color: "#d8d8d8",
-    textDecoration: "none",
-    "&:hover": {
-      textDecoration: "underline",
+    paddingRight: theme.spacing(0.5),
+    "& a": {
+      color: "#d8d8d8",
+      textDecoration: "none",
+      "&:hover": {
+        textDecoration: "underline",
+      },
     },
   },
   support: {
     marginTop: theme.spacing(1),
   },
-  links: {
-    marginBottom: theme.spacing(2),
-  },
   supportedBy: {
     color: "#d8d8d8",
     marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
-    marginRight: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
 }))
 
@@ -82,20 +84,24 @@ const CondensedFooter = () => {
   return (
     <footer>
       <Grid container justify="center" className={classes.container}>
-        <Grid item className={classes.header}>
+        <Grid item xs={12} className={classes.header}>
           <Typography variant="h6">Dicty Community Resource</Typography>
         </Grid>
-        <Grid item container justify="space-around" className={classes.links}>
-          {links.map((item) => (
-            <a href={item.url} className={classes.link}>
-              {item.description}
-            </a>
-          ))}
-          <Grid item container justify="flex-end">
-            <span className={classes.supportedBy}>
-              <em>Supported by NIH/NIGMS</em>
-            </span>
-          </Grid>
+        <Grid item container justify="center">
+          {links.map((item, index) => {
+            const separator = index ? " • " : ""
+            return (
+              <span key={index} className={classes.link}>
+                {separator}
+                <a href={item.url}>{item.description}</a>
+              </span>
+            )
+          })}
+        </Grid>
+        <Grid item xs={12} container justify="flex-end">
+          <span className={classes.supportedBy}>
+            <em>Supported by NIH/NIGMS</em>
+          </span>
         </Grid>
       </Grid>
     </footer>
