@@ -155,7 +155,7 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
       }, _ref[theme.breakpoints.only("md")] = {
         paddingLeft: theme.spacing(2)
       }, _ref[theme.breakpoints.down("md")] = {
-        paddingTop: theme.spacing(1),
+        paddingTop: "0px",
         paddingBottom: theme.spacing(0.5)
       }, _ref[theme.breakpoints.down("sm")] = {
         justifyContent: "center"

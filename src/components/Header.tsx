@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     paddingTop: theme.spacing(3),
     [theme.breakpoints.only("md")]: { paddingLeft: theme.spacing(2) },
     [theme.breakpoints.down("md")]: {
-      paddingTop: theme.spacing(1),
+      paddingTop: "0px",
       paddingBottom: theme.spacing(0.5),
     },
     [theme.breakpoints.down("sm")]: {
