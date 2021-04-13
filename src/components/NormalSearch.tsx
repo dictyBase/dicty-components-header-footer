@@ -24,10 +24,8 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
 }))
 
 type Props = {
-  /** Whether search box is expanded */
-  isExpanded: boolean
-  /** Function to toggle search box expansion */
-  setIsExpanded: (arg0: boolean) => void
+  /** Function called when user clicks the search box */
+  handleClick: () => void
   /** CSS theme to use in header */
   theme: Theme
 }
@@ -36,12 +34,8 @@ type Props = {
  * NormalSearch handles the unexpanded appearance of the search box.
  */
 
-const NormalSearch = ({ isExpanded, setIsExpanded, theme }: Props) => {
+const NormalSearch = ({ handleClick, theme }: Props) => {
   const classes = useStyles(theme)
-
-  const handleClick = () => {
-    setIsExpanded(!isExpanded)
-  }
 
   return (
     <FormControl className={classes.textField}>

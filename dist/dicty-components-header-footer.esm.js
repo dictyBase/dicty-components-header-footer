@@ -111,15 +111,9 @@ var useStyles$1 = /*#__PURE__*/makeStyles(function (theme) {
  */
 
 var NormalSearch = function NormalSearch(_ref) {
-  var isExpanded = _ref.isExpanded,
-      setIsExpanded = _ref.setIsExpanded,
+  var handleClick = _ref.handleClick,
       theme = _ref.theme;
   var classes = useStyles$1(theme);
-
-  var handleClick = function handleClick() {
-    setIsExpanded(!isExpanded);
-  };
-
   return React.createElement(FormControl, {
     className: classes.textField
   }, React.createElement(InputLabel, {
@@ -220,6 +214,10 @@ var Header = function Header(_ref3) {
       isExpanded = _React$useState[0],
       setIsExpanded = _React$useState[1];
 
+  var handleClick = function handleClick() {
+    return setIsExpanded(!isExpanded);
+  };
+
   return React.createElement(Grid, {
     container: true
   }, React.createElement(Grid, {
@@ -252,8 +250,7 @@ var Header = function Header(_ref3) {
     isExpanded: isExpanded,
     theme: theme
   }) : React.createElement(NormalSearch, {
-    isExpanded: isExpanded,
-    setIsExpanded: setIsExpanded,
+    handleClick: handleClick,
     theme: theme
   })), React.createElement(Grid, {
     item: true,
