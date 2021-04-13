@@ -160,7 +160,7 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
 
       return _ref = {
         fontWeight: 400,
-        fontSize: "1.1rem",
+        fontSize: "1.1em",
         color: props.primary,
         paddingTop: theme.spacing(3)
       }, _ref[theme.breakpoints.only("md")] = {
@@ -170,20 +170,15 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
         paddingBottom: theme.spacing(0.5)
       }, _ref;
     },
-    left: (_left = {
-      display: "flex",
-      alignItems: "center"
-    }, _left[theme.breakpoints.down("sm")] = {
+    left: (_left = {}, _left[theme.breakpoints.down("sm")] = {
       display: "inline-block"
     }, _left[theme.breakpoints.only("md")] = {
       display: "inline-block",
       textAlign: "left"
     }, _left),
     logo: {
+      maxWidth: "180px",
       padding: theme.spacing(1.5)
-    },
-    image: {
-      maxWidth: "180px"
     },
     searchContainer: (_searchContainer = {
       display: "flex",
@@ -196,8 +191,6 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
 
       return _ref2 = {
         marginTop: theme.spacing(2),
-        display: "flex",
-        justifyContent: "flex-end",
         paddingBottom: "0px",
         fontSize: "0.8em"
       }, _ref2[theme.breakpoints.down("md")] = {
@@ -242,27 +235,25 @@ var Header = function Header(_ref3) {
     lg: 4,
     className: classes.logoContainer
   }, React.createElement(Grid, {
-    container: true,
-    alignItems: "flex-start"
-  }, React.createElement(Grid, {
     item: true,
-    xs: 12,
+    container: true,
+    alignItems: "center",
     className: classes.left
   }, React.createElement("a", {
-    className: classes.logo,
     href: home
   }, React.createElement("img", {
     src: img,
     alt: "dictyBase logo",
-    className: classes.image
+    className: classes.logo
   })), React.createElement("div", {
     className: classes.dcr
-  }, React.createElement("em", null, "Dicty Community Resource"))))), React.createElement(Grid, {
+  }, React.createElement("em", null, "Dicty Community Resource")))), React.createElement(Grid, {
     item: true,
+    container: true,
+    justify: "center",
     xs: 12,
     md: 5,
-    lg: 4,
-    className: classes.searchContainer
+    lg: 4
   }, isExpanded ? React.createElement(ExpandedSearch, {
     isExpanded: isExpanded,
     theme: theme
@@ -272,6 +263,8 @@ var Header = function Header(_ref3) {
     theme: theme
   })), React.createElement(Grid, {
     item: true,
+    container: true,
+    justify: "flex-end",
     xs: 12,
     md: 4,
     className: classes.linkContainer
