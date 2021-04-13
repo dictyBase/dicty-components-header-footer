@@ -39,13 +39,6 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     maxWidth: "180px",
     padding: theme.spacing(1.5),
   },
-  searchContainer: {
-    display: "flex",
-    justifyContent: "center",
-    [theme.breakpoints.only("md")]: {
-      alignItems: "center",
-    },
-  },
   linkContainer: (props: Theme) => ({
     marginTop: theme.spacing(2),
     paddingBottom: "0px",
