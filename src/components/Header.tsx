@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
   },
   dcr: (props: Theme) => ({
     fontWeight: 400,
-    fontSize: "1.1rem",
+    fontSize: "1.1em",
     color: props.primary,
     paddingTop: theme.spacing(3),
     [theme.breakpoints.only("md")]: { paddingLeft: theme.spacing(2) },
@@ -27,8 +27,6 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     },
   }),
   left: {
-    display: "flex",
-    alignItems: "center",
     [theme.breakpoints.down("sm")]: {
       display: "inline-block",
     },
@@ -38,10 +36,8 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     },
   },
   logo: {
-    padding: theme.spacing(1.5),
-  },
-  image: {
     maxWidth: "180px",
+    padding: theme.spacing(1.5),
   },
   searchContainer: {
     display: "flex",
@@ -52,8 +48,6 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
   },
   linkContainer: (props: Theme) => ({
     marginTop: theme.spacing(2),
-    display: "flex",
-    justifyContent: "flex-end",
     paddingBottom: "0px",
     fontSize: "0.8em",
     [theme.breakpoints.down("md")]: {
@@ -73,13 +67,13 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
 const Home = "/"
 
 type Props = {
-  /** List of header items */
+  /** List of header items (links) */
   items: HeaderItem[]
   /** Link for the logo that goes to the home page */
   home?: string
   /** Render function to display list of links in header */
   render: ({ items }: { items: HeaderItem[] }) => JSX.Element
-  /** CSS theme to use in header */
+  /** CSS color theme to use in header */
   theme: Theme
 }
 
@@ -98,18 +92,16 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
   return (
     <Grid container>
       <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
-        <Grid container alignItems="flex-start">
-          <Grid item xs={12} className={classes.left}>
-            <a className={classes.logo} href={home}>
-              <img src={logo} alt="dictyBase logo" className={classes.image} />
-            </a>
-            <div className={classes.dcr}>
-              <em>Dicty Community Resource</em>
-            </div>
-          </Grid>
+        <Grid item container alignItems="center" className={classes.left}>
+          <a href={home}>
+            <img src={logo} alt="dictyBase logo" className={classes.logo} />
+          </a>
+          <div className={classes.dcr}>
+            <em>Dicty Community Resource</em>
+          </div>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={5} lg={4} className={classes.searchContainer}>
+      <Grid item container justify="center" xs={12} md={5} lg={4}>
         {isExpanded ? (
           <ExpandedSearch isExpanded={isExpanded} theme={theme} />
         ) : (
@@ -120,7 +112,13 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
           />
         )}
       </Grid>
-      <Grid item xs={12} md={4} className={classes.linkContainer}>
+      <Grid
+        item
+        container
+        justify="flex-end"
+        xs={12}
+        md={4}
+        className={classes.linkContainer}>
         <Links items={items} />
       </Grid>
     </Grid>

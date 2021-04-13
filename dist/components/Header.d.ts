@@ -1,7 +1,7 @@
 /// <reference types="react" />
 import { HeaderItem, Theme } from "../types";
 declare type Props = {
-    /** List of header items */
+    /** List of header items (links) */
     items: HeaderItem[];
     /** Link for the logo that goes to the home page */
     home?: string;
@@ -9,7 +9,7 @@ declare type Props = {
     render: ({ items }: {
         items: HeaderItem[];
     }) => JSX.Element;
-    /** CSS theme to use in header */
+    /** CSS color theme to use in header */
     theme: Theme;
 };
 /**
