@@ -2,13 +2,13 @@
   "name": "dicty-components-header-footer",
   "version": "0.0.0-semantically-released",
   "description": "React library for the header and footer of dictyBase web applications",
+  "license": "BSD-2-Clause",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/dicty-components-header-footer.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-header-footer.git"
