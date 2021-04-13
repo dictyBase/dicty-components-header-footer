@@ -9,7 +9,6 @@ import { Theme } from "../types"
 
 const useStyles = makeStyles((theme: MuiTheme) => ({
   textField: {
-    marginTop: theme.spacing(2.5),
     paddingBottom: "0px",
     [theme.breakpoints.down("md")]: {
       marginTop: "0px",
