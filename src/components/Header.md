@@ -1,16 +1,10 @@
 ## Default header component
 
 ```jsx
-const aStyle = {
-  color: "#15317e",
-  marginRight: "8px",
-  textDecoration: "none",
-}
-
-const rStyle = {
-  color: "#1B9CFC",
-  marginRight: "8px",
-  textDecoration: "none",
+const headerTheme = {
+  primary: "#004080",
+  secondary: "#001b53",
+  text: "#004080",
 }
 
 const items = [
@@ -37,17 +31,22 @@ const items = [
   },
 ]
 
-const generateLinks = (link, i) => {
-  return link.isRouter ? (
-    <a style={rStyle} key={i} href={link.url}>
-      {link.text}
-    </a>
-  ) : (
-    <a style={aStyle} key={i} href={link.url}>
-      {link.text}
-    </a>
+const style = {
+  marginRight: "8px",
+  marginTop: "24px",
+}
+
+const HeaderLinks = ({ items }) => {
+  return (
+    <React.Fragment>
+      {items.map((link, i) => (
+        <a key={i} href={link.url} style={style}>
+          {link.text}
+        </a>
+      ))}
+    </React.Fragment>
   )
 }
 
-;<Header items={items}>{items => items.map(generateLinks)}</Header>
+;<Header items={items} render={HeaderLinks} theme={headerTheme} />
 ```
