@@ -9,7 +9,7 @@ import Search from "@material-ui/icons/Search"
 import { Theme } from "../types"
 
 const useStyles = makeStyles((theme: MuiTheme) => ({
-  textFieldExpanded: {
+  searchBox: {
     marginTop: theme.spacing(2.5),
     width: "60%",
     paddingBottom: "0px",
@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
       color: props.primary,
     },
   }),
-  searchFocused: {},
   searchUnderline: (props: Theme) => ({
     "&:after": {
       borderBottomColor: props.primary,
@@ -52,13 +51,12 @@ const ExpandedSearch = ({ isExpanded, theme }: Props) => {
   const classes = useStyles(theme)
 
   return (
-    <Grow in={isExpanded} timeout={500} style={{ opacity: 1 }}>
-      <FormControl className={classes.textFieldExpanded}>
+    <Grow in={isExpanded}>
+      <FormControl className={classes.searchBox}>
         <InputLabel
           htmlFor="guided-search"
           classes={{
             root: classes.searchLabel,
-            focused: classes.searchFocused,
           }}>
           Guided Search (coming soon)
         </InputLabel>
