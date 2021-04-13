@@ -89,6 +89,8 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
   const classes = useStyles(theme)
   const [isExpanded, setIsExpanded] = React.useState(false)
 
+  const handleClick = () => setIsExpanded(!isExpanded)
+
   return (
     <Grid container>
       <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
@@ -105,11 +107,7 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
         {isExpanded ? (
           <ExpandedSearch isExpanded={isExpanded} theme={theme} />
         ) : (
-          <NormalSearch
-            isExpanded={isExpanded}
-            setIsExpanded={setIsExpanded}
-            theme={theme}
-          />
+          <NormalSearch handleClick={handleClick} theme={theme} />
         )}
       </Grid>
       <Grid
