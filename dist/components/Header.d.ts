@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { HeaderItem } from "../types";
+import { HeaderItem, Theme } from "../types";
 declare type Props = {
     /** List of header items */
     items: HeaderItem[];
@@ -9,10 +9,12 @@ declare type Props = {
     render: ({ items }: {
         items: HeaderItem[];
     }) => JSX.Element;
+    /** CSS theme to use in header */
+    theme: Theme;
 };
 /**
  * The `Header` component that will be displayed
  * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
  */
-declare const Header: ({ home, render: Links, items }: Props) => JSX.Element;
+declare const Header: ({ home, render: Links, items, theme }: Props) => JSX.Element;
 export default Header;

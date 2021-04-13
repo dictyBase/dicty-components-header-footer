@@ -23,7 +23,7 @@ var useStyles = /*#__PURE__*/styles.makeStyles(function (theme) {
 
   return {
     textFieldExpanded: (_textFieldExpanded = {
-      marginTop: "20px",
+      marginTop: theme.spacing(2.5),
       width: "60%",
       paddingBottom: "0px"
     }, _textFieldExpanded[theme.breakpoints.only("sm")] = {
@@ -31,20 +31,26 @@ var useStyles = /*#__PURE__*/styles.makeStyles(function (theme) {
     }, _textFieldExpanded[theme.breakpoints.down("md")] = {
       marginTop: "0px"
     }, _textFieldExpanded),
-    searchLabel: {
-      fontSize: "13px",
-      "&$searchFocused": {
-        color: "#004080"
-      }
+    searchLabel: function searchLabel(props) {
+      return {
+        fontSize: "0.9em",
+        "&$searchFocused": {
+          color: props.primary
+        }
+      };
     },
     searchFocused: {},
-    searchUnderline: {
-      "&:after": {
-        borderBottomColor: "#004080"
-      }
+    searchUnderline: function searchUnderline(props) {
+      return {
+        "&:after": {
+          borderBottomColor: props.primary
+        }
+      };
     },
-    searchIcon: {
-      color: "#004080"
+    searchIcon: function searchIcon(props) {
+      return {
+        color: props.primary
+      };
     }
   };
 });
@@ -53,8 +59,9 @@ var useStyles = /*#__PURE__*/styles.makeStyles(function (theme) {
  */
 
 var ExpandedSearch = function ExpandedSearch(_ref) {
-  var isExpanded = _ref.isExpanded;
-  var classes = useStyles();
+  var isExpanded = _ref.isExpanded,
+      theme = _ref.theme;
+  var classes = useStyles(theme);
   return React.createElement(Grow, {
     "in": isExpanded,
     timeout: 500,
@@ -90,16 +97,18 @@ var useStyles$1 = /*#__PURE__*/styles.makeStyles(function (theme) {
 
   return {
     textField: (_textField = {
-      marginTop: "20px",
+      marginTop: theme.spacing(2.5),
       paddingBottom: "0px"
     }, _textField[theme.breakpoints.down("md")] = {
       marginTop: "0px"
     }, _textField),
-    searchIcon: {
-      color: "#004080"
+    searchIcon: function searchIcon(props) {
+      return {
+        color: props.primary
+      };
     },
     inputLabel: {
-      fontSize: "12px"
+      fontSize: "0.8em"
     }
   };
 });
@@ -109,8 +118,9 @@ var useStyles$1 = /*#__PURE__*/styles.makeStyles(function (theme) {
 
 var NormalSearch = function NormalSearch(_ref) {
   var isExpanded = _ref.isExpanded,
-      setIsExpanded = _ref.setIsExpanded;
-  var classes = useStyles$1();
+      setIsExpanded = _ref.setIsExpanded,
+      theme = _ref.theme;
+  var classes = useStyles$1(theme);
 
   var handleClick = function handleClick() {
     setIsExpanded(!isExpanded);
@@ -135,7 +145,7 @@ var NormalSearch = function NormalSearch(_ref) {
 };
 
 var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
-  var _logoContainer, _dcr, _left, _searchContainer, _linkContainer;
+  var _logoContainer, _left, _searchContainer;
 
   return {
     logoContainer: (_logoContainer = {
@@ -145,17 +155,21 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
       justifyContent: "center",
       textAlign: "center"
     }, _logoContainer),
-    dcr: (_dcr = {
-      fontWeight: 400,
-      fontSize: "1.1rem",
-      color: "#004080",
-      paddingTop: theme.spacing(3)
-    }, _dcr[theme.breakpoints.only("md")] = {
-      paddingLeft: theme.spacing(2)
-    }, _dcr[theme.breakpoints.down("md")] = {
-      paddingTop: theme.spacing(1),
-      paddingBottom: theme.spacing(0.5)
-    }, _dcr),
+    dcr: function dcr(props) {
+      var _ref;
+
+      return _ref = {
+        fontWeight: 400,
+        fontSize: "1.1rem",
+        color: props.primary,
+        paddingTop: theme.spacing(3)
+      }, _ref[theme.breakpoints.only("md")] = {
+        paddingLeft: theme.spacing(2)
+      }, _ref[theme.breakpoints.down("md")] = {
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(0.5)
+      }, _ref;
+    },
     left: (_left = {
       display: "flex",
       alignItems: "center"
@@ -177,15 +191,25 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
     }, _searchContainer[theme.breakpoints.only("md")] = {
       alignItems: "center"
     }, _searchContainer),
-    linkContainer: (_linkContainer = {
-      marginTop: theme.spacing(2),
-      display: "flex",
-      justifyContent: "flex-end",
-      paddingBottom: "0px",
-      fontSize: "0.8em"
-    }, _linkContainer[theme.breakpoints.down("md")] = {
-      justifyContent: "center"
-    }, _linkContainer)
+    linkContainer: function linkContainer(props) {
+      var _ref2;
+
+      return _ref2 = {
+        marginTop: theme.spacing(2),
+        display: "flex",
+        justifyContent: "flex-end",
+        paddingBottom: "0px",
+        fontSize: "0.8em"
+      }, _ref2[theme.breakpoints.down("md")] = {
+        justifyContent: "center"
+      }, _ref2["& a"] = {
+        color: props.text,
+        textDecoration: "none",
+        "&:hover": {
+          color: props.secondary
+        }
+      }, _ref2;
+    }
   };
 }); // set base URL for homepage
 
@@ -197,12 +221,13 @@ var Home = "/"; // render uses component injections
  * on top of the navigation bar in every React web application of [dictycr](https://dictycr.org).
  */
 
-var Header = function Header(_ref) {
-  var _ref$home = _ref.home,
-      home = _ref$home === void 0 ? Home : _ref$home,
-      Links = _ref.render,
-      items = _ref.items;
-  var classes = useStyles$2();
+var Header = function Header(_ref3) {
+  var _ref3$home = _ref3.home,
+      home = _ref3$home === void 0 ? Home : _ref3$home,
+      Links = _ref3.render,
+      items = _ref3.items,
+      theme = _ref3.theme;
+  var classes = useStyles$2(theme);
 
   var _React$useState = React.useState(false),
       isExpanded = _React$useState[0],
@@ -239,10 +264,12 @@ var Header = function Header(_ref) {
     lg: 4,
     className: classes.searchContainer
   }, isExpanded ? React.createElement(ExpandedSearch, {
-    isExpanded: isExpanded
+    isExpanded: isExpanded,
+    theme: theme
   }) : React.createElement(NormalSearch, {
     isExpanded: isExpanded,
-    setIsExpanded: setIsExpanded
+    setIsExpanded: setIsExpanded,
+    theme: theme
   })), React.createElement(Grid, {
     item: true,
     xs: 12,
