@@ -1,21 +1,16 @@
 import React from "react"
 import { makeStyles, Theme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import Divider from "@material-ui/core/Divider"
 import Typography from "@material-ui/core/Typography"
 
 const links = [
-  {
-    url: "/",
-    description: "Teaching Protocols",
-  },
   {
     url: "/",
     description: "Techniques",
   },
   {
     url: "/",
-    description: "Nomenclature Guidelines",
+    description: "Teaching Protocols",
   },
   {
     url: "/",
@@ -23,7 +18,11 @@ const links = [
   },
   {
     url: "/",
-    description: "DSC FAQs",
+    description: "Genome Browser",
+  },
+  {
+    url: "/",
+    description: "dictyAccess",
   },
   {
     url: "/",
@@ -32,6 +31,10 @@ const links = [
   {
     url: "/",
     description: "Labs",
+  },
+  {
+    url: "/",
+    description: "About",
   },
   {
     url: "/",
@@ -45,23 +48,31 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: theme.spacing(2),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
-  },
-  item: {
-    [theme.breakpoints.down("sm")]: {},
+    backgroundColor: "#004080",
   },
   header: {
+    marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
-    color: "#142a70",
+    color: "#ebe97a",
   },
   link: {
-    color: "#374151",
+    color: "#d8d8d8",
     textDecoration: "none",
     "&:hover": {
-      color: "#004080",
+      textDecoration: "underline",
     },
   },
   support: {
     marginTop: theme.spacing(1),
+  },
+  links: {
+    marginBottom: theme.spacing(2),
+  },
+  supportedBy: {
+    color: "#d8d8d8",
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+    marginRight: theme.spacing(2),
   },
 }))
 
@@ -70,20 +81,21 @@ const CondensedFooter = () => {
 
   return (
     <footer>
-      <Divider />
       <Grid container justify="center" className={classes.container}>
         <Grid item className={classes.header}>
           <Typography variant="h6">Dicty Community Resource</Typography>
         </Grid>
-
-        <Grid item container justify="space-around">
+        <Grid item container justify="space-around" className={classes.links}>
           {links.map((item) => (
-            <Grid item className={classes.item}>
-              <a href={item.url} className={classes.link}>
-                {item.description}
-              </a>
-            </Grid>
+            <a href={item.url} className={classes.link}>
+              {item.description}
+            </a>
           ))}
+          <Grid item container justify="flex-end">
+            <span className={classes.supportedBy}>
+              <em>Supported by NIH/NIGMS</em>
+            </span>
+          </Grid>
         </Grid>
       </Grid>
     </footer>
