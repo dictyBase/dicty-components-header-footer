@@ -2,10 +2,8 @@ import React from "react"
 import { Header, Footer } from "dicty-components-header-footer"
 import { makeStyles, Theme } from "@material-ui/core/styles"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
-import Container from "@material-ui/core/Container"
 import CondensedFooter from "./CondensedFooter"
 import OldFooter from "./OldFooter"
-import LightFooterDCR from "./LightFooterDCR"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
 
@@ -35,12 +33,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: theme.spacing(8),
   },
 }))
-
-const lightTheme = {
-  primary: "#edf2f7",
-  secondary: "#004080",
-  text: "#374151",
-}
 
 const darkTheme = {
   primary: "#004080",
@@ -84,18 +76,10 @@ const App = () => {
         <OldFooter items={footerLinks} />
       </div>
       <div className={classes.footer}>
-        <Container>
-          <CondensedFooter />
-        </Container>
+        <CondensedFooter />
       </div>
       <div className={classes.footer}>
         <Footer items={footerLinks} theme={darkTheme} />
-      </div>
-      <div className={classes.footer}>
-        <Footer items={footerLinks} theme={lightTheme} />
-      </div>
-      <div className={classes.footer}>
-        <LightFooterDCR />
       </div>
     </div>
   )
