@@ -1,15 +1,16 @@
 import React from "react"
-import { makeStyles, Theme } from "@material-ui/core/styles"
+import { makeStyles, Theme as MuiTheme } from "@material-ui/core/styles"
 import Input from "@material-ui/core/Input"
 import InputLabel from "@material-ui/core/InputLabel"
 import InputAdornment from "@material-ui/core/InputAdornment"
 import FormControl from "@material-ui/core/FormControl"
 import Grow from "@material-ui/core/Grow"
 import Search from "@material-ui/icons/Search"
+import { Theme } from "../types"
 
-const useStyles = makeStyles((theme: Theme) => ({
+const useStyles = makeStyles((theme: MuiTheme) => ({
   textFieldExpanded: {
-    marginTop: "20px",
+    marginTop: theme.spacing(2.5),
     width: "60%",
     paddingBottom: "0px",
     [theme.breakpoints.only("sm")]: {
@@ -19,34 +20,36 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginTop: "0px",
     },
   },
-  searchLabel: {
-    fontSize: "13px",
+  searchLabel: (props: Theme) => ({
+    fontSize: "0.9em",
     "&$searchFocused": {
-      color: "#004080",
+      color: props.primary,
     },
-  },
+  }),
   searchFocused: {},
-  searchUnderline: {
+  searchUnderline: (props: Theme) => ({
     "&:after": {
-      borderBottomColor: "#004080",
+      borderBottomColor: props.primary,
     },
-  },
-  searchIcon: {
-    color: "#004080",
-  },
+  }),
+  searchIcon: (props: Theme) => ({
+    color: props.primary,
+  }),
 }))
 
 type Props = {
   /** Represents if search box is expanded or not */
   isExpanded: boolean
+  /** CSS theme to use in header */
+  theme: Theme
 }
 
 /**
  * ExpandedSearch handles the expanded appearance of the search box.
  */
 
-const ExpandedSearch = ({ isExpanded }: Props) => {
-  const classes = useStyles()
+const ExpandedSearch = ({ isExpanded, theme }: Props) => {
+  const classes = useStyles(theme)
 
   return (
     <Grow in={isExpanded} timeout={500} style={{ opacity: 1 }}>

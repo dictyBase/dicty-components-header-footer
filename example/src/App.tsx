@@ -45,6 +45,12 @@ const darkTheme = {
   text: "#d8d8d8",
 }
 
+const headerTheme = {
+  primary: "#004080",
+  secondary: "#001b53",
+  text: "#004080",
+}
+
 const HeaderLinks = ({ items }: { items: Link[] }) => {
   const classes = useStyles()
 
@@ -69,7 +75,7 @@ const App = () => {
   return (
     <React.Fragment>
       <div className={classes.header}>
-        <Header items={headerLinks} render={HeaderLinks} />
+        <Header items={headerLinks} render={HeaderLinks} theme={headerTheme} />
       </div>
       <div className={classes.footer}>
         <OldFooter items={footerLinks} />
