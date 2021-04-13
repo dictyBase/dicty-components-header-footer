@@ -16,6 +16,9 @@ type Link = {
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
+  container: {
+    backgroundColor: "#fff",
+  },
   header: {
     fontFamily: "Roboto, sans-serif",
     marginBottom: theme.spacing(15),
@@ -73,7 +76,7 @@ const App = () => {
   const classes = useStyles()
 
   return (
-    <React.Fragment>
+    <div className={classes.container}>
       <div className={classes.header}>
         <Header items={headerLinks} render={HeaderLinks} theme={headerTheme} />
       </div>
@@ -94,7 +97,7 @@ const App = () => {
       <div className={classes.footer}>
         <LightFooterDCR />
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 

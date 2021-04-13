@@ -19,11 +19,16 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     fontWeight: 400,
     fontSize: "1.1em",
     color: props.primary,
+    display: "flex",
+    alignItems: "center",
     paddingTop: theme.spacing(3),
     [theme.breakpoints.only("md")]: { paddingLeft: theme.spacing(2) },
     [theme.breakpoints.down("md")]: {
       paddingTop: theme.spacing(1),
       paddingBottom: theme.spacing(0.5),
+    },
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
     },
   }),
   left: {
@@ -40,11 +45,11 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
     padding: theme.spacing(1.5),
   },
   linkContainer: (props: Theme) => ({
-    marginTop: theme.spacing(2),
     paddingBottom: "0px",
     fontSize: "0.8em",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
+      marginTop: theme.spacing(2),
     },
     "& a": {
       color: props.text,
@@ -85,9 +90,9 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
   const handleClick = () => setIsExpanded(!isExpanded)
 
   return (
-    <Grid container>
+    <Grid container alignItems="center">
       <Grid item xs={12} md={3} lg={4} className={classes.logoContainer}>
-        <Grid item container alignItems="center" className={classes.left}>
+        <Grid item container className={classes.left}>
           <a href={home}>
             <img src={logo} alt="dictyBase logo" className={classes.logo} />
           </a>

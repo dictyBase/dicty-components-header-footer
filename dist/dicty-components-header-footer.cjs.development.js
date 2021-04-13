@@ -91,7 +91,6 @@ var useStyles$1 = /*#__PURE__*/styles.makeStyles(function (theme) {
 
   return {
     textField: (_textField = {
-      marginTop: theme.spacing(2.5),
       paddingBottom: "0px"
     }, _textField[theme.breakpoints.down("md")] = {
       marginTop: "0px"
@@ -133,7 +132,7 @@ var NormalSearch = function NormalSearch(_ref) {
 };
 
 var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
-  var _logoContainer, _left, _searchContainer;
+  var _logoContainer, _left;
 
   return {
     logoContainer: (_logoContainer = {
@@ -150,12 +149,16 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
         fontWeight: 400,
         fontSize: "1.1em",
         color: props.primary,
+        display: "flex",
+        alignItems: "center",
         paddingTop: theme.spacing(3)
       }, _ref[theme.breakpoints.only("md")] = {
         paddingLeft: theme.spacing(2)
       }, _ref[theme.breakpoints.down("md")] = {
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(0.5)
+      }, _ref[theme.breakpoints.down("sm")] = {
+        justifyContent: "center"
       }, _ref;
     },
     left: (_left = {}, _left[theme.breakpoints.down("sm")] = {
@@ -168,21 +171,15 @@ var useStyles$2 = /*#__PURE__*/styles.makeStyles(function (theme) {
       maxWidth: "180px",
       padding: theme.spacing(1.5)
     },
-    searchContainer: (_searchContainer = {
-      display: "flex",
-      justifyContent: "center"
-    }, _searchContainer[theme.breakpoints.only("md")] = {
-      alignItems: "center"
-    }, _searchContainer),
     linkContainer: function linkContainer(props) {
       var _ref2;
 
       return _ref2 = {
-        marginTop: theme.spacing(2),
         paddingBottom: "0px",
         fontSize: "0.8em"
-      }, _ref2[theme.breakpoints.down("md")] = {
-        justifyContent: "center"
+      }, _ref2[theme.breakpoints.down("sm")] = {
+        justifyContent: "center",
+        marginTop: theme.spacing(2)
       }, _ref2["& a"] = {
         color: props.text,
         textDecoration: "none",
@@ -219,7 +216,8 @@ var Header = function Header(_ref3) {
   };
 
   return React.createElement(Grid, {
-    container: true
+    container: true,
+    alignItems: "center"
   }, React.createElement(Grid, {
     item: true,
     xs: 12,
@@ -229,7 +227,6 @@ var Header = function Header(_ref3) {
   }, React.createElement(Grid, {
     item: true,
     container: true,
-    alignItems: "center",
     className: classes.left
   }, React.createElement("a", {
     href: home
