@@ -38,8 +38,14 @@ describe("Header", () => {
     )
   }
 
+  const headerTheme = {
+    primary: "#004080",
+    secondary: "#001b53",
+    text: "#004080",
+  }
+
   const MockComponent = () => {
-    return <Header render={Links} items={headerLinks} />
+    return <Header render={Links} items={headerLinks} theme={headerTheme} />
   }
 
   it("should render four links", () => {
