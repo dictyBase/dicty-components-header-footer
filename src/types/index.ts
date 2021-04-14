@@ -23,6 +23,13 @@ type FooterItem = {
   items: FooterLink[]
 }
 
+type CondensedFooterItem = {
+  /** Link URL */
+  url: string
+  /** Text used for link */
+  description: string
+}
+
 type Theme = {
   /** RGB, hex or CSS color string used as background color for footer and hovered links */
   primary: string
@@ -32,4 +39,4 @@ type Theme = {
   text: string
 }
 
-export type { HeaderItem, FooterItem, FooterLink, Theme }
+export type { HeaderItem, FooterItem, FooterLink, CondensedFooterItem, Theme }

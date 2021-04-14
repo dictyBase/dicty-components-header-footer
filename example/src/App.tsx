@@ -1,9 +1,7 @@
 import React from "react"
-import { Header, Footer } from "dicty-components-header-footer"
+import { Header, SiteMapFooter, Footer } from "dicty-components-header-footer"
 import { makeStyles, Theme } from "@material-ui/core/styles"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
-import CondensedFooter from "./CondensedFooter"
-import OldFooter from "./OldFooter"
 import headerLinks from "./data/header"
 import footerLinks from "./data/footer"
 
@@ -36,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const darkTheme = {
   primary: "#004080",
-  secondary: "#57CAC8",
+  secondary: "#ebe07a",
   text: "#d8d8d8",
 }
 
@@ -45,6 +43,45 @@ const headerTheme = {
   secondary: "#001b53",
   text: "#004080",
 }
+
+const condensedFooterLinks = [
+  {
+    url: "/",
+    description: "Techniques",
+  },
+  {
+    url: "/",
+    description: "Teaching Protocols",
+  },
+  {
+    url: "/",
+    description: "Dicty Stock Center",
+  },
+  {
+    url: "/",
+    description: "Genome Browser",
+  },
+  {
+    url: "/",
+    description: "dictyAccess",
+  },
+  {
+    url: "/",
+    description: "Conference",
+  },
+  {
+    url: "/",
+    description: "Labs",
+  },
+  {
+    url: "/",
+    description: "About",
+  },
+  {
+    url: "/",
+    description: "Contact",
+  },
+]
 
 const HeaderLinks = ({ items }: { items: Link[] }) => {
   const classes = useStyles()
@@ -73,13 +110,10 @@ const App = () => {
         <Header items={headerLinks} render={HeaderLinks} theme={headerTheme} />
       </div>
       <div className={classes.footer}>
-        <OldFooter items={footerLinks} />
+        <SiteMapFooter items={footerLinks} theme={darkTheme} />
       </div>
       <div className={classes.footer}>
-        <CondensedFooter />
-      </div>
-      <div className={classes.footer}>
-        <Footer items={footerLinks} theme={darkTheme} />
+        <Footer links={condensedFooterLinks} theme={darkTheme} />
       </div>
     </div>
   )

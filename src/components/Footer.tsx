@@ -1,88 +1,62 @@
 import React from "react"
 import { makeStyles, Theme as MuiTheme } from "@material-ui/core/styles"
+import Box from "@material-ui/core/Box"
 import Grid from "@material-ui/core/Grid"
-import Divider from "@material-ui/core/Divider"
 import Typography from "@material-ui/core/Typography"
-import { FooterItem, FooterLink, Theme } from "../types"
-
-const useStyles = makeStyles((theme: MuiTheme) => ({
-  container: (props: Theme) => ({
-    backgroundColor: props.primary,
-  }),
-  gridItem: {
-    [theme.breakpoints.down("xs")]: {
-      width: "50%",
-    },
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
-  },
-  list: {
-    padding: "0px",
-  },
-  listHeader: (props: Theme) => ({
-    color: props.secondary,
-    fontSize: "1.2em",
-    textDecoration: "none",
-    listStyle: "none",
-    marginBottom: theme.spacing(1),
-  }),
-  listItem: {
-    margin: "0px",
-    padding: "0px",
-    listStyle: "none",
-  },
-  link: (props: Theme) => ({
-    color: props.text,
-    fontSize: "0.8em",
-    textDecoration: "none",
-    "&:hover": {
-      color: theme.palette.getContrastText(props.primary),
-      textDecoration: "underline",
-    },
-  }),
-}))
+import { CondensedFooterItem, Theme } from "../types"
 
 type Props = {
   /** Colors used as part of footer theme */
   theme: Theme
   /** List of items to display in footer */
-  items: FooterItem[][]
+  links: CondensedFooterItem[]
 }
 
-const Footer = ({ items, theme }: Props) => {
+const useStyles = makeStyles((theme: MuiTheme) => ({
+  link: (props: Props["theme"]) => ({
+    color: props.text,
+    paddingRight: theme.spacing(0.5),
+    "& a": {
+      color: props.text,
+      textDecoration: "none",
+      "&:hover": {
+        textDecoration: "underline",
+      },
+    },
+  }),
+}))
+
+const Footer = ({ links, theme }: Props) => {
   const classes = useStyles(theme)
 
-  const footerItems = (items: Array<FooterLink>) =>
-    items.map((c, i) => (
-      <Typography key={i}>
-        <a href={c.link} className={classes.link}>
-          {c.description}
-        </a>
-      </Typography>
-    ))
-
-  const footerSubSections = (items: Array<FooterItem>) =>
-    items.map((c, i) => (
-      <ul key={i} className={classes.list}>
-        <li className={classes.listHeader}>{c.header.description}</li>
-        <li className={classes.listItem}>{footerItems(c.items)}</li>
-      </ul>
-    ))
-
-  const footerSections = (items: Props["items"]) =>
-    items.map((c, i) => (
-      <Grid item key={i} className={classes.gridItem}>
-        {footerSubSections(c)}
-      </Grid>
-    ))
-
   return (
-    <React.Fragment>
-      <Divider />
-      <Grid container justify="center" className={classes.container}>
-        {footerSections(items)}
-      </Grid>
-    </React.Fragment>
+    <footer>
+      <Box my={2} px={2} bgcolor={theme.primary}>
+        <Grid container justify="center">
+          <Grid item xs={12}>
+            <Box my={2} color={theme.secondary} textAlign="center">
+              <Typography variant="h6">Dicty Community Resource</Typography>
+            </Box>
+          </Grid>
+          <Grid item container justify="center">
+            {links.map((item: CondensedFooterItem, index: number) => {
+              const separator = index ? " • " : ""
+              return (
+                <span key={index} className={classes.link}>
+                  {separator}
+                  <a href={item.url}>{item.description}</a>
+                </span>
+              )
+            })}
+          </Grid>
+          <Grid item xs={12} container justify="flex-end">
+            <Box mt={1} mb={2} mr={1} color={theme.text}>
+              <em>Supported by NIH/NIGMS</em>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+    </footer>
   )
 }
 
