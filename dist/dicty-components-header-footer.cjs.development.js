@@ -288,7 +288,6 @@ var Footer = function Footer(_ref) {
       theme = _ref.theme;
   var classes = useStyles$3(theme);
   return React.createElement("footer", null, React.createElement(Box, {
-    my: 2,
     px: 2,
     bgcolor: theme.primary
   }, React.createElement(Grid, {

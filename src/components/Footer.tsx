@@ -34,7 +34,7 @@ const Footer = ({ links, theme }: Props) => {
 
   return (
     <footer>
-      <Box my={2} px={2} bgcolor={theme.primary}>
+      <Box px={2} bgcolor={theme.primary}>
         <Grid container justify="center">
           <Grid item xs={12}>
             <Box my={2} color={theme.secondary} textAlign="center">
