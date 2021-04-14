@@ -302,8 +302,9 @@ var Footer = function Footer(_ref) {
     justify: "center"
   }, links.map(function (item, index) {
     var separator = index ? " • " : "";
-    return React.createElement("span", {
+    return React.createElement(Typography, {
       key: index,
+      variant: "body2",
       className: classes.link
     }, separator, React.createElement("a", {
       href: item.url

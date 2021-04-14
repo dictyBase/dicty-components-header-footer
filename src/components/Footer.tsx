@@ -47,10 +47,13 @@ const Footer = ({ links, theme }: Props) => {
             {links.map((item: CondensedFooterItem, index: number) => {
               const separator = index ? " • " : ""
               return (
-                <span key={index} className={classes.link}>
+                <Typography
+                  key={index}
+                  variant="body2"
+                  className={classes.link}>
                   {separator}
                   <a href={item.url}>{item.description}</a>
-                </span>
+                </Typography>
               )
             })}
           </Grid>
