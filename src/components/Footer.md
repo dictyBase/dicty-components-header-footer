@@ -1,56 +1,50 @@
-### Default footer
+### Default condensed footer
 
 ```jsx
-const items = [
-  [
-    {
-      header: { description: "Random" },
-      items: [
-        { link: "http://cnn.com", description: "CNN" },
-        { link: "http://nytimes.com", description: "Nytimes" },
-        { link: "http://yahoo.com", description: "Yahoo" },
-      ],
-    },
-  ],
-  [
-    {
-      header: { description: "Tools", link: "http://dictybase.org/tools" },
-      items: [
-        { link: "http://dictybase.org/tools", description: "Tools home" },
-        { link: "http://dictybase.org/tools", description: "Genome browser" },
-      ],
-    },
-  ],
-  [
-    {
-      header: { description: "Please Cite", link: "http://dictybase.org/cite" },
-      items: [
-        { description: "dictyBase", link: "http://dictybase.org" },
-        {
-          description: "Dicty stock center",
-          link: "http://dictybase.org/stock",
-        },
-      ],
-    },
-    {
-      header: {
-        description: "Supported By",
-        link: "http://dictybase.org/support",
-      },
-      items: [
-        { description: "NIH", link: "http://dictybase.org/nih" },
-        { description: "GMOD", link: "http://dictybase.org/nih" },
-        { description: "Gene ontology", link: "http://dictybase.org/nih" },
-      ],
-    },
-  ],
+const links = [
+  {
+    url: "/techniques",
+    description: "Techniques",
+  },
+  {
+    url: "/teaching-protocols",
+    description: "Teaching Protocols",
+  },
+  {
+    url: "/stockcenter",
+    description: "Dicty Stock Center",
+  },
+  {
+    url: "/gene",
+    description: "Genome Browser",
+  },
+  {
+    url: "/dictyaccess",
+    description: "dictyAccess",
+  },
+  {
+    url: "/conferences",
+    description: "Conference",
+  },
+  {
+    url: "/labs",
+    description: "Labs",
+  },
+  {
+    url: "/about",
+    description: "About",
+  },
+  {
+    url: "/contact",
+    description: "Contact",
+  },
 ]
 
 const theme = {
   primary: "#004080",
-  secondary: "#57CAC8",
+  secondary: "#ebe07a",
   text: "#d8d8d8",
 }
 
-;<Footer items={items} theme={theme} />
+;<Footer links={links} theme={theme} />
 ```
