@@ -20,6 +20,12 @@ declare type FooterItem = {
     /** List of entry under the header */
     items: FooterLink[];
 };
+declare type CondensedFooterItem = {
+    /** Link URL */
+    url: string;
+    /** Text used for link */
+    description: string;
+};
 declare type Theme = {
     /** RGB, hex or CSS color string used as background color for footer and hovered links */
     primary: string;
@@ -28,4 +34,4 @@ declare type Theme = {
     /** RGB, hex or CSS color string used as primary text color */
     text: string;
 };
-export type { HeaderItem, FooterItem, FooterLink, Theme };
+export type { HeaderItem, FooterItem, FooterLink, CondensedFooterItem, Theme };

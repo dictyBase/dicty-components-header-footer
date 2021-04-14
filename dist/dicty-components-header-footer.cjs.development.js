@@ -264,6 +264,9 @@ var Header = function Header(_ref3) {
 
 var useStyles$3 = /*#__PURE__*/styles.makeStyles(function (theme) {
   return {
+    header: {
+      fontSize: "1.2rem"
+    },
     link: function link(props) {
       return {
         color: props.text,
@@ -299,7 +302,7 @@ var Footer = function Footer(_ref) {
     color: theme.secondary,
     textAlign: "center"
   }, React.createElement(Typography, {
-    variant: "h6"
+    className: classes.header
   }, "Dicty Community Resource"))), React.createElement(Grid, {
     item: true,
     container: true,

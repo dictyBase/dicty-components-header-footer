@@ -13,6 +13,9 @@ type Props = {
 }
 
 const useStyles = makeStyles((theme: MuiTheme) => ({
+  header: {
+    fontSize: "1.2rem",
+  },
   link: (props: Props["theme"]) => ({
     color: props.text,
     paddingRight: theme.spacing(0.5),
@@ -35,7 +38,9 @@ const Footer = ({ links, theme }: Props) => {
         <Grid container justify="center">
           <Grid item xs={12}>
             <Box my={2} color={theme.secondary} textAlign="center">
-              <Typography variant="h6">Dicty Community Resource</Typography>
+              <Typography className={classes.header}>
+                Dicty Community Resource
+              </Typography>
             </Box>
           </Grid>
           <Grid item container justify="center">
