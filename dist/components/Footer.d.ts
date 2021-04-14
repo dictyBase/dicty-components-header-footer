@@ -1,10 +1,10 @@
 /// <reference types="react" />
-import { FooterItem, Theme } from "../types";
+import { CondensedFooterItem, Theme } from "../types";
 declare type Props = {
     /** Colors used as part of footer theme */
     theme: Theme;
     /** List of items to display in footer */
-    items: FooterItem[][];
+    links: CondensedFooterItem[];
 };
-declare const Footer: ({ items, theme }: Props) => JSX.Element;
+declare const Footer: ({ links, theme }: Props) => JSX.Element;
 export default Footer;
