@@ -263,6 +263,8 @@ var Header = function Header(_ref3) {
 };
 
 var useStyles$3 = /*#__PURE__*/styles.makeStyles(function (theme) {
+  var _support;
+
   return {
     header: {
       fontSize: "1.2rem"
@@ -279,7 +281,10 @@ var useStyles$3 = /*#__PURE__*/styles.makeStyles(function (theme) {
           }
         }
       };
-    }
+    },
+    support: (_support = {}, _support[theme.breakpoints.down("sm")] = {
+      justifyContent: "center"
+    }, _support)
   };
 });
 
@@ -322,7 +327,8 @@ var Footer = function Footer(_ref) {
     item: true,
     xs: 12,
     container: true,
-    justify: "flex-end"
+    justify: "flex-end",
+    className: classes.support
   }, React.createElement(Box, {
     mt: 1,
     mb: 2,

@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme: MuiTheme) => ({
       },
     },
   }),
+  support: {
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+    },
+  },
 }))
 
 const Footer = ({ links, theme }: Props) => {
@@ -59,7 +64,12 @@ const Footer = ({ links, theme }: Props) => {
               )
             })}
           </Grid>
-          <Grid item xs={12} container justify="flex-end">
+          <Grid
+            item
+            xs={12}
+            container
+            justify="flex-end"
+            className={classes.support}>
             <Box
               mt={1}
               mb={2}
