@@ -60,8 +60,25 @@ const Footer = ({ links, theme }: Props) => {
             })}
           </Grid>
           <Grid item xs={12} container justify="flex-end">
-            <Box mt={1} mb={2} mr={1} color={theme.text}>
-              <em>Supported by NIH/NIGMS</em>
+            <Box
+              mt={1}
+              mb={2}
+              mr={1}
+              color={theme.text}
+              className={classes.link}>
+              <em>
+                Supported by{" "}
+                <a href="https://www.nih.gov/" target="_blank" rel="noopener">
+                  NIH
+                </a>
+                /
+                <a
+                  href="https://www.nigms.nih.gov/"
+                  target="_blank"
+                  rel="noopener">
+                  NIGMS
+                </a>
+              </em>
             </Box>
           </Grid>
         </Grid>

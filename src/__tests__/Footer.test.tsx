@@ -51,7 +51,8 @@ describe("Footer", () => {
   it("should render all links", () => {
     render(<Footer links={condensedFooterLinks} theme={theme} />)
     const links = screen.getAllByRole("link")
-    expect(links).toHaveLength(condensedFooterLinks.length)
+    // should have same number of links as array (9) + two for NIH/NIGMS
+    expect(links).toHaveLength(11)
     // verify all links have expected text and hrefs
     condensedFooterLinks.forEach((link) => {
       expect(screen.getByText(link.description)).toBeInTheDocument()

@@ -321,8 +321,17 @@ var Footer = function Footer(_ref) {
     mt: 1,
     mb: 2,
     mr: 1,
-    color: theme.text
-  }, React.createElement("em", null, "Supported by NIH/NIGMS"))))));
+    color: theme.text,
+    className: classes.link
+  }, React.createElement("em", null, "Supported by", " ", React.createElement("a", {
+    href: "https://www.nih.gov/",
+    target: "_blank",
+    rel: "noopener"
+  }, "NIH"), "/", React.createElement("a", {
+    href: "https://www.nigms.nih.gov/",
+    target: "_blank",
+    rel: "noopener"
+  }, "NIGMS")))))));
 };
 
 function _objectWithoutPropertiesLoose(source, excluded) {
