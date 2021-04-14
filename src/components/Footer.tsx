@@ -51,7 +51,9 @@ const Footer = ({ links, theme }: Props) => {
                   key={index}
                   variant="body2"
                   className={classes.link}>
-                  {separator}
+                  <Box component="span" px={0.5}>
+                    {separator}
+                  </Box>
                   <a href={item.url}>{item.description}</a>
                 </Typography>
               )

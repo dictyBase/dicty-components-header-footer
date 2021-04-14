@@ -312,7 +312,10 @@ var Footer = function Footer(_ref) {
       key: index,
       variant: "body2",
       className: classes.link
-    }, separator, React.createElement("a", {
+    }, React.createElement(Box, {
+      component: "span",
+      px: 0.5
+    }, separator), React.createElement("a", {
       href: item.url
     }, item.description));
   })), React.createElement(Grid, {
