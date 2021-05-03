@@ -78,7 +78,10 @@ const Footer = ({ links, theme }: Props) => {
               className={classes.link}>
               <em>
                 Supported by{" "}
-                <a href="https://www.nih.gov/" target="_blank" rel="noopener">
+                <a
+                  href="https://reporter.nih.gov/project-details/10024726"
+                  target="_blank"
+                  rel="noopener">
                   NIH
                 </a>
                 /

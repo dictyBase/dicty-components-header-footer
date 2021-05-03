@@ -330,7 +330,7 @@ var Footer = function Footer(_ref) {
     color: theme.text,
     className: classes.link
   }, React.createElement("em", null, "Supported by", " ", React.createElement("a", {
-    href: "https://www.nih.gov/",
+    href: "https://reporter.nih.gov/project-details/10024726",
     target: "_blank",
     rel: "noopener"
   }, "NIH"), "/", React.createElement("a", {
