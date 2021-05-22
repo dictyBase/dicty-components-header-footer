@@ -55,7 +55,7 @@
     "react-dom": "^16.14.0",
     "react-styleguidist": "^11.1.6",
     "semantic-release": "^17.4.2",
-    "ts-loader": "^9.1.2",
+    "ts-loader": "^9.2.1",
     "tsdx": "^0.14.1",
     "webpack": "4"
   },
