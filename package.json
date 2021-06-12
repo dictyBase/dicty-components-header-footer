@@ -51,7 +51,7 @@
     "node-notifier": "8.0.1",
     "prettier": "^2.3.0",
     "react": "^16.14.0",
-    "react-docgen-typescript": "^1.22.0",
+    "react-docgen-typescript": "^2.0.0",
     "react-dom": "^16.14.0",
     "react-styleguidist": "^11.1.6",
     "semantic-release": "^17.4.2",
