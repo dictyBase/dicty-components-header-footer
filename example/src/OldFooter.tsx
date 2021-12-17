@@ -116,7 +116,7 @@ const Footer = ({ items }: FooterProps) => {
     ))
 
   return (
-    <Grid container className={classes.root} justify="center">
+    <Grid container className={classes.root} justifyContent="center">
       {footerSections(items)}
     </Grid>
   )

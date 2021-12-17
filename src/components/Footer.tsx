@@ -40,7 +40,7 @@ const Footer = ({ links, theme }: Props) => {
   return (
     <footer>
       <Box px={2} bgcolor={theme.primary}>
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item xs={12}>
             <Box my={2} color={theme.secondary} textAlign="center">
               <Typography className={classes.header}>
@@ -48,7 +48,7 @@ const Footer = ({ links, theme }: Props) => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item container justify="center">
+          <Grid item container justifyContent="center">
             {links.map((item: CondensedFooterItem, index: number) => {
               const separator = index ? " • " : ""
               return (
@@ -68,7 +68,7 @@ const Footer = ({ links, theme }: Props) => {
             item
             xs={12}
             container
-            justify="flex-end"
+            justifyContent="flex-end"
             className={classes.support}>
             <Box
               mt={1}
