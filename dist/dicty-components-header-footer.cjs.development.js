@@ -240,7 +240,7 @@ var Header = function Header(_ref3) {
   }, React.createElement("em", null, "Dicty Community Resource")))), React.createElement(Grid, {
     item: true,
     container: true,
-    justify: "center",
+    justifyContent: "center",
     xs: 12,
     md: 5,
     lg: 4
@@ -253,7 +253,7 @@ var Header = function Header(_ref3) {
   })), React.createElement(Grid, {
     item: true,
     container: true,
-    justify: "flex-end",
+    justifyContent: "flex-end",
     xs: 12,
     md: 4,
     className: classes.linkContainer
@@ -297,7 +297,7 @@ var Footer = function Footer(_ref) {
     bgcolor: theme.primary
   }, React.createElement(Grid, {
     container: true,
-    justify: "center"
+    justifyContent: "center"
   }, React.createElement(Grid, {
     item: true,
     xs: 12
@@ -310,7 +310,7 @@ var Footer = function Footer(_ref) {
   }, "Dicty Community Resource"))), React.createElement(Grid, {
     item: true,
     container: true,
-    justify: "center"
+    justifyContent: "center"
   }, links.map(function (item, index) {
     var separator = index ? " • " : "";
     return React.createElement(Typography, {
@@ -327,7 +327,7 @@ var Footer = function Footer(_ref) {
     item: true,
     xs: 12,
     container: true,
-    justify: "flex-end",
+    justifyContent: "flex-end",
     className: classes.support
   }, React.createElement(Box, {
     mt: 1,
@@ -458,7 +458,7 @@ var SiteMapFooter = function SiteMapFooter(_ref) {
 
   return React.createElement(React.Fragment, null, React.createElement(Divider, null), React.createElement(Grid, {
     container: true,
-    justify: "center",
+    justifyContent: "center",
     className: classes.container
   }, footerSections(items)));
 };
