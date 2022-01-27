@@ -79,7 +79,7 @@ const SiteMapFooter = ({ items, theme }: Props) => {
   return (
     <React.Fragment>
       <Divider />
-      <Grid container justify="center" className={classes.container}>
+      <Grid container justifyContent="center" className={classes.container}>
         {footerSections(items)}
       </Grid>
     </React.Fragment>

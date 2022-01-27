@@ -101,7 +101,7 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
           </div>
         </Grid>
       </Grid>
-      <Grid item container justify="center" xs={12} md={5} lg={4}>
+      <Grid item container justifyContent="center" xs={12} md={5} lg={4}>
         {isExpanded ? (
           <ExpandedSearch isExpanded={isExpanded} theme={theme} />
         ) : (
@@ -111,7 +111,7 @@ const Header = ({ home = Home, render: Links, items, theme }: Props) => {
       <Grid
         item
         container
-        justify="flex-end"
+        justifyContent="flex-end"
         xs={12}
         md={4}
         className={classes.linkContainer}>
