@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Theme } from "../types";
 declare type Props = {
     /** Function called when user clicks the search box */

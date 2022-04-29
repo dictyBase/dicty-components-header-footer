@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { HeaderItem, Theme } from "../types";
 declare type Props = {
     /** List of header items (links) */

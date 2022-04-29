@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Theme } from "../types";
 declare type Props = {
     /** Represents if search box is expanded or not */

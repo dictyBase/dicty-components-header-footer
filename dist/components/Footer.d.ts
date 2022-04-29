@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { CondensedFooterItem, Theme } from "../types";
 declare type Props = {
     /** Colors used as part of footer theme */
